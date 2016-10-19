@@ -8,3 +8,4 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
+package model.property;

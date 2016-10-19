@@ -8,3 +8,17 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
+package controller;
+
+public class TransactionManager
+{
+    public TransactionManager()
+    {
+
+    }
+
+    public void update(PropertyManager properties, long year)
+    {
+
+    }
+}

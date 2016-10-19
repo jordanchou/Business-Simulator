@@ -1,3 +1,18 @@
+/*
+FILE: CompanyController.java
+AUTHOR:Jordan Pinglin Chou
+USERNAME:18348691
+UNIT: COMP2003 (Object Oriented Software Engineering)
+PURPOSE:
+REFERENCE:-
+COMMENTS:-
+REQUIRES:-
+*/
+
+package controller;
+
+import view.*;
+
 public class SimulationController
 {
     private PropertyManager properties;
@@ -19,7 +34,7 @@ public class SimulationController
                                     UserInterface ui)
     {
         this.properties = properties;
-        this.event = events;
+        this.events = events;
         this.transactions = transactions;
         this.ui = ui;
     }
@@ -32,7 +47,7 @@ public class SimulationController
      */
     public void simulate(long start, long end)
     {
-        for (int i=start; i<=end; i++)
+        for (long i=start; i<=end; i++)
         {
             //output company names and bank account balances
             ui.outputProperties(properties.getCompanies());
