@@ -8,9 +8,13 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
-public abstract class Event
+package model.event;
+
+import java.util.*;
+
+public abstract class Event implements Comparable<Event>
 {
-    private int year;
+    private long year;
 
     public Event()
     {
@@ -22,20 +26,38 @@ public abstract class Event
         setYear(year);
     }
 
-    public int getYear()
+    public long getYear()
     {
         return this.year;
     }
 
-    public void setYear(int year)
+    public void setYear(long year)
     {
-        if (validateYear(year))
-            this.year = year;
+        if (!validateYear(year))
+            throw new IllegalArgumentException("Invalid year: " + year);
+
+        this.year = year;
     }
 
-    private boolean validateYear(int year)
+    private boolean validateYear(long year)
     {
         return year > 0;
+    }
+
+    public int compareTo(Event event)
+    {
+        if (event.getYear() > this.year)
+        {
+            return -1;
+        }
+        else if (event.getYear() < this.year)
+        {
+            return 1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 
 }

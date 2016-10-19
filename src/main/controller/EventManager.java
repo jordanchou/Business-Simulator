@@ -10,9 +10,12 @@ REQUIRES:-
 */
 package controller;
 
+import controller.factory.*;
+
+
 public class EventManager
 {
-    public EventManager()
+    public EventManager(EventFactory ef, String file)
     {
 
     }

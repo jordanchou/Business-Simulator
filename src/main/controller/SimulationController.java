@@ -30,6 +30,13 @@ public class SimulationController
         transactions = null;
     }
 
+    /**
+     *
+     * @param properties
+     * @param events
+     * @param transactions
+     * @param ui
+     */
     public SimulationController(PropertyManager properties, EventManager events, TransactionManager transactions,
                                     UserInterface ui)
     {

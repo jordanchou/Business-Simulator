@@ -8,3 +8,14 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
+package model.transaction;
+
+public class SellTransaction extends Transaction
+{
+    public SellTransaction()
+    {
+
+    }
+
+
+}

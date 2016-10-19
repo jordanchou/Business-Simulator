@@ -8,3 +8,12 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
+package model.event;
+
+public class RevenueDecreaseEvent extends Event
+{
+    public RevenueDecreaseEvent()
+    {
+
+    }
+}

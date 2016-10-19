@@ -10,9 +10,11 @@ REQUIRES:-
 */
 package controller;
 
+import controller.factory.*;
+
 public class TransactionManager
 {
-    public TransactionManager()
+    public TransactionManager(TransactionFactory tf, String file)
     {
 
     }
