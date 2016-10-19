@@ -36,25 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EventFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controller/factory/EventFactory.java">
+      <file leaf-file-name="Property.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/model/property/Property.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="562">
+              <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
               <folding>
-                <element signature="e#0#274#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PropertyFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#281#0" expanded="true" />
+                <element signature="e#0#869#0" expanded="true" />
+                <element signature="e#573#574#0" expanded="true" />
+                <element signature="e#607#608#0" expanded="true" />
+                <element signature="e#655#656#0" expanded="true" />
+                <element signature="e#691#692#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#795#796#0" expanded="true" />
+                <element signature="e#822#823#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,18 +61,60 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="e#0#540#0" expanded="true" />
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RevenueDecreaseEvent.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/model/event/RevenueDecreaseEvent.java">
+      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/model/property/Company.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="157">
+              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
               <folding>
-                <element signature="e#0#297#0" expanded="true" />
+                <element signature="e#0#845#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#704#705#0" expanded="true" />
+                <element signature="e#730#731#0" expanded="true" />
+                <element signature="e#780#781#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PropertyFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#385#0" expanded="true" />
+                <element signature="e#355#356#0" expanded="true" />
+                <element signature="e#382#383#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusinessUnit.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/model/property/BusinessUnit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="577">
+              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#800#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#664#665#0" expanded="true" />
+                <element signature="e#702#703#0" expanded="true" />
+                <element signature="e#732#733#0" expanded="true" />
+                <element signature="e#768#769#0" expanded="true" />
+                <element signature="e#796#797#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,15 +159,13 @@
       <file leaf-file-name="PropertyManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/controller/PropertyManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+            <state relative-caret-position="337">
+              <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
               <folding>
-                <element signature="e#0#887#0" expanded="true" />
+                <element signature="e#0#1907#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#427#428#0" expanded="true" />
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#857#858#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,20 +178,6 @@
               <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
               <folding>
                 <element signature="e#0#406#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/model/transaction/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#721#0" expanded="true" />
-                <element signature="e#686#687#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -509,11 +531,8 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/model/property/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/main/view/UserInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/BusinessUnit.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/Company.java" />
         <option value="$PROJECT_DIR$/src/main/model/transaction/BuyTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/model/transaction/SellTransaction.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/Property.java" />
         <option value="$PROJECT_DIR$/src/main/model/transaction/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/model/event/Event.java" />
         <option value="$PROJECT_DIR$/src/main/model/event/RevenueDecreaseEvent.java" />
@@ -523,12 +542,15 @@
         <option value="$PROJECT_DIR$/src/main/model/event/WageDecreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/model/event/WageIncreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/controller/factory/TransactionFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java" />
         <option value="$PROJECT_DIR$/src/main/controller/factory/EventFactory.java" />
         <option value="$PROJECT_DIR$/src/main/controller/EventManager.java" />
         <option value="$PROJECT_DIR$/src/main/controller/TransactionManager.java" />
         <option value="$PROJECT_DIR$/src/main/main.java" />
         <option value="$PROJECT_DIR$/src/main/controller/SimulationController.java" />
+        <option value="$PROJECT_DIR$/src/main/model/property/BusinessUnit.java" />
+        <option value="$PROJECT_DIR$/src/main/model/property/Property.java" />
+        <option value="$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/model/property/Company.java" />
         <option value="$PROJECT_DIR$/src/main/controller/PropertyManager.java" />
       </list>
     </option>
@@ -1260,12 +1282,12 @@
       <workItem from="1476086353588" duration="3873000" />
       <workItem from="1476671051650" duration="7485000" />
       <workItem from="1476844177129" duration="632000" />
-      <workItem from="1476853814777" duration="5198000" />
+      <workItem from="1476853814777" duration="7163000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17460000" />
+    <option name="totallyTimeSpent" value="19425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1052" extended-state="6" />
@@ -1625,34 +1647,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/property/BusinessUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/property/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/property/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#628#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
@@ -1684,14 +1678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/property/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/event/RevenueDecreaseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1708,16 +1694,6 @@
           <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="e#0#274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#281#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1762,17 +1738,97 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/propertyfile.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/property/BusinessUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#800#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#664#665#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#732#733#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/property/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#540#0" expanded="true" />
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/property/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="49" column="20" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#869#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#655#656#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#795#796#0" expanded="true" />
+            <element signature="e#822#823#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/property/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#845#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#704#705#0" expanded="true" />
+            <element signature="e#730#731#0" expanded="true" />
+            <element signature="e#780#781#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#385#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/controller/PropertyManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        <state relative-caret-position="337">
+          <caret line="34" column="72" selection-start-line="34" selection-start-column="72" selection-end-line="34" selection-end-column="72" />
           <folding>
-            <element signature="e#0#887#0" expanded="true" />
+            <element signature="e#0#1907#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#857#858#0" expanded="true" />
           </folding>
         </state>
       </provider>

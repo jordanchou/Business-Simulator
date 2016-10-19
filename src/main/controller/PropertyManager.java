@@ -10,18 +10,30 @@ REQUIRES:-
 */
 package controller;
 
+import java.io.*;
 import java.util.*;
 import model.property.*;
 import controller.factory.*;
 
 public class PropertyManager
 {
+    PropertyFactory pf;
     Map<String,Property> properties;
     Company primary;
 
     public PropertyManager(PropertyFactory pf, String file)
     {
-        readFile();
+        this.pf = pf;
+        properties = new HashMap<String,Property>();
+
+        try
+        {
+            readFile(file);
+        }
+        catch (IOException e)
+        {
+            throw new IllegalArgumentException("Invalid property file");
+        }
     }
 
 
@@ -35,19 +47,44 @@ public class PropertyManager
         return null;
     }
 
-    private void readFile(PropertyFactory pf, String file)
+    private void readFile(String file) throws IOException
     {
-        BufferedReader reader = new BufferedReader(file);
-        String line;
+        FileInputStream stream = null;
+        InputStreamReader streamReader;
+        BufferedReader reader;
 
-        properties = new HashMap<String,Property>();
-
-        line = reader.readLine();
-        line = reader.readLine();//Get rid of the first line lol.
-
-        while (line != null)
+        try
         {
+            stream = new FileInputStream(file);
 
+            streamReader = new InputStreamReader(stream);
+            reader = new BufferedReader(streamReader);
+            Property property;
+            String line;
+
+            line = reader.readLine();
+            line = reader.readLine();//Get rid of the first line lol.
+
+
+            while (line != null)
+            {
+                property = pf.getProperty(line);
+                properties.put(property.getName(), property);
+            }
+        }
+        catch (IOException e)
+        {
+            if (stream != null)
+            {
+                try
+                {
+                    stream.close();
+                }
+                catch (IOException e2)
+                {
+                    throw new IOException("wtf");
+                }
+            }
         }
     }
 

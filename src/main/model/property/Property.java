@@ -14,11 +14,20 @@ public abstract class Property
 {
     double value;
     double profit;
+    String name;
 
     public Property()
     {
         value = 0.0;
         profit = 0.0;
+        name = null;
+    }
+
+    public Property(String name, double value)
+    {
+        this.name = name;
+        this.value = value;
+        this.profit = 0.0;
     }
 
     public void setValue(double value)
@@ -34,6 +43,11 @@ public abstract class Property
     public double getValue()
     {
         return this.value;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 
     public abstract double calcProfit();

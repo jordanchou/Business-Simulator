@@ -10,11 +10,17 @@ REQUIRES:-
 */
 package controller.factory;
 
+import model.property.*;
 
 public class PropertyFactory
 {
     public PropertyFactory()
     {
 
+    }
+
+    public Property getProperty(String line)
+    {
+        return null;
     }
 }
