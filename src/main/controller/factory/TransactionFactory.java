@@ -10,10 +10,17 @@ REQUIRES:-
 */
 package controller.factory;
 
+import model.transaction.*;
+
 public class TransactionFactory
 {
     public TransactionFactory()
     {
 
+    }
+
+    public Transaction getTransaction(String line)
+    {
+        return null;
     }
 }

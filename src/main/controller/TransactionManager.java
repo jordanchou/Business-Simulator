@@ -10,17 +10,75 @@ REQUIRES:-
 */
 package controller;
 
+import java.util.*;
+import java.io.*;
 import controller.factory.*;
+import model.transaction.*;
 
 public class TransactionManager
 {
+    TransactionFactory tf;
+    Set<Transaction> transactions;
+
+
     public TransactionManager(TransactionFactory tf, String file)
     {
+        this.tf = tf;
+        transactions = new TreeSet<Transaction>();
 
+        try
+        {
+            readFile(file);
+        }
+        catch (IOException e)
+        {
+            throw new IllegalArgumentException("Invalid events file");
+        }
     }
 
     public void update(PropertyManager properties, long year)
     {
 
+    }
+
+    private void readFile(String file) throws IOException
+    {
+        FileInputStream stream = null;
+        InputStreamReader streamReader;
+        BufferedReader reader;
+
+        try
+        {
+            stream = new FileInputStream(file);
+
+            streamReader = new InputStreamReader(stream);
+            reader = new BufferedReader(streamReader);
+            Transaction transaction;
+            String line;
+
+            line = reader.readLine();
+            line = reader.readLine();//Get rid of the first line lol.
+
+
+            while (line != null)
+            {
+                transaction = tf.getTransaction(line);
+                transactions.add(transaction);
+            }
+        }
+        catch (IOException e)
+        {
+            if (stream != null)
+            {
+                try
+                {
+                    stream.close();
+                }
+                catch (IOException e2)
+                {
+                    throw new IOException("wtf");
+                }
+            }
+        }
     }
 }
