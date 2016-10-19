@@ -12,8 +12,11 @@ package model.event;
 
 public class RevenueIncreaseEvent extends Event
 {
-    public RevenueIncreaseEvent()
-    {
+    String company;
 
+    public RevenueIncreaseEvent(long year, String company)
+    {
+        super(year);
+        this.company = company;
     }
 }

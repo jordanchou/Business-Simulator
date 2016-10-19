@@ -21,6 +21,40 @@ public class EventFactory
 
     public Event getEvent(String line)
     {
+        String[] lineArray;
+        Event event;
+
+        lineArray = line.split(",");
+
+        switch (lineArray[1])
+        {
+            case "R-":
+
+                break;
+
+            case "R+":
+
+                break;
+
+            case "W+":
+
+                break;
+
+            case "W-":
+
+                break;
+
+            case "V+":
+
+                break;
+
+            case "V-":
+
+                break;
+        }
+
+
+
         return null;
     }
 }

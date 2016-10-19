@@ -21,7 +21,7 @@ public abstract class Event implements Comparable<Event>
         year = -1;
     }
 
-    public Event(int year)
+    public Event(long year)
     {
         setYear(year);
     }

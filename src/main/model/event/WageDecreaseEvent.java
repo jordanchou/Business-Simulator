@@ -12,8 +12,8 @@ package model.event;
 
 public class WageDecreaseEvent extends Event
 {
-    public WageDecreaseEvent()
+    public WageDecreaseEvent(long year)
     {
-
+        super(year);
     }
 }

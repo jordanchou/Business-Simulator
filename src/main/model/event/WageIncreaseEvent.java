@@ -10,10 +10,10 @@ REQUIRES:-
 */
 package model.event;
 
-public class WageIncreaseEvent
+public class WageIncreaseEvent extends Event
 {
-    public WageIncreaseEvent()
+    public WageIncreaseEvent(long year)
     {
-
+        super(year);
     }
 }
