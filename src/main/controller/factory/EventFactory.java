@@ -10,10 +10,17 @@ REQUIRES:-
 */
 package controller.factory;
 
+import model.event.*;
+
 public class EventFactory
 {
     public EventFactory()
     {
 
+    }
+
+    public Event getEvent(String line)
+    {
+        return null;
     }
 }
