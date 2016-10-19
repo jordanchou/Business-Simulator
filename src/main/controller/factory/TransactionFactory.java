@@ -21,6 +21,28 @@ public class TransactionFactory
 
     public Transaction getTransaction(String line)
     {
-        return null;
+        String[] lineArray;
+        Transaction transaction = null;
+        long year;
+
+        lineArray = line.split(",");
+
+        year = Long.parseLong(lineArray[0]);
+
+        switch (lineArray[1])
+        {
+            case "S":
+                transaction = new SellTransaction(year, lineArray[2]);
+                break;
+
+            case "B":
+                transaction = new BuyTransaction(year, lineArray[2]);
+                break;
+
+            default:
+                //throw exception!
+        }
+
+        return transaction;
     }
 }

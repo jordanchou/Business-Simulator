@@ -12,8 +12,8 @@ package model.transaction;
 
 public class BuyTransaction extends Transaction
 {
-    public BuyTransaction()
+    public BuyTransaction(long year, String property)
     {
-
+        super(year, property);
     }
 }

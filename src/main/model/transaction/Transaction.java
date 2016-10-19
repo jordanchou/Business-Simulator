@@ -15,12 +15,13 @@ import java.util.*;
 public abstract class Transaction implements Comparable<Transaction>
 {
     long year;
+    String property;
 
 
-
-    public Transaction()
+    public Transaction(long year, String property)
     {
-
+        this.year = year;
+        this.property = property;
     }
 
     public int compareTo(Transaction transaction)
