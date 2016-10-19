@@ -21,6 +21,27 @@ public class PropertyFactory
 
     public Property getProperty(String line)
     {
-        return null;
+        String[] lineArray;
+        Property property = null;
+
+        lineArray = line.split(",");
+
+        switch (lineArray[1])
+        {
+            case "C":
+                property = new Company(lineArray[0], lineArray[2], Double.parseDouble(lineArray[3]), new BankAccount());
+
+                break;
+
+            case "B":
+                property = new BusinessUnit(lineArray[0], lineArray[2], Double.parseDouble(lineArray[3]),
+                                            Double.parseDouble(lineArray[4]), Double.parseDouble(lineArray[5]));
+                break;
+
+            default:
+                //throw exception!
+        }
+
+        return property;
     }
 }

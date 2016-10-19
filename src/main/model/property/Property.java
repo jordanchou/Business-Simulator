@@ -15,17 +15,20 @@ public abstract class Property
     double value;
     double profit;
     String name;
+    String owner;
 
     public Property()
     {
         value = 0.0;
         profit = 0.0;
         name = null;
+        owner = null;
     }
 
-    public Property(String name, double value)
+    public Property(String name, String owner, double value)
     {
         this.name = name;
+        this.owner = owner;
         this.value = value;
         this.profit = 0.0;
     }
@@ -48,6 +51,16 @@ public abstract class Property
     public String getName()
     {
         return name;
+    }
+
+    public String getOwner()
+    {
+        return owner;
+    }
+
+    public void setOwner(String owner)
+    {
+        this.owner = owner;
     }
 
     public abstract double calcProfit();

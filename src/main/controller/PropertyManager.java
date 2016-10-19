@@ -69,6 +69,7 @@ public class PropertyManager
             while (line != null)
             {
                 property = pf.getProperty(line);
+                //GET OWNER AND STUFF!
                 properties.put(property.getName(), property);
             }
         }

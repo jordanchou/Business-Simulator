@@ -22,9 +22,9 @@ public class BusinessUnit extends Property
         wages = 0.0;
     }
 
-    public BusinessUnit(String name, double value, double revenue, double wages)
+    public BusinessUnit(String name, String owner, double value, double revenue, double wages)
     {
-        super(name, value);
+        super(name, owner, value);
         this.revenue = revenue;
         this.wages = wages;
     }

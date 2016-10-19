@@ -18,17 +18,27 @@ public class Company extends Property
     private List<String> companies;
     private BankAccount account;
 
-    public Company(String name, double value, List<String> companies, BankAccount account)
-        {
-            super(name, value);
+    public Company(String name, String owner, double value, BankAccount account)
+    {
+        super(name, owner, value);
 
-        this.companies = companies;
+        this.companies = new ArrayList<String>();
         this.account = account;
     }
 
     public List<String> getCompanies()
     {
         return companies;
+    }
+
+    public void addCompany(String company)
+    {
+        this.companies.add(company);
+    }
+
+    public boolean removeCompany(String company)
+    {
+        return this.companies.remove(company);
     }
 
     @Override
