@@ -15,30 +15,30 @@ import model.property.BankAccount;
 
 public class Company extends Property
 {
-    private List<String> companies;
+    private List<String> properties;
     private BankAccount account;
 
     public Company(String name, String owner, double value, BankAccount account)
     {
         super(name, owner, value);
 
-        this.companies = new ArrayList<String>();
+        this.properties = new ArrayList<String>();
         this.account = account;
     }
 
-    public List<String> getCompanies()
+    public List<String> getProperties()
     {
-        return companies;
+        return properties;
     }
 
-    public void addCompany(String company)
+    public void addProperty(String property)
     {
-        this.companies.add(company);
+        this.properties.add(property);
     }
 
-    public boolean removeCompany(String company)
+    public boolean removeProperty(String property)
     {
-        return this.companies.remove(company);
+        return this.properties.remove(property);
     }
 
     @Override

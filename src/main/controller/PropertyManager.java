@@ -70,6 +70,11 @@ public class PropertyManager
             {
                 property = pf.getProperty(line);
                 //GET OWNER AND STUFF!
+                if (!("".equals(property.getOwner())))
+                {
+                    ((Company)properties.get(property.getOwner())).addProperty(property.getName());
+                }//Error check for if owner is not in map
+
                 properties.put(property.getName(), property);
             }
         }
