@@ -44,7 +44,17 @@ public class PropertyManager
 
     public List<Property> getCompanies()
     {
-        return null;
+        List<Property> companies;
+
+        companies = new ArrayList<Property>();
+
+        for (Property property : properties.values())
+        {
+            if (property instanceof Company)
+                companies.add(property);
+        }
+
+        return companies;
     }
 
     private void readFile(String file) throws IOException
