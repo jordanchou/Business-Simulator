@@ -4,7 +4,7 @@
     <property name="resources.dir" value="resources"/>
     <property name="build.dir"     value="build"/>
     <property name="dist.dir"      value="dist"/>
-    <property name="main-class"    value="Start"/>
+    <property name="main-class"    value="Main"/>
 
     <target name="clean">
         <delete dir="${build.dir}"/>
@@ -33,7 +33,7 @@
             <arg value="${dist.dir}/propertyfile.csv"/>
             <arg value="${dist.dir}/eventfile.csv"/>
             <arg value="${dist.dir}/planfile.csv"/>
-            <arg value="2017"/>
+            <arg value="2016"/>
             <arg value="2019"/>
         </java>
     </target>

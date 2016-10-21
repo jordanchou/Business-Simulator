@@ -63,6 +63,11 @@ public abstract class Property
         this.owner = owner;
     }
 
+    public String toString()
+    {
+        return "Name: " + name;
+    }
+
     public abstract double calcProfit();
 
 

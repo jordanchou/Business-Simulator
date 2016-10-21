@@ -15,25 +15,24 @@ import java.util.*;
 import model.property.*;
 import controller.factory.*;
 
-public class PropertyManager
-{
+public class PropertyManager {
     PropertyFactory pf;
-    Map<String,Property> properties;
+    Map<String, Property> properties;
     Company primary;
 
-    public PropertyManager(PropertyFactory pf, String file)
-    {
+    public PropertyManager(PropertyFactory pf, String file) {
         this.pf = pf;
-        properties = new HashMap<String,Property>();
+        properties = new HashMap<String, Property>();
 
         try
         {
             readFile(file);
-        }
-        catch (IOException e)
+        } catch (IOException e)
         {
             throw new IllegalArgumentException("Invalid property file");
         }
+
+        primary = (Company)this.getCompanies().remove(0);//remove first company CHANGE THIS!
     }
 
 
@@ -82,10 +81,11 @@ public class PropertyManager
                 //GET OWNER AND STUFF!
                 if (!("".equals(property.getOwner())))
                 {
-                    ((Company)properties.get(property.getOwner())).addProperty(property.getName());
+                    ((Company) properties.get(property.getOwner())).addProperty(property.getName());
                 }//Error check for if owner is not in map
 
                 properties.put(property.getName(), property);
+                line = reader.readLine();
             }
         }
         catch (IOException e)
@@ -95,13 +95,22 @@ public class PropertyManager
                 try
                 {
                     stream.close();
-                }
-                catch (IOException e2)
+                } catch (IOException e2)
                 {
                     throw new IOException("wtf");
                 }
             }
         }
+    }
+
+    public Company getPrimary()
+    {
+        return primary;
+    }
+
+    public Property getProperty(String name)
+    {
+        return properties.get(name);
     }
 
 

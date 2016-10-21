@@ -57,7 +57,7 @@ public class SimulationController
         for (long i=start; i<=end; i++)
         {
             //output company names and bank account balances
-            ui.outputProperties(properties.getCompanies());
+            ui.outputProperties(properties.getCompanies(), i);
 
             //do events :D
             //give the EventManager the properties as well as the current year

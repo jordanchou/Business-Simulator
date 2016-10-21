@@ -14,17 +14,18 @@ import java.util.*;
 import java.io.*;
 import controller.factory.*;
 import model.transaction.*;
+import model.property.*;
 
 public class TransactionManager
 {
     TransactionFactory tf;
-    Set<Transaction> transactions;
+    List<Transaction> transactions;
 
 
     public TransactionManager(TransactionFactory tf, String file)
     {
         this.tf = tf;
-        transactions = new TreeSet<Transaction>();
+        transactions = new ArrayList<Transaction>();
 
         try
         {
@@ -38,7 +39,19 @@ public class TransactionManager
 
     public void update(PropertyManager properties, long year)
     {
+        for (Transaction transaction : transactions)
+        {
+            if (transaction.getYear() == year)
+            {
+                transaction.update(properties);
+            }
+            else if (transaction.getYear() > year)
+            {
+                break;//change to while-iterator
+            }
 
+            //transactions.remove(transaction);
+        }
     }
 
     private void readFile(String file) throws IOException
@@ -64,6 +77,7 @@ public class TransactionManager
             {
                 transaction = tf.getTransaction(line);
                 transactions.add(transaction);
+                line = reader.readLine();
             }
         }
         catch (IOException e)

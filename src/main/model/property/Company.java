@@ -53,5 +53,22 @@ public class Company extends Property
         return super.getValue() + account.getValue();
     }
 
+    public String toString()
+    {
+        return super.toString() + "    Bank: " + account.toString();
+    }
+
+    public void buy(Property property)
+    {
+        account.setValue(account.getValue() - property.getValue());
+        addProperty(property.getName());
+    }
+
+    public void sell(Property property)
+    {
+        account.setValue(account.getValue() + property.getValue());
+        removeProperty(property.getName());
+    }
+
 
 }

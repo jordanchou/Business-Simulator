@@ -34,4 +34,9 @@ public class BankAccount extends Property
         return profit;
     }
 
+    public String toString()
+    {
+        return super.getValue() + "";
+    }
+
 }

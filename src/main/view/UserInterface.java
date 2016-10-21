@@ -20,9 +20,13 @@ public class UserInterface
 
     }
 
-    public void outputProperties(List<Property> properties)
+    public void outputProperties(List<Property> properties, long year)
     {
+        System.out.println("Year: " + year);
+
         for (Property property : properties)
             System.out.println(property.toString());
+
+        System.out.println();
     }
 }

@@ -19,13 +19,13 @@ import model.event.*;
 public class EventManager
 {
     EventFactory ef;
-    Set<Event> events;
+    List<Event> events;
 
 
     public EventManager(EventFactory ef, String file)
     {
         this.ef = ef;
-        events = new TreeSet<Event>();
+        events = new ArrayList<Event>();
 
         try
         {
@@ -40,7 +40,17 @@ public class EventManager
 
     public void update(PropertyManager properties, long year)
     {
+        for (Event event : events)
+        {
+            if (event.getYear() == year)
+            {
 
+            }
+            else if (event.getYear() > year)
+            {
+                break;//change to while-iterator
+            }
+        }
     }
 
     private void readFile(String file) throws IOException
@@ -66,6 +76,7 @@ public class EventManager
             {
                 event = ef.getEvent(line);
                 events.add(event);
+                line = reader.readLine();
             }
         }
         catch (IOException e)

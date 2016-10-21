@@ -11,6 +11,7 @@ REQUIRES:-
 package model.transaction;
 
 import java.util.*;
+import controller.*;
 
 public abstract class Transaction implements Comparable<Transaction>
 {
@@ -44,4 +45,11 @@ public abstract class Transaction implements Comparable<Transaction>
     {
         return this.year;
     }
+
+    public String getProperty()
+    {
+        return property;
+    }
+
+    public abstract void update(PropertyManager pm);
 }

@@ -45,4 +45,9 @@ public class BusinessUnit extends Property
         return wages;
     }
 
+    public void update(double change)
+    {
+        wages = wages * (1.0 + change);
+    }
+
 }

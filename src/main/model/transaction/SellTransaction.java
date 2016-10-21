@@ -10,6 +10,9 @@ REQUIRES:-
 */
 package model.transaction;
 
+import controller.*;
+import model.property.*;
+
 public class SellTransaction extends Transaction
 {
     public SellTransaction(long year, String property)
@@ -17,5 +20,9 @@ public class SellTransaction extends Transaction
         super(year, property);
     }
 
-
+    public void update(PropertyManager pm)
+    {
+        pm.getPrimary().sell(pm.getProperty(super.getProperty()));
+        //other company has to buy
+    }
 }
