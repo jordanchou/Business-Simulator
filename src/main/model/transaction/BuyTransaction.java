@@ -24,7 +24,7 @@ public class BuyTransaction extends Transaction
     {
         Property property = pm.getProperty(super.getProperty());
 
-        pm.getPrimary().buy(property);
+
 
         Company owner = (Company)pm.getProperty(property.getOwner());
 
@@ -32,6 +32,8 @@ public class BuyTransaction extends Transaction
         {
             owner.sell(property);
         }
+
+        pm.getPrimary().buy(property);
         //other company has to sell
     }
 }

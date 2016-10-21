@@ -26,7 +26,6 @@ public class RevenueDecreaseEvent extends Event
     public void update(PropertyManager pm)
     {
         BusinessUnit unit = ((BusinessUnit)pm.getProperty(company));
-
         unit.setRevenue(unit.getRevenue() * 0.95);
     }
 }

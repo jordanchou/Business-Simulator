@@ -54,7 +54,7 @@ public class BusinessUnit extends Property implements WageObserver
     @Override
     public void calcProfit()
     {
-        super.setValue(super.getValue() + revenue - wages);
+        super.setProfit(revenue - wages);
     }
 
 

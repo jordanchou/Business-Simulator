@@ -56,13 +56,17 @@ public class Company extends Property
 
     public void buy(Property property)
     {
+    //System.out.println("PROPERTY BUYING IS: " + property.getName() + " VALUE IS: " + property.getValue());
         account.setValue(account.getValue() - property.getValue());
+        property.setOwner(super.getName());
         addProperty(property);
     }
 
     public void sell(Property property)
     {
+        //System.out.println("PROPERTY SELLING IS: " + property.getName() + " VALUE IS: " + property.getValue());
         account.setValue(account.getValue() + property.getValue());
+        property.setOwner("");
         removeProperty(property);
     }
 
@@ -74,9 +78,10 @@ public class Company extends Property
         for (Property property : properties)
         {
             //if (!("".equals(property.getOwner())))
-                property.calcProfit();
+            property.calcProfit();
             profit = profit + property.getProfit();
         }
+
 
         if (profit >= 0.0)
             account.setValue(account.getValue() + 0.5 * profit);

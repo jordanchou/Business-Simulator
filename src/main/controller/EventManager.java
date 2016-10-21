@@ -19,13 +19,13 @@ import model.event.*;
 public class EventManager
 {
     EventFactory ef;
-    List<Event> events;
+    Set<Event> events;
 
 
     public EventManager(EventFactory ef, String file)
     {
         this.ef = ef;
-        events = new ArrayList<Event>();
+        events = new LinkedHashSet<Event>();
 
         try
         {
@@ -44,12 +44,14 @@ public class EventManager
         {
             if (event.getYear() == year)
             {
-
+                event.update(properties);
             }
             else if (event.getYear() > year)
             {
                 break;//change to while-iterator
             }
+
+
         }
     }
 

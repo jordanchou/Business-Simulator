@@ -25,12 +25,6 @@ public class SellTransaction extends Transaction
         Property property = pm.getProperty(super.getProperty());
 
         pm.getPrimary().sell(property);
-
-        Company owner = (Company)pm.getProperty(property.getOwner());
-
-        if (owner != null)
-        {
-            owner.buy(property);
-        }
+        //sell to unnamed buyer
     }
 }

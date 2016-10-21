@@ -34,6 +34,9 @@ public class PropertyFactory
                 break;
 
             case "B":
+                System.out.println(lineArray[0] + " " + lineArray[2]+ " " + Double.parseDouble(lineArray[3])+ " " +
+                        Double.parseDouble(lineArray[4])+ " " + Double.parseDouble(lineArray[5]));
+
                 property = new BusinessUnit(lineArray[0], lineArray[2], Double.parseDouble(lineArray[3]),
                                             Double.parseDouble(lineArray[4]), Double.parseDouble(lineArray[5]));
                 break;
