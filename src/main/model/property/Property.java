@@ -58,6 +58,11 @@ public abstract class Property
         return owner;
     }
 
+    public double getProfit()
+    {
+        return profit;
+    }
+
     public void setOwner(String owner)
     {
         this.owner = owner;
@@ -68,7 +73,8 @@ public abstract class Property
         return "Name: " + name;
     }
 
-    public abstract double calcProfit();
+    public abstract void calcProfit();
+
 
 
 }

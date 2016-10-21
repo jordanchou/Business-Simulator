@@ -11,40 +11,35 @@ REQUIRES:-
 package model.property;
 
 import java.util.*;
+import java.text.*;
 import model.property.BankAccount;
 
 public class Company extends Property
 {
-    private List<String> properties;
+    private List<Property> properties;
     private BankAccount account;
 
     public Company(String name, String owner, double value, BankAccount account)
     {
         super(name, owner, value);
 
-        this.properties = new ArrayList<String>();
+        this.properties = new ArrayList<Property>();
         this.account = account;
     }
 
-    public List<String> getProperties()
+    public List<Property> getProperties()
     {
         return properties;
     }
 
-    public void addProperty(String property)
+    public void addProperty(Property property)
     {
         this.properties.add(property);
     }
 
-    public boolean removeProperty(String property)
+    public boolean removeProperty(Property property)
     {
         return this.properties.remove(property);
-    }
-
-    @Override
-    public double calcProfit()
-    {
-        return 0.0;
     }
 
     @Override
@@ -55,19 +50,40 @@ public class Company extends Property
 
     public String toString()
     {
-        return super.toString() + "    Bank: " + account.toString();
+        DecimalFormat df = new DecimalFormat("0.00");
+        return (super.toString() + "    " +  df.format(account.getValue()));
     }
 
     public void buy(Property property)
     {
         account.setValue(account.getValue() - property.getValue());
-        addProperty(property.getName());
+        addProperty(property);
     }
 
     public void sell(Property property)
     {
         account.setValue(account.getValue() + property.getValue());
-        removeProperty(property.getName());
+        removeProperty(property);
+    }
+
+    @Override
+    public void calcProfit()
+    {
+        double profit = 0.0;
+
+        for (Property property : properties)
+        {
+            //if (!("".equals(property.getOwner())))
+                property.calcProfit();
+            profit = profit + property.getProfit();
+        }
+
+        if (profit >= 0.0)
+            account.setValue(account.getValue() + 0.5 * profit);
+        else
+            account.setValue(account.getValue() - profit);
+
+        account.calcProfit();
     }
 
 

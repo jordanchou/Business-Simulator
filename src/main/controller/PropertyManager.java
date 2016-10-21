@@ -14,31 +14,38 @@ import java.io.*;
 import java.util.*;
 import model.property.*;
 import controller.factory.*;
+import view.*;
 
-public class PropertyManager {
+public class PropertyManager
+{
     PropertyFactory pf;
     Map<String, Property> properties;
+    List<WageObserver> observers;
     Company primary;
 
-    public PropertyManager(PropertyFactory pf, String file) {
+    public PropertyManager(PropertyFactory pf, String file)
+    {
         this.pf = pf;
-        properties = new HashMap<String, Property>();
-
+        properties = new LinkedHashMap<String, Property>();
+        observers = new ArrayList<WageObserver>();
+        primary = null;
         try
         {
             readFile(file);
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             throw new IllegalArgumentException("Invalid property file");
         }
 
-        primary = (Company)this.getCompanies().remove(0);//remove first company CHANGE THIS!
+
     }
 
 
     public void updateAccounts()
     {
-
+        for (Property property : properties.values())
+            property.calcProfit();
     }
 
     public List<Property> getCompanies()
@@ -54,6 +61,12 @@ public class PropertyManager {
         }
 
         return companies;
+    }
+
+    public void notifyObservers(double multiplier)
+    {
+        for (WageObserver observer : observers)
+            observer.update(multiplier);
     }
 
     private void readFile(String file) throws IOException
@@ -81,12 +94,23 @@ public class PropertyManager {
                 //GET OWNER AND STUFF!
                 if (!("".equals(property.getOwner())))
                 {
-                    ((Company) properties.get(property.getOwner())).addProperty(property.getName());
+                    ((Company) properties.get(property.getOwner())).addProperty(property);
                 }//Error check for if owner is not in map
 
+
+                if ((primary == null) && (property instanceof Company))
+                {
+                    primary = (Company) property;
+                }
+
                 properties.put(property.getName(), property);
+
+                if (property instanceof BusinessUnit)
+                    observers.add((BusinessUnit)property);//don't hate me dave
+
                 line = reader.readLine();
             }
+
         }
         catch (IOException e)
         {

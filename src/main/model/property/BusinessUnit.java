@@ -10,7 +10,9 @@ REQUIRES:-
 */
 package model.property;
 
-public class BusinessUnit extends Property
+import view.*;
+
+public class BusinessUnit extends Property implements WageObserver
 {
     private double revenue;
     private double wages;
@@ -29,12 +31,6 @@ public class BusinessUnit extends Property
         this.wages = wages;
     }
 
-    @Override
-    public double calcProfit()
-    {
-        return revenue-wages;
-    }
-
     public double getRevenue()
     {
         return revenue;
@@ -47,7 +43,19 @@ public class BusinessUnit extends Property
 
     public void update(double change)
     {
-        wages = wages * (1.0 + change);
+        wages = wages * change;
     }
+
+    public void setRevenue(double revenue)
+    {
+        this.revenue = revenue;
+    }
+
+    @Override
+    public void calcProfit()
+    {
+        super.setValue(super.getValue() + revenue - wages);
+    }
+
 
 }

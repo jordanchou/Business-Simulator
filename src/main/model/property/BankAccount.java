@@ -17,21 +17,10 @@ public class BankAccount extends Property
         super();
     }
 
-
     @Override
-    public double calcProfit()
+    public void calcProfit()
     {
-        double value;
-
-        value = super.getValue();
-        profit = 0.0;
-
-        if (value >= 0.0)
-        {
-            profit = value * 1.05;
-        }
-
-        return profit;
+        super.setValue(super.getValue() + super.getValue() * 0.05);
     }
 
     public String toString()

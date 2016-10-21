@@ -11,6 +11,8 @@ REQUIRES:-
 package model.event;
 
 import java.util.*;
+import controller.*;
+import model.property.*;
 
 public abstract class Event implements Comparable<Event>
 {
@@ -59,5 +61,7 @@ public abstract class Event implements Comparable<Event>
             return 0;
         }
     }
+
+    public abstract void update(PropertyManager pm);
 
 }

@@ -54,6 +54,8 @@ public class SimulationController
      */
     public void simulate(long start, long end)
     {
+
+
         for (long i=start; i<=end; i++)
         {
             //output company names and bank account balances

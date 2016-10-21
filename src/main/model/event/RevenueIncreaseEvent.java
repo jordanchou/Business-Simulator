@@ -10,6 +10,9 @@ REQUIRES:-
 */
 package model.event;
 
+import model.property.*;
+import controller.*;
+
 public class RevenueIncreaseEvent extends Event
 {
     String company;
@@ -18,5 +21,12 @@ public class RevenueIncreaseEvent extends Event
     {
         super(year);
         this.company = company;
+    }
+
+    public void update(PropertyManager pm)
+    {
+        BusinessUnit unit = ((BusinessUnit)pm.getProperty(company));
+
+        unit.setRevenue(unit.getRevenue() * 1.05);
     }
 }

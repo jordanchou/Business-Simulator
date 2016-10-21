@@ -22,7 +22,15 @@ public class SellTransaction extends Transaction
 
     public void update(PropertyManager pm)
     {
-        pm.getPrimary().sell(pm.getProperty(super.getProperty()));
-        //other company has to buy
+        Property property = pm.getProperty(super.getProperty());
+
+        pm.getPrimary().sell(property);
+
+        Company owner = (Company)pm.getProperty(property.getOwner());
+
+        if (owner != null)
+        {
+            owner.buy(property);
+        }
     }
 }

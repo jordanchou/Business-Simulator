@@ -10,10 +10,18 @@ REQUIRES:-
 */
 package model.event;
 
+import controller.*;
+import model.property.*;
+
 public class WageIncreaseEvent extends Event
 {
     public WageIncreaseEvent(long year)
     {
         super(year);
+    }
+
+    public void update(PropertyManager pm)
+    {
+        pm.notifyObservers(1.05);
     }
 }
