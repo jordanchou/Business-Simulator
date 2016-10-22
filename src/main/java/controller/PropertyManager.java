@@ -13,17 +13,17 @@ package controller;
 import java.io.*;
 import java.util.*;
 import model.property.*;
-import controller.factory.*;
+import controller.reader.*;
 import view.*;
 
 public class PropertyManager
 {
-    PropertyFactory pf;
+    PropertyReader pf;
     Map<String, Property> properties;
     List<WageObserver> observers;
     Company primary;
 
-    public PropertyManager(PropertyFactory pf, String file)
+    public PropertyManager(PropertyReader pf, String file)
     {
         this.pf = pf;
         properties = new LinkedHashMap<String, Property>();

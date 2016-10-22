@@ -8,13 +8,13 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
-package controller.factory;
+package controller.reader;
 
 import model.event.*;
 
-public class EventFactory
+public class EventReader
 {
-    public EventFactory()
+    public EventReader()
     {
 
     }

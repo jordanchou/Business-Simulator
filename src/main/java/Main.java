@@ -9,16 +9,16 @@ COMMENTS:-
 REQUIRES:-
 */
 import controller.*;
-import controller.factory.*;
+import controller.reader.*;
 import view.*;
 
 public class Main
 {
     public static void main(String[] args)
     {
-        PropertyFactory pf = new PropertyFactory();
+        PropertyReader pf = new PropertyReader();
         EventFactory ef = new EventFactory();
-        TransactionFactory tf = new TransactionFactory();
+        TransactionReader tf = new TransactionReader();
 
         PropertyManager pm = new PropertyManager(pf, args[0]);
         EventManager em = new EventManager(ef, args[1]);

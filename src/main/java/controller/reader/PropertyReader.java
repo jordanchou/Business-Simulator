@@ -8,13 +8,13 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
-package controller.factory;
+package controller.reader;
 
 import model.property.*;
 
-public class PropertyFactory
+public class PropertyReader
 {
-    public PropertyFactory()
+    public PropertyReader()
     {
 
     }

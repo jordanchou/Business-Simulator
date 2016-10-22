@@ -8,13 +8,13 @@ REFERENCE:-
 COMMENTS:-
 REQUIRES:-
 */
-package controller.factory;
+package controller.reader;
 
 import model.transaction.*;
 
-public class TransactionFactory
+public class TransactionReader
 {
-    public TransactionFactory()
+    public TransactionReader()
     {
 
     }

@@ -1,5 +1,5 @@
 /*
-FILE: TransactionController.java
+FILE: CompanyController.java
 AUTHOR:Jordan Pinglin Chou
 USERNAME:18348691
 UNIT: COMP2003 (Object Oriented Software Engineering)
@@ -12,20 +12,20 @@ package controller;
 
 import java.util.*;
 import java.io.*;
-import controller.factory.*;
-import model.transaction.*;
-import model.property.*;
+import controller.reader.*;
+import model.event.*;
 
-public class TransactionManager
+
+public class EventManager
 {
-    TransactionFactory tf;
-    List<Transaction> transactions;
+    EventFactory ef;
+    Set<Event> events;
 
 
-    public TransactionManager(TransactionFactory tf, String file)
+    public EventManager(EventFactory ef, String file)
     {
-        this.tf = tf;
-        transactions = new ArrayList<Transaction>();
+        this.ef = ef;
+        events = new LinkedHashSet<Event>();
 
         try
         {
@@ -35,22 +35,23 @@ public class TransactionManager
         {
             throw new IllegalArgumentException("Invalid events file");
         }
+
     }
 
     public void update(PropertyManager properties, long year)
     {
-        for (Transaction transaction : transactions)
+        for (Event event : events)
         {
-            if (transaction.getYear() == year)
+            if (event.getYear() == year)
             {
-                transaction.update(properties);
+                event.update(properties);
             }
-            else if (transaction.getYear() > year)
+            else if (event.getYear() > year)
             {
                 break;//change to while-iterator
             }
 
-            //transactions.remove(transaction);
+
         }
     }
 
@@ -66,7 +67,7 @@ public class TransactionManager
 
             streamReader = new InputStreamReader(stream);
             reader = new BufferedReader(streamReader);
-            Transaction transaction;
+            Event event;
             String line;
 
             line = reader.readLine();
@@ -75,8 +76,8 @@ public class TransactionManager
 
             while (line != null)
             {
-                transaction = tf.getTransaction(line);
-                transactions.add(transaction);
+                event = ef.getEvent(line);
+                events.add(event);
                 line = reader.readLine();
             }
         }
@@ -95,4 +96,7 @@ public class TransactionManager
             }
         }
     }
+
+
+
 }
