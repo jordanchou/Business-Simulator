@@ -62,6 +62,6 @@ public abstract class Event implements Comparable<Event>
         }
     }
 
-    public abstract void update(PropertyManager pm);
+    public abstract void update();
 
 }

@@ -63,13 +63,13 @@ public class SimulationController
 
             //do events :D
             //give the EventManager the properties as well as the current year
-            events.update(properties, i);
+            events.update(i);
 
             //give the TransactionManager the properties as well as the current year
-            transactions.update(properties, i);
+            transactions.update(i);
 
             //update bank accounts
-            properties.updateAccounts();
+            properties.update();
         }
     }
 

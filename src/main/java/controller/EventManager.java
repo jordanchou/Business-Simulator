@@ -18,33 +18,20 @@ import model.event.*;
 
 public class EventManager
 {
-    EventFactory ef;
     Set<Event> events;
 
-
-    public EventManager(EventFactory ef, String file)
+    public EventManager()
     {
-        this.ef = ef;
         events = new LinkedHashSet<Event>();
-
-        try
-        {
-            readFile(file);
-        }
-        catch (IOException e)
-        {
-            throw new IllegalArgumentException("Invalid events file");
-        }
-
     }
 
-    public void update(PropertyManager properties, long year)
+    public void update(long year)
     {
         for (Event event : events)
         {
             if (event.getYear() == year)
             {
-                event.update(properties);
+                event.update();
             }
             else if (event.getYear() > year)
             {
@@ -55,48 +42,9 @@ public class EventManager
         }
     }
 
-    private void readFile(String file) throws IOException
+    public void addEvent(Event event)
     {
-        FileInputStream stream = null;
-        InputStreamReader streamReader;
-        BufferedReader reader;
-
-        try
-        {
-            stream = new FileInputStream(file);
-
-            streamReader = new InputStreamReader(stream);
-            reader = new BufferedReader(streamReader);
-            Event event;
-            String line;
-
-            line = reader.readLine();
-            line = reader.readLine();//Get rid of the first line lol.
-
-
-            while (line != null)
-            {
-                event = ef.getEvent(line);
-                events.add(event);
-                line = reader.readLine();
-            }
-        }
-        catch (IOException e)
-        {
-            if (stream != null)
-            {
-                try
-                {
-                    stream.close();
-                }
-                catch (IOException e2)
-                {
-                    throw new IOException("wtf");
-                }
-            }
-        }
+        events.add(event);
     }
-
-
 
 }

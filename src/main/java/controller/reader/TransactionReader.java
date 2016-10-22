@@ -11,15 +11,21 @@ REQUIRES:-
 package controller.reader;
 
 import model.transaction.*;
+import controller.*;
 
-public class TransactionReader
+public class TransactionReader extends Reader
 {
-    public TransactionReader()
-    {
+    TransactionManager tm;
+    PropertyManager pm;
 
+    public TransactionReader(TransactionManager tm, PropertyManager pm)
+    {
+        this.tm = tm;
+        this.pm = pm;
     }
 
-    public Transaction getTransaction(String line)
+    @Override
+    public void processLine(String line)
     {
         String[] lineArray;
         Transaction transaction = null;
@@ -32,17 +38,19 @@ public class TransactionReader
         switch (lineArray[1])
         {
             case "S":
-                transaction = new SellTransaction(year, lineArray[2]);
+                transaction = new SellTransaction(year, pm.getProperty(lineArray[2]));
                 break;
 
             case "B":
-                transaction = new BuyTransaction(year, lineArray[2]);
+                transaction = new BuyTransaction(year, pm.getProperty(lineArray[2]));
                 break;
 
             default:
                 //throw exception!
         }
 
-        return transaction;
+        transaction.setPrimary(pm.getPrimary());
+
+        tm.addTransaction(transaction);
     }
 }

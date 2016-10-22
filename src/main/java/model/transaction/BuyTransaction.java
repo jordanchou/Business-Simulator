@@ -15,25 +15,25 @@ import model.property.*;
 
 public class BuyTransaction extends Transaction
 {
-    public BuyTransaction(long year, String property)
+    public BuyTransaction(long year, Property property)
     {
         super(year, property);
     }
 
-    public void update(PropertyManager pm)
+    public void update()
     {
-        Property property = pm.getProperty(super.getProperty());
+        Property property = super.getProperty();
 
 
 
-        Company owner = (Company)pm.getProperty(property.getOwner());
+        Company owner = property.getOwner();
 
         if (owner != null)
         {
             owner.sell(property);
         }
 
-        pm.getPrimary().buy(property);
+        super.getPrimary().buy(property);
         //other company has to sell
     }
 }

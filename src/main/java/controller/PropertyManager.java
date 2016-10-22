@@ -10,42 +10,28 @@ REQUIRES:-
 */
 package controller;
 
-import java.io.*;
 import java.util.*;
 import model.property.*;
-import controller.reader.*;
 import view.*;
 
 public class PropertyManager
 {
-    PropertyReader pf;
     Map<String, Property> properties;
     List<WageObserver> observers;
     Company primary;
 
-    public PropertyManager(PropertyReader pf, String file)
+    public PropertyManager()
     {
-        this.pf = pf;
         properties = new LinkedHashMap<String, Property>();
         observers = new ArrayList<WageObserver>();
         primary = null;
-        try
-        {
-            readFile(file);
-        }
-        catch (IOException e)
-        {
-            throw new IllegalArgumentException("Invalid property file");
-        }
-
-
     }
 
 
-    public void updateAccounts()
+    public void update()
     {
         for (Property property : properties.values())
-            property.calcProfit();
+            property.update();
     }
 
     public List<Property> getCompanies()
@@ -63,69 +49,6 @@ public class PropertyManager
         return companies;
     }
 
-    public void notifyObservers(double multiplier)
-    {
-        for (WageObserver observer : observers)
-            observer.update(multiplier);
-    }
-
-    private void readFile(String file) throws IOException
-    {
-        FileInputStream stream = null;
-        InputStreamReader streamReader;
-        BufferedReader reader;
-
-        try
-        {
-            stream = new FileInputStream(file);
-
-            streamReader = new InputStreamReader(stream);
-            reader = new BufferedReader(streamReader);
-            Property property;
-            String line;
-
-            line = reader.readLine();
-            line = reader.readLine();//Get rid of the first line lol.
-
-
-            while (line != null)
-            {
-                property = pf.getProperty(line);
-                //GET OWNER AND STUFF!
-                if (!("".equals(property.getOwner())))
-                {
-                    ((Company) properties.get(property.getOwner())).addProperty(property);
-                }//Error check for if owner is not in map
-
-
-                if ((primary == null) && (property instanceof Company))
-                {
-                    primary = (Company) property;
-                }
-
-                properties.put(property.getName(), property);
-
-                if (property instanceof BusinessUnit)
-                    observers.add((BusinessUnit)property);//don't hate me dave
-
-                line = reader.readLine();
-            }
-
-        }
-        catch (IOException e)
-        {
-            if (stream != null)
-            {
-                try
-                {
-                    stream.close();
-                } catch (IOException e2)
-                {
-                    throw new IOException("wtf");
-                }
-            }
-        }
-    }
 
     public Company getPrimary()
     {
@@ -137,7 +60,28 @@ public class PropertyManager
         return properties.get(name);
     }
 
+    public void setPrimary(Company primary)
+    {
+        this.primary = primary;
+    }
 
+    public void addProperty(Property property)
+    {
+        properties.put(property.getName(), property);
+
+        if (property instanceof BusinessUnit)
+            addObserver((BusinessUnit)property);//don't hate me dave
+    }
+
+    private void addObserver(WageObserver observer)
+    {
+        observers.add(observer);
+    }
+
+    public List<WageObserver> getWageObservers()
+    {
+        return observers;
+    }
 
 
 }

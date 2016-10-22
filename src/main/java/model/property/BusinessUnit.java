@@ -24,7 +24,7 @@ public class BusinessUnit extends Property implements WageObserver
         wages = 0.0;
     }
 
-    public BusinessUnit(String name, String owner, double value, double revenue, double wages)
+    public BusinessUnit(String name, Company owner, double value, double revenue, double wages)
     {
         super(name, owner, value);
         this.revenue = revenue;
@@ -52,7 +52,7 @@ public class BusinessUnit extends Property implements WageObserver
     }
 
     @Override
-    public void calcProfit()
+    public void update()
     {
         super.setProfit(revenue - wages);
     }

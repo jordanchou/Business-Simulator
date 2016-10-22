@@ -11,15 +11,23 @@ REQUIRES:-
 package controller.reader;
 
 import model.event.*;
+import model.property.*;
+import controller.*;
+import model.property.Property;
 
-public class EventReader
+public class EventReader extends Reader
 {
-    public EventReader()
-    {
+    EventManager ec;
+    PropertyManager pm;
 
+    public EventReader(EventManager eventController, PropertyManager pm)
+    {
+        this.ec = eventController;
+        this.pm = pm;
     }
 
-    public Event getEvent(String line)
+    @Override
+    public void processLine(String line)
     {
         String[] lineArray;
         Event event = null;
@@ -32,32 +40,33 @@ public class EventReader
         switch (lineArray[1])
         {
             case "R-":
-                event = new RevenueDecreaseEvent(year, lineArray[2]);
+                event = new RevenueDecreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "R+":
-                event = new RevenueIncreaseEvent(year, lineArray[2]);
+                event = new RevenueIncreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "W+":
-                event = new WageIncreaseEvent(year);
+                event = new WageIncreaseEvent(year, pm.getWageObservers());
+
                 break;
 
             case "W-":
-                event = new WageDecreaseEvent(year);
+                event = new WageDecreaseEvent(year, pm.getWageObservers());
                 break;
 
             case "V+":
-                event = new ValueIncreaseEvent(year, lineArray[2]);
+                event = new ValueIncreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "V-":
-                event = new ValueDecreaseEvent(year, lineArray[2]);
+                event = new ValueDecreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
             default:
                 //throw exception!
         }
 
-        return event;
+        ec.addEvent(event);
     }
 }

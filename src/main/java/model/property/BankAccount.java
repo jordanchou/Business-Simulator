@@ -18,7 +18,7 @@ public class BankAccount extends Property
     }
 
     @Override
-    public void calcProfit()
+    public void update()
     {
         super.setValue(super.getValue() + super.getValue() * 0.05);
     }

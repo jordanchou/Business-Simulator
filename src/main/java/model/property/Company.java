@@ -12,14 +12,13 @@ package model.property;
 
 import java.util.*;
 import java.text.*;
-import model.property.BankAccount;
 
 public class Company extends Property
 {
     private List<Property> properties;
     private BankAccount account;
 
-    public Company(String name, String owner, double value, BankAccount account)
+    public Company(String name, Company owner, double value, BankAccount account)
     {
         super(name, owner, value);
 
@@ -58,7 +57,7 @@ public class Company extends Property
     {
     //System.out.println("PROPERTY BUYING IS: " + property.getName() + " VALUE IS: " + property.getValue());
         account.setValue(account.getValue() - property.getValue());
-        property.setOwner(super.getName());
+        property.setOwner(this);
         addProperty(property);
     }
 
@@ -66,19 +65,19 @@ public class Company extends Property
     {
         //System.out.println("PROPERTY SELLING IS: " + property.getName() + " VALUE IS: " + property.getValue());
         account.setValue(account.getValue() + property.getValue());
-        property.setOwner("");
+        property.setOwner(null);
         removeProperty(property);
     }
 
     @Override
-    public void calcProfit()
+    public void update()
     {
         double profit = 0.0;
 
         for (Property property : properties)
         {
             //if (!("".equals(property.getOwner())))
-            property.calcProfit();
+            property.update();
             profit = profit + property.getProfit();
         }
 
@@ -88,7 +87,7 @@ public class Company extends Property
         else
             account.setValue(account.getValue() - profit);
 
-        account.calcProfit();
+        account.update();
     }
 
 

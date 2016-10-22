@@ -16,13 +16,27 @@ public class Main
 {
     public static void main(String[] args)
     {
-        PropertyReader pf = new PropertyReader();
-        EventFactory ef = new EventFactory();
-        TransactionReader tf = new TransactionReader();
+        Reader reader;
 
-        PropertyManager pm = new PropertyManager(pf, args[0]);
-        EventManager em = new EventManager(ef, args[1]);
-        TransactionManager tm = new TransactionManager(tf, args[2]);
+        PropertyManager pm = new PropertyManager();
+        EventManager em = new EventManager();
+        TransactionManager tm = new TransactionManager();
+
+        try
+        {
+            reader = new PropertyReader(pm);
+            reader.readFile(args[0]);
+
+            reader = new EventReader(em, pm);
+            reader.readFile(args[1]);
+
+            reader = new TransactionReader(tm, pm);
+            reader.readFile(args[2]);
+        }
+        catch (Exception lolpleasechangethis)
+        {
+
+        }
 
         UserInterface ui = new UserInterface();
 

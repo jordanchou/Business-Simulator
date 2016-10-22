@@ -12,14 +12,16 @@ package model.transaction;
 
 import java.util.*;
 import controller.*;
+import model.property.*;
 
 public abstract class Transaction implements Comparable<Transaction>
 {
     long year;
-    String property;
+    Property property;
+    Company primary;
 
 
-    public Transaction(long year, String property)
+    public Transaction(long year, Property property)
     {
         this.year = year;
         this.property = property;
@@ -46,10 +48,20 @@ public abstract class Transaction implements Comparable<Transaction>
         return this.year;
     }
 
-    public String getProperty()
+    public Property getProperty()
     {
         return property;
     }
 
-    public abstract void update(PropertyManager pm);
+    public abstract void update();
+
+    public void setPrimary(Company primary)
+    {
+        this.primary = primary;
+    }
+
+    public Company getPrimary()
+    {
+        return primary;
+    }
 }

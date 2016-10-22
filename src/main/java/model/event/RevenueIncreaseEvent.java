@@ -15,18 +15,16 @@ import controller.*;
 
 public class RevenueIncreaseEvent extends Event
 {
-    String company;
+    BusinessUnit unit;
 
-    public RevenueIncreaseEvent(long year, String company)
+    public RevenueIncreaseEvent(long year, BusinessUnit unit)
     {
         super(year);
-        this.company = company;
+        this.unit = unit;
     }
 
-    public void update(PropertyManager pm)
+    public void update()
     {
-        BusinessUnit unit = ((BusinessUnit)pm.getProperty(company));
-
         unit.setRevenue(unit.getRevenue() * 1.05);
     }
 }

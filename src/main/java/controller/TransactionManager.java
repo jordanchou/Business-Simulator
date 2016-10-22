@@ -17,32 +17,20 @@ import model.transaction.*;
 
 public class TransactionManager
 {
-    TransactionReader tf;
     List<Transaction> transactions;
 
-
-    public TransactionManager(TransactionReader tf, String file)
+    public TransactionManager()
     {
-        this.tf = tf;
         transactions = new ArrayList<Transaction>();
-
-        try
-        {
-            readFile(file);
-        }
-        catch (IOException e)
-        {
-            throw new IllegalArgumentException("Invalid events file");
-        }
     }
 
-    public void update(PropertyManager properties, long year)
+    public void update(long year)
     {
         for (Transaction transaction : transactions)
         {
             if (transaction.getYear() == year)
             {
-                transaction.update(properties);
+                transaction.update();
             }
             else if (transaction.getYear() > year)
             {
@@ -53,45 +41,9 @@ public class TransactionManager
         }
     }
 
-    private void readFile(String file) throws IOException
+    public void addTransaction(Transaction transaction)
     {
-        FileInputStream stream = null;
-        InputStreamReader streamReader;
-        BufferedReader reader;
-
-        try
-        {
-            stream = new FileInputStream(file);
-
-            streamReader = new InputStreamReader(stream);
-            reader = new BufferedReader(streamReader);
-            Transaction transaction;
-            String line;
-
-            line = reader.readLine();
-            line = reader.readLine();//Get rid of the first line lol.
-
-
-            while (line != null)
-            {
-                transaction = tf.getTransaction(line);
-                transactions.add(transaction);
-                line = reader.readLine();
-            }
-        }
-        catch (IOException e)
-        {
-            if (stream != null)
-            {
-                try
-                {
-                    stream.close();
-                }
-                catch (IOException e2)
-                {
-                    throw new IOException("wtf");
-                }
-            }
-        }
+        transactions.add(transaction);
     }
+
 }

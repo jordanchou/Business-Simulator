@@ -15,7 +15,7 @@ public abstract class Property
     double value;
     double profit;
     String name;
-    String owner;
+    Company owner;
 
     public Property()
     {
@@ -25,7 +25,7 @@ public abstract class Property
         owner = null;
     }
 
-    public Property(String name, String owner, double value)
+    public Property(String name, Company owner, double value)
     {
         this.name = name;
         this.owner = owner;
@@ -53,7 +53,7 @@ public abstract class Property
         return name;
     }
 
-    public String getOwner()
+    public Company getOwner()
     {
         return owner;
     }
@@ -63,7 +63,7 @@ public abstract class Property
         return profit;
     }
 
-    public void setOwner(String owner)
+    public void setOwner(Company owner)
     {
         this.owner = owner;
     }
@@ -73,7 +73,7 @@ public abstract class Property
         return "Name: " + name;
     }
 
-    public abstract void calcProfit();
+    public abstract void update();
 
 
 

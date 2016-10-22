@@ -15,16 +15,17 @@ import model.property.*;
 
 public class SellTransaction extends Transaction
 {
-    public SellTransaction(long year, String property)
+    public SellTransaction(long year, Property property)
     {
         super(year, property);
     }
 
-    public void update(PropertyManager pm)
+    @Override
+    public void update()
     {
-        Property property = pm.getProperty(super.getProperty());
+        Property property = super.getProperty();
 
-        pm.getPrimary().sell(property);
+        super.getPrimary().sell(property);
         //sell to unnamed buyer
     }
 }

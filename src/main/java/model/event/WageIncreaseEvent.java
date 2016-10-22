@@ -12,16 +12,32 @@ package model.event;
 
 import controller.*;
 import model.property.*;
+import view.WageObserver;
+
+import java.util.List;
 
 public class WageIncreaseEvent extends Event
 {
-    public WageIncreaseEvent(long year)
+    List<WageObserver> observers;
+
+    public WageIncreaseEvent(long year, List<WageObserver> observers)
     {
         super(year);
+
+        setObservers(observers);
     }
 
-    public void update(PropertyManager pm)
+    public void update()
     {
-        pm.notifyObservers(1.05);
+        for (WageObserver observer : observers)
+        {
+            observer.update(1.05);
+
+        }
+    }
+
+    public void setObservers(List<WageObserver> observers)
+    {
+            this.observers = observers;
     }
 }
