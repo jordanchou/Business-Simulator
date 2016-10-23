@@ -44,6 +44,12 @@ public class EventManager
 
     public void addEvent(Event event)
     {
+        for (Event e : events)
+        {
+            if (e.compareTo(event) == -1)
+                throw new IllegalArgumentException("Event date is invalid. Please check the years.");
+        }
+
         events.add(event);
     }
 
