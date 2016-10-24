@@ -16,7 +16,7 @@ import controller.reader.*;
 import model.event.*;
 
 
-public class EventManager
+public class EventManager<T>
 {
     Set<Updateable> events;
 
@@ -51,7 +51,7 @@ public class EventManager
      * Adds an event to the EventManager
      * @param event The event to add
      */
-    public void addEvent(Updateable<Event> event)
+    public void add(Updateable<T> event)
     {
         for (Updateable e : events)
         {

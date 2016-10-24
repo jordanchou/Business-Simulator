@@ -17,7 +17,7 @@ public class SimulationController
 {
     private PropertyManager properties;
     private EventManager events;
-    private TransactionManager transactions;
+    private EventManager transactions;
     private UserInterface ui;
 
     /**
@@ -37,7 +37,7 @@ public class SimulationController
      * @param transactions
      * @param ui
      */
-    public SimulationController(PropertyManager properties, EventManager events, TransactionManager transactions,
+    public SimulationController(PropertyManager properties, EventManager events, EventManager transactions,
                                     UserInterface ui)
     {
         this.properties = properties;

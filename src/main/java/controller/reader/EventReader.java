@@ -82,6 +82,6 @@ public class EventReader extends Reader
                 throw new IllegalArgumentException("Invalid event type: " + lineArray[1]);
         }
 
-        ec.addEvent(event);
+        ec.add(event);
     }
 }

@@ -23,7 +23,7 @@ public class Main
 
         PropertyManager pm = new PropertyManager();
         EventManager em = new EventManager();
-        TransactionManager tm = new TransactionManager();
+        EventManager tm = new EventManager();
         UserInterface ui = new UserInterface();
 
         try

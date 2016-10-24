@@ -15,7 +15,7 @@ import controller.*;
 
 public class TransactionReader extends Reader
 {
-    TransactionManager tm;
+    EventManager tm;
     PropertyManager pm;
 
     /**
@@ -23,7 +23,7 @@ public class TransactionReader extends Reader
      * @param tm Used to store the Transactions
      * @param pm Used to store the necessary property reference associated with a Transaction
      */
-    public TransactionReader(TransactionManager tm, PropertyManager pm)
+    public TransactionReader(EventManager tm, PropertyManager pm)
     {
         this.tm = tm;
         this.pm = pm;
@@ -63,7 +63,7 @@ public class TransactionReader extends Reader
         System.out.println("HI4");
         transaction.setPrimary(pm.getPrimary());//Each transaction gets a reference to the primary company
         System.out.println("HI2");
-        tm.addTransaction((Updateable<Transaction>)transaction);//Adds the transaction to the transaction manager
+        tm.add((Updateable<Transaction>)transaction);//Adds the transaction to the transaction manager
         System.out.println("HI5");
     }
 }
