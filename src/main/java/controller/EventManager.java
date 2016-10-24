@@ -1,9 +1,9 @@
 /*
-FILE: CompanyController.java
+FILE: EventManager.java
 AUTHOR:Jordan Pinglin Chou
 USERNAME:18348691
 UNIT: COMP2003 (Object Oriented Software Engineering)
-PURPOSE:
+PURPOSE: Manages and stores Event objects
 REFERENCE:-
 COMMENTS:-
 REQUIRES:-
@@ -20,11 +20,18 @@ public class EventManager
 {
     Set<Event> events;
 
+    /**
+     * Constructs an EventManager with no events
+     */
     public EventManager()
     {
         events = new LinkedHashSet<Event>();
     }
 
+    /**
+     * Calls the update() method of each Event. Basically carries out the required events for the year
+     * @param year
+     */
     public void update(long year)
     {
         for (Event event : events)
@@ -33,21 +40,26 @@ public class EventManager
             {
                 event.update();
             }
-            else if (event.getYear() > year)
+            else if (event.getYear() > year)//Only do the events for the year
             {
-                break;//change to while-iterator
-            }
-
-
+                break;
+            }//Do not call remove because unexpected things may happen. Also want to keep the list of events intact
         }
     }
 
+    /**
+     * Adds an event to the EventManager
+     * @param event The event to add
+     */
     public void addEvent(Event event)
     {
         for (Event e : events)
         {
-            if (e.compareTo(event) == -1)
-                throw new IllegalArgumentException("Event date is invalid. Please check the years.");
+            if (e.compareTo(event) == 1)//If the event being added is less than the others (in terms of years)
+            {
+                throw new IllegalArgumentException("Event date is invalid. Please check the years: " + event.toString());
+
+            }
         }
 
         events.add(event);

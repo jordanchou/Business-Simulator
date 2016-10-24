@@ -19,18 +19,30 @@ public class WageDecreaseEvent extends Event
 {
     List<WageObserver> observers;
 
+    /**
+     * Constructs a WageDecreaseEvent
+     * @param year the year of the event
+     * @param observers list of observers
+     */
     public WageDecreaseEvent(long year, List<WageObserver> observers)
     {
         super(year);
         setObservers(observers);
     }
 
+    /**
+     * Calls the update method on each of the observers in the list
+     */
     public void update()
     {
         for (WageObserver observer : observers)
             observer.update(0.95);
     }
 
+    /**
+     * Sets the observers for the Event
+     * @param observers the observers that this event should have
+     */
     public void setObservers(List<WageObserver> observers)
     {
         this.observers = observers;

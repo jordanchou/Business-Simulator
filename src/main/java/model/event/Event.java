@@ -48,20 +48,36 @@ public abstract class Event implements Comparable<Event>
 
     public int compareTo(Event event)
     {
+        int value;
+
         if (event.getYear() > this.year)
         {
-            return -1;
+            value =  -1;
         }
         else if (event.getYear() < this.year)
         {
-            return 1;
+            value = 1;
         }
         else
         {
-            return 0;
+            value = 0;
         }
+
+        return value;
     }
 
+    /**
+     * Returns the state of the Event as a String
+     * @return state of the Event
+     */
+    public String toString()
+    {
+        return year + "";
+    }
+
+    /**
+     * Abstract update() method
+     */
     public abstract void update();
 
 }

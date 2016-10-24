@@ -1,5 +1,17 @@
+/*
+FILE: Reader.java
+AUTHOR:Jordan Pinglin Chou
+USERNAME:18348691
+UNIT: COMP2003 (Object Oriented Software Engineering)
+PURPOSE: provides a template for reading input files line by line
+REFERENCE:-
+COMMENTS:-
+REQUIRES:-
+*/
+
 package controller.reader;
 
+import model.error.FileFormatException;
 import model.property.BusinessUnit;
 import model.property.Company;
 import model.property.Property;
@@ -12,6 +24,11 @@ import java.io.*;
 
 public abstract class Reader
 {
+    /**
+     * Reads in a file using BufferedReader. Delegates the processing of each line of the file to subclasses.
+     * @param file The name of the file to read from
+     * @throws IOException
+     */
     public void readFile(String file) throws IOException
     {
         FileInputStream stream = null;
@@ -27,7 +44,7 @@ public abstract class Reader
             String line;
 
             line = reader.readLine();
-            line = reader.readLine();//Get rid of the first line lol.
+            line = reader.readLine();//Get rid of the first line
 
 
             while (line != null)
@@ -50,9 +67,16 @@ public abstract class Reader
                 }
             }
         }
+        catch (IllegalArgumentException e)
+        {
+            throw new FileFormatException(e.getMessage(), e);
+        }
     }
 
-
+    /**
+     * Forces subclasses to decide how the line should be processed
+     * @param line The line to process
+     */
     protected abstract void processLine(String line);
 
 }

@@ -20,7 +20,7 @@ public class BankAccount extends Property
     @Override
     public void update()
     {
-        super.setValue(super.getValue() + super.getValue() * 0.05);
+        super.setValue(super.getValue() + (super.getValue() * 0.05));
     }
 
     public String toString()

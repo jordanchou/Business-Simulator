@@ -15,12 +15,20 @@ import model.property.*;
 
 public class UserInterface
 {
+    /**
+     * Constructs a UserInterface
+     */
     public UserInterface()
     {
 
     }
 
-    public void outputProperties(List<Property> properties, long year)
+    /**
+     * Outputs the current year as well as a list of properties
+     * @param properties a list of properties to output
+     * @param year the year to output
+     */
+    public void output(List<Property> properties, long year)
     {
         System.out.println("Year: " + year);
 
@@ -28,5 +36,10 @@ public class UserInterface
             System.out.println(property.toString());
 
         System.out.println();
+    }
+
+    public void output(Exception e)
+    {
+        System.out.println(e.getMessage());
     }
 }

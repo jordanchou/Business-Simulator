@@ -1,9 +1,9 @@
 /*
-FILE: CompanyController.java
+FILE: PropertyReader.java
 AUTHOR:Jordan Pinglin Chou
 USERNAME:18348691
 UNIT: COMP2003 (Object Oriented Software Engineering)
-PURPOSE:
+PURPOSE: Reads in Property objects from file
 REFERENCE:-
 COMMENTS:-
 REQUIRES:-
@@ -17,11 +17,20 @@ public class PropertyReader extends Reader
 {
     PropertyManager properties;
 
+    /**
+     * Constructs a PropertyReader given a PropertyManager
+     * @param pm
+     */
     public PropertyReader(PropertyManager pm)
     {
         this.properties = pm;
     }
 
+    /**
+     * Overrides the abstract processLine method from Reader. This method processes a line and adds it to the
+     * PropertyManager
+     * @param line
+     */
     @Override
     public void processLine(String line)
     {
@@ -30,6 +39,16 @@ public class PropertyReader extends Reader
         Company primary;
 
         lineArray = line.split(",");
+
+        /**
+         * Check that owner has been added to the map
+         */
+        if (!("".equals(lineArray[2])))
+        {
+            if (properties.getProperty(lineArray[2]) == null)
+                throw new IllegalArgumentException("Invalid owner for property: " + line);
+        }
+
 
         switch (lineArray[1])
         {
@@ -46,13 +65,16 @@ public class PropertyReader extends Reader
                 break;
 
             default:
-                //throw exception!
+                throw new IllegalArgumentException("Invalid property type: " + lineArray[1]);
         }
 
-        if (!(null == property.getOwner()))
+
+        if (!(null == (property.getOwner())))
         {
             property.getOwner().addProperty(property);
         }//Error check for if owner is not in map
+
+
 
 
         primary = properties.getPrimary();

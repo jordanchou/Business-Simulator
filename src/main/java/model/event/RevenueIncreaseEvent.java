@@ -17,12 +17,20 @@ public class RevenueIncreaseEvent extends Event
 {
     BusinessUnit unit;
 
+    /**
+     * Constructs a RevenueIncreaseEvent
+     * @param year year for the Event
+     * @param unit unit that the Event applies to
+     */
     public RevenueIncreaseEvent(long year, BusinessUnit unit)
     {
         super(year);
         this.unit = unit;
     }
 
+    /**
+     * Updates the revenue of the associated BusinessUnit by +5%
+     */
     public void update()
     {
         unit.setRevenue(unit.getRevenue() * 1.05);

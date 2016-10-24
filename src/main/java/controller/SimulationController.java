@@ -55,22 +55,33 @@ public class SimulationController
     public void simulate(long start, long end)
     {
 
+          try
+          {
+              for (long i = start; i <= end; i++)
+              {
+                  //output company names and bank account balances
+                  ui.output(properties.getCompanies(), i);
 
-        for (long i=start; i<=end; i++)
-        {
-            //output company names and bank account balances
-            ui.outputProperties(properties.getCompanies(), i);
+                  //do events :D
+                  //give the EventManager the properties as well as the current year
+                  events.update(i);
 
-            //do events :D
-            //give the EventManager the properties as well as the current year
-            events.update(i);
+                  //give the TransactionManager the properties as well as the current year
+                  transactions.update(i);
 
-            //give the TransactionManager the properties as well as the current year
-            transactions.update(i);
+                  //update bank accounts
+                  properties.update();
+              }
+          }
+          catch (IllegalArgumentException e)
+          {
+              ui.output(e);
+          }
+          catch (IllegalStateException e)
+          {
+              ui.output(e);
+          }
 
-            //update bank accounts
-            properties.update();
-        }
     }
 
 

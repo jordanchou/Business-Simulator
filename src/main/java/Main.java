@@ -1,5 +1,5 @@
 /*
-FILE: CompanyController.java
+FILE: Main.java
 AUTHOR:Jordan Pinglin Chou
 USERNAME:18348691
 UNIT: COMP2003 (Object Oriented Software Engineering)
@@ -12,6 +12,9 @@ import controller.*;
 import controller.reader.*;
 import view.*;
 
+import java.io.IOException;
+import model.error.*;
+
 public class Main
 {
     public static void main(String[] args)
@@ -21,6 +24,7 @@ public class Main
         PropertyManager pm = new PropertyManager();
         EventManager em = new EventManager();
         TransactionManager tm = new TransactionManager();
+        UserInterface ui = null;
 
         try
         {
@@ -32,19 +36,25 @@ public class Main
 
             reader = new TransactionReader(tm, pm);
             reader.readFile(args[2]);
+
+             ui = new UserInterface();
+
+            SimulationController sc = new SimulationController(pm, em, tm, ui);
+
+            long start = Long.parseLong(args[3]);
+            long end = Long.parseLong(args[4]);
+
+            sc.simulate(start, end);
         }
-        catch (Exception lolpleasechangethis)
+        catch (IOException e)
         {
-
+            ui.output(e);
+        }
+        catch (FileFormatException e)
+        {
+            ui.output(e);
         }
 
-        UserInterface ui = new UserInterface();
 
-        SimulationController sc = new SimulationController(pm, em, tm, ui);
-
-        long start = Long.parseLong(args[3]);
-        long end = Long.parseLong(args[4]);
-
-        sc.simulate(start, end);
     }
 }

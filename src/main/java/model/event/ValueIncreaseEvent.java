@@ -17,12 +17,20 @@ public class ValueIncreaseEvent extends Event
 {
     BusinessUnit unit;
 
+    /**
+     * Constructs a ValueIncreaseEvent
+     * @param year year of the event
+     * @param unit the associated BusinessUnit
+     */
     public ValueIncreaseEvent(long year, BusinessUnit unit)
     {
         super(year);
         this.unit = unit;
     }
 
+    /**
+     * Updates the value of the associated BusinessNet by +5%
+     */
     public void update()
     {
         unit.setValue(unit.getValue() *  1.05);
