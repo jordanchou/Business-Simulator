@@ -18,14 +18,14 @@ import model.event.*;
 
 public class EventManager
 {
-    Set<Event> events;
+    Set<Updateable> events;
 
     /**
      * Constructs an EventManager with no events
      */
     public EventManager()
     {
-        events = new LinkedHashSet<Event>();
+        events = new LinkedHashSet<Updateable>();
     }
 
     /**
@@ -34,7 +34,7 @@ public class EventManager
      */
     public void update(long year)
     {
-        for (Event event : events)
+        for (Updateable event : events)
         {
             if (event.getYear() == year)
             {
@@ -51,9 +51,9 @@ public class EventManager
      * Adds an event to the EventManager
      * @param event The event to add
      */
-    public void addEvent(Event event)
+    public void addEvent(Updateable<Event> event)
     {
-        for (Event e : events)
+        for (Updateable e : events)
         {
             if (e.compareTo(event) == 1)//If the event being added is less than the others (in terms of years)
             {

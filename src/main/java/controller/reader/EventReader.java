@@ -51,10 +51,14 @@ public class EventReader extends Reader
         switch (lineArray[1])
         {
             case "R-":
+                if (pm.getProperty(lineArray[2]) == null)
+                    throw new IllegalArgumentException("Cannot create event with property: " + lineArray[2]);
                 event = new RevenueDecreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "R+":
+                if (pm.getProperty(lineArray[2]) == null)
+                    throw new IllegalArgumentException("Cannot create event with property: " + lineArray[2]);
                 event = new RevenueIncreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 

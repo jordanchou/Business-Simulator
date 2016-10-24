@@ -12,16 +12,16 @@ package controller;
 
 import java.util.*;
 import java.io.*;
-import controller.reader.*;
+import controller.*;
 import model.transaction.*;
 
 public class TransactionManager
 {
-    Set<Transaction> transactions;//Set of transactions
+    Set<Updateable> transactions;//Set of transactions
 
     public TransactionManager()
     {
-        transactions = new LinkedHashSet<Transaction>();//LinkedHashSet keeps insert order
+        transactions = new LinkedHashSet<Updateable>();//LinkedHashSet keeps insert order
     }
 
     /**
@@ -30,7 +30,8 @@ public class TransactionManager
      */
     public void update(long year)
     {
-        for (Transaction transaction : transactions)
+
+        for (Updateable transaction : transactions)
         {
             if (transaction.getYear() == year)
             {
@@ -49,9 +50,9 @@ public class TransactionManager
      * Adds a transaction to the TransactionManager
      * @param transaction The transaction to add
      */
-    public void addTransaction(Transaction transaction)
+    public void addTransaction(Updateable transaction)
     {
-        for (Transaction t : transactions)
+        for (Updateable t : transactions)
         {
             if (t.compareTo(transaction) == 1)//If the event being added is less than the others (in terms of years)
             {

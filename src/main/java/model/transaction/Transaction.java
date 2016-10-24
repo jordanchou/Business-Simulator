@@ -14,7 +14,7 @@ import java.util.*;
 import controller.*;
 import model.property.*;
 
-public abstract class Transaction implements Comparable<Transaction>
+public abstract class Transaction implements Comparable<Transaction>, Updateable<Transaction>
 {
     long year;
     Property property;

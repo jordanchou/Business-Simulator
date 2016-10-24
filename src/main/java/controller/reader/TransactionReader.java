@@ -41,7 +41,7 @@ public class TransactionReader extends Reader
         long year;
 
         lineArray = line.split(",");
-
+        System.out.println("HI");
         year = Long.parseLong(lineArray[0]);
 
         switch (lineArray[1])
@@ -59,9 +59,11 @@ public class TransactionReader extends Reader
             default:
                 throw new IllegalArgumentException("Invalid transaction: " + line);
         }
-
+        System.out.println("HI");
+        System.out.println("HI4");
         transaction.setPrimary(pm.getPrimary());//Each transaction gets a reference to the primary company
-
-        tm.addTransaction(transaction);//Adds the transacction to the transaction manager
+        System.out.println("HI2");
+        tm.addTransaction((Updateable<Transaction>)transaction);//Adds the transaction to the transaction manager
+        System.out.println("HI5");
     }
 }

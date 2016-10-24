@@ -74,9 +74,6 @@ public class PropertyReader extends Reader
             property.getOwner().addProperty(property);
         }//Error check for if owner is not in map
 
-
-
-
         primary = properties.getPrimary();
 
         if ((primary == null) && (property instanceof Company))

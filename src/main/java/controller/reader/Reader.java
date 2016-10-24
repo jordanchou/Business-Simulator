@@ -69,6 +69,28 @@ public abstract class Reader
         }
         catch (IllegalArgumentException e)
         {
+            try
+            {
+                stream.close();
+            } catch (IOException e2)
+            {
+                throw new IllegalArgumentException("File is incorrect.");
+            }
+
+
+            throw new FileFormatException(e.getMessage(), e);
+        }
+        catch (ClassCastException e)
+        {
+            try
+            {
+                stream.close();
+            } catch (IOException e2)
+            {
+                throw new IllegalArgumentException("File is incorrect.");
+            }
+
+
             throw new FileFormatException(e.getMessage(), e);
         }
     }

@@ -24,7 +24,7 @@ public class Main
         PropertyManager pm = new PropertyManager();
         EventManager em = new EventManager();
         TransactionManager tm = new TransactionManager();
-        UserInterface ui = null;
+        UserInterface ui = new UserInterface();
 
         try
         {
@@ -33,11 +33,8 @@ public class Main
 
             reader = new EventReader(em, pm);
             reader.readFile(args[1]);
-
             reader = new TransactionReader(tm, pm);
             reader.readFile(args[2]);
-
-             ui = new UserInterface();
 
             SimulationController sc = new SimulationController(pm, em, tm, ui);
 

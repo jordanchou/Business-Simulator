@@ -35,4 +35,5 @@ public class RevenueDecreaseEvent extends Event
     {
         unit.setRevenue(unit.getRevenue() * 0.95);
     }
+
 }
