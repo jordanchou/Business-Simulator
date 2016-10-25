@@ -59,11 +59,12 @@ public class TransactionReader extends Reader
             default:
                 throw new IllegalArgumentException("Invalid transaction: " + line);
         }
-        System.out.println("HI");
-        System.out.println("HI4");
+
+        if (transaction.getProperty().equals(pm.getPrimary()))
+            throw new IllegalArgumentException("Cannot buy/sell primary company: " + line);
+
         transaction.setPrimary(pm.getPrimary());//Each transaction gets a reference to the primary company
-        System.out.println("HI2");
-        tm.add((Updateable<Transaction>)transaction);//Adds the transaction to the transaction manager
-        System.out.println("HI5");
+        tm.add(transaction);//Adds the transaction to the transaction manager
+
     }
 }

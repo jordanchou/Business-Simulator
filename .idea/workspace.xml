@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="066da7c9-8b55-4ef9-936e-cc81a5d0d832" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/EventManager.java" afterPath="$PROJECT_DIR$/src/main/java/controller/EventManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/SimulationController.java" afterPath="$PROJECT_DIR$/src/main/java/controller/SimulationController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" afterPath="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/controller/TransactionManager.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/controller/reader/Reader.class" afterPath="$PROJECT_DIR$/build/controller/reader/Reader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/controller/reader/TransactionReader.class" afterPath="$PROJECT_DIR$/build/controller/reader/TransactionReader.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/man.jar" afterPath="$PROJECT_DIR$/dist/man.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" afterPath="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" afterPath="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" />
     </list>
     <ignored path="OOSE2016s2.iws" />
@@ -46,8 +48,8 @@
       <file leaf-file-name="EventManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/EventManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
+            <state relative-caret-position="-294">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="e#0#1603#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -56,13 +58,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionReader.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PropertyManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/PropertyManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-714">
+              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#2840#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionReader.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
+            <state relative-caret-position="437">
+              <caret line="63" column="91" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
               <folding>
-                <element signature="e#0#1941#0" expanded="true" />
+                <element signature="e#0#1935#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#2270#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Reader.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/Reader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#2605#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -72,22 +112,10 @@
       <file leaf-file-name="EventReader.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="1260">
               <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
               <folding>
                 <element signature="e#0#2588#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#2270#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -101,566 +129,504 @@
               <ID>JAVA</ID>
               <OriginalElement>Main</OriginalElement>
               <nodes>
-                <node x="2570.8958333333335" y="146.0">model.property.Company</node>
-                <node x="949.5625" y="1319.5">model.event.WageIncreaseEvent</node>
-                <node x="3374.3125" y="1308.5">controller.EventManager</node>
-                <node x="1919.2814995446934" y="885.0">model.event.Event</node>
-                <node x="1361.5625" y="1319.5">model.event.ValueIncreaseEvent</node>
-                <node x="40.53125" y="952.5">model.error.FileFormatException</node>
-                <node x="3473.5716001505352" y="563.5">controller.Updateable</node>
-                <node x="1785.636566948141" y="1776.0">controller.reader.EventReader</node>
-                <node x="1583.5625" y="1319.5">model.event.RevenueDecreaseEvent</node>
-                <node x="2693.5625" y="1331.0">model.transaction.BuyTransaction</node>
-                <node x="1805.5625" y="1319.5">model.event.ValueDecreaseEvent</node>
-                <node x="316.5625" y="1331.5">controller.reader.Reader</node>
-                <node x="2250.5625" y="1253.0">controller.PropertyManager</node>
-                <node x="2932.23694573602" y="896.5">model.transaction.Transaction</node>
-                <node x="996.8958333333335" y="586.0">view.WageObserver</node>
-                <node x="1562.0625" y="907.5">model.property.BusinessUnit</node>
-                <node x="69.21875" y="1787.0">controller.reader.PropertyReader</node>
-                <node x="3983.3125" y="1320.0">view.UserInterface</node>
-                <node x="3596.1875" y="1743.0">controller.SimulationController</node>
-                <node x="3007.5625" y="1331.0">model.transaction.SellTransaction</node>
-                <node x="2027.5625" y="1319.5">model.event.RevenueIncreaseEvent</node>
-                <node x="2927.1536124026866" y="1776.0">controller.reader.TransactionReader</node>
-                <node x="2836.726362055297" y="508.0">model.property.Property</node>
-                <node x="533.5625" y="1319.5">model.event.WageDecreaseEvent</node>
-                <node x="3364.26819573602" y="2038.0">Main</node>
-                <node x="2661.8958333333335" y="0.0">model.property.BankAccount</node>
-                <node x="3660.3125" y="1308.5">controller.TransactionManager</node>
+                <node x="2501.185318082302" y="493.0">model.property.Company</node>
+                <node x="1036.9480871618803" y="1339.5">model.event.WageIncreaseEvent</node>
+                <node x="3492.094515733309" y="1328.5">controller.EventManager</node>
+                <node x="1271.296398405235" y="855.0">model.event.Event</node>
+                <node x="1670.9480871618803" y="1339.5">model.event.ValueIncreaseEvent</node>
+                <node x="21.5" y="922.5">model.error.FileFormatException</node>
+                <node x="3164.685318082302" y="571.0">controller.Updateable</node>
+                <node x="1448.9480871618803" y="1339.5">model.event.RevenueDecreaseEvent</node>
+                <node x="1897.908091310032" y="1786.0">controller.reader.EventReader</node>
+                <node x="2916.094515733309" y="1351.0">model.transaction.BuyTransaction</node>
+                <node x="2114.9480871618803" y="1339.5">model.event.ValueDecreaseEvent</node>
+                <node x="403.94808716188027" y="1351.5">controller.reader.Reader</node>
+                <node x="2337.9480871618803" y="1273.0">controller.PropertyManager</node>
+                <node x="2901.185318082302" y="866.5">model.transaction.Transaction</node>
+                <node x="1084.2814204952135" y="593.5">view.WageObserver</node>
+                <node x="1871.4480871618803" y="877.5">model.property.BusinessUnit</node>
+                <node x="120.93207443897154" y="1797.0">controller.reader.PropertyReader</node>
+                <node x="3778.094515733309" y="1340.0">view.UserInterface</node>
+                <node x="3497.969515733309" y="1753.0">controller.SimulationController</node>
+                <node x="3204.094515733309" y="1351.0">model.transaction.SellTransaction</node>
+                <node x="1892.9480871618803" y="1339.5">model.event.RevenueIncreaseEvent</node>
+                <node x="3001.2414246433655" y="1786.0">controller.reader.TransactionReader</node>
+                <node x="2558.7695157333087" y="0.0">model.property.Property</node>
+                <node x="620.9480871618803" y="1339.5">model.event.WageDecreaseEvent</node>
+                <node x="3027.7414246433655" y="2028.0">Main</node>
+                <node x="2457.2695157333087" y="347.0">model.property.BankAccount</node>
               </nodes>
               <notes />
               <edges>
                 <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
-                  <point x="67.33333333333337" y="-48.5" />
-                  <point x="1973.8958333333335" y="1233.0" />
-                  <point x="2059.9064995446934" y="1233.0" />
-                  <point x="15.625" y="104.0" />
+                  <point x="-67.33333333333326" y="-48.5" />
+                  <point x="2148.614753828547" y="1153.0" />
+                  <point x="1503.4392555480922" y="1153.0" />
+                  <point x="107.14285714285711" y="104.0" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="model.property.Property">
-                  <point x="-16.5625" y="-48.5" />
-                  <point x="185.15625" y="1623.0" />
-                  <point x="274.03125" y="1623.0" />
-                  <point x="274.03125" y="775.0" />
-                  <point x="2850.9485842775193" y="775.0" />
-                  <point x="-113.77777777777783" y="103.5" />
+                  <point x="-115.9375" y="-48.5" />
+                  <point x="137.49457443897154" y="1733.0" />
+                  <point x="11.0" y="1733.0" />
+                  <point x="11.0" y="297.0" />
+                  <point x="2567.302849066642" y="297.0" />
+                  <point x="-119.4666666666667" y="103.5" />
                 </edge>
                 <edge source="model.transaction.SellTransaction" target="model.transaction.Transaction">
-                  <point x="67.0" y="-37.0" />
-                  <point x="3208.5625" y="1233.0" />
-                  <point x="3220.570279069353" y="1233.0" />
+                  <point x="-67.0" y="-37.0" />
+                  <point x="3271.094515733309" y="1243.0" />
+                  <point x="3189.5186514156353" y="1243.0" />
                   <point x="115.33333333333331" y="92.5" />
                 </edge>
-                <edge source="controller.EventManager" target="controller.Updateable">
-                  <point x="88.66666666666652" y="-59.5" />
-                  <point x="3595.9791666666665" y="1233.0" />
-                  <point x="3630.8930287219637" y="1233.0" />
-                  <point x="3630.8930287219637" y="865.0" />
-                  <point x="3585.4287430076783" y="865.0" />
-                  <point x="24.85714285714289" y="48.0" />
+                <edge source="controller.reader.TransactionReader" target="controller.EventManager">
+                  <point x="96.25" y="-59.5" />
+                  <point x="3207.4914246433655" y="1733.0" />
+                  <point x="3608.469515733309" y="1733.0" />
+                  <point x="-16.625" y="59.5" />
                 </edge>
                 <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
-                  <point x="67.33333333333348" y="-48.5" />
-                  <point x="1751.8958333333335" y="1223.0" />
-                  <point x="2028.6564995446934" y="1223.0" />
-                  <point x="-15.625" y="104.0" />
+                  <point x="-67.33333333333326" y="-48.5" />
+                  <point x="1482.614753828547" y="1183.0" />
+                  <point x="1396.296398405235" y="1183.0" />
+                  <point x="0.0" y="104.0" />
                 </edge>
-                <edge source="controller.SimulationController" target="controller.TransactionManager">
-                  <point x="21.5625" y="-92.5" />
-                  <point x="3790.25" y="1723.0" />
-                  <point x="3786.5625" y="1723.0" />
-                  <point x="-25.25" y="59.5" />
+                <edge source="controller.EventManager" target="controller.Updateable">
+                  <point x="66.5" y="-59.5" />
+                  <point x="3691.594515733309" y="1253.0" />
+                  <point x="3684.4071126909494" y="1253.0" />
+                  <point x="3684.4071126909494" y="825.0" />
+                  <point x="3316.935318082302" y="825.0" />
+                  <point x="65.25" y="48.0" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.WageDecreaseEvent">
                   <point x="-83.46153846153845" y="-59.5" />
-                  <point x="1810.6750284866025" y="1633.0" />
-                  <point x="731.5625" y="1633.0" />
+                  <point x="1922.9465528484934" y="1643.0" />
+                  <point x="818.9480871618803" y="1643.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="Main" target="controller.SimulationController">
-                  <point x="33.39999999999998" y="-25.5" />
-                  <point x="3481.16819573602" y="1978.0" />
-                  <point x="3854.9375" y="1978.0" />
-                  <point x="86.25" y="92.5" />
+                  <point x="12.84615384615384" y="-25.5" />
+                  <point x="3124.087578489519" y="1958.0" />
+                  <point x="3584.219515733309" y="1958.0" />
+                  <point x="-86.25" y="92.5" />
                 </edge>
                 <edge source="controller.reader.TransactionReader" target="model.transaction.Transaction">
-                  <point x="0.0" y="-59.5" />
-                  <point x="3057.1536124026866" y="1543.0" />
-                  <point x="2997.0625" y="1543.0" />
-                  <point x="2997.0625" y="1233.0" />
-                  <point x="3105.23694573602" y="1233.0" />
-                  <point x="0.0" y="92.5" />
+                  <point x="-13.75" y="-59.5" />
+                  <point x="3097.4914246433655" y="1553.0" />
+                  <point x="2898.4071126909494" y="1553.0" />
+                  <point x="2898.4071126909494" y="1253.0" />
+                  <point x="2958.851984748969" y="1253.0" />
+                  <point x="-115.33333333333337" y="92.5" />
                 </edge>
                 <edge source="Main" target="controller.reader.PropertyReader">
-                  <point x="-66.80000000000001" y="-25.5" />
-                  <point x="3380.96819573602" y="2008.0" />
-                  <point x="201.71875" y="2008.0" />
+                  <point x="-64.23076923076925" y="-25.5" />
+                  <point x="3047.010655412596" y="1998.0" />
+                  <point x="253.43207443897154" y="1998.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="Main" target="view.UserInterface">
-                  <point x="77.9333333333334" y="-25.5" />
-                  <point x="3525.7015290693535" y="2018.0" />
-                  <point x="4111.1875" y="2018.0" />
-                  <point x="4111.1875" y="1723.0" />
-                  <point x="4146.9375" y="1723.0" />
+                  <point x="77.0769230769231" y="-25.5" />
+                  <point x="3188.3183477202883" y="2008.0" />
+                  <point x="3916.6571126909494" y="2008.0" />
+                  <point x="3916.6571126909494" y="1733.0" />
+                  <point x="3941.719515733309" y="1733.0" />
                   <point x="70.125" y="48.0" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.WageIncreaseEvent">
                   <point x="-66.76923076923077" y="-59.5" />
-                  <point x="1827.3673361789104" y="1623.0" />
-                  <point x="1145.0625" y="1623.0" />
+                  <point x="1939.6388605408013" y="1633.0" />
+                  <point x="1232.4480871618803" y="1633.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="model.event.ValueIncreaseEvent" target="model.property.BusinessUnit">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="1395.229166666667" y="1163.0" />
-                  <point x="1617.7443181818182" y="1163.0" />
-                  <point x="-66.81818181818187" y="81.5" />
+                  <point x="67.33333333333348" y="-48.5" />
+                  <point x="1839.2814204952138" y="1253.0" />
+                  <point x="1971.675359889153" y="1253.0" />
+                  <point x="-22.272727272727252" y="81.5" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.ValueDecreaseEvent">
-                  <point x="0.0" y="-59.5" />
-                  <point x="1894.136566948141" y="1623.0" />
-                  <point x="1906.5625" y="1623.0" />
+                  <point x="16.69230769230768" y="-59.5" />
+                  <point x="2023.1003990023396" y="1643.0" />
+                  <point x="2215.9480871618803" y="1643.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
                   <point x="130.33333333333326" y="-48.5" />
-                  <point x="1275.3958333333333" y="1203.0" />
-                  <point x="1966.1564995446934" y="1203.0" />
-                  <point x="-78.125" y="104.0" />
+                  <point x="1362.7814204952135" y="1203.0" />
+                  <point x="1324.8678269766638" y="1203.0" />
+                  <point x="-71.42857142857133" y="104.0" />
                 </edge>
                 <edge source="model.transaction.Transaction" target="model.property.Company">
-                  <point x="69.20000000000005" y="-92.5" />
-                  <point x="3174.43694573602" y="835.0" />
-                  <point x="3251.1430287219637" y="835.0" />
-                  <point x="3251.1430287219637" y="418.0" />
-                  <point x="2924.7419871794873" y="418.0" />
-                  <point x="169.8461538461538" y="126.0" />
+                  <point x="-138.39999999999998" y="-92.5" />
+                  <point x="2935.785318082302" y="815.0" />
+                  <point x="2800.185318082302" y="815.0" />
+                  <point x="115.0" y="126.0" />
                 </edge>
                 <edge source="controller.reader.TransactionReader" target="controller.PropertyManager">
-                  <point x="-86.66666666666666" y="-59.5" />
-                  <point x="2970.48694573602" y="1573.0" />
-                  <point x="2525.5125000000003" y="1573.0" />
-                  <point x="63.450000000000045" y="115.0" />
+                  <point x="-41.25" y="-59.5" />
+                  <point x="3069.9914246433655" y="1563.0" />
+                  <point x="2655.1980871618803" y="1563.0" />
+                  <point x="105.75" y="115.0" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="model.property.BankAccount">
-                  <point x="-115.9375" y="-48.5" />
-                  <point x="85.78125" y="1723.0" />
-                  <point x="19.03125" y="1723.0" />
-                  <point x="19.03125" y="116.0" />
-                  <point x="2685.1458333333335" y="116.0" />
-                  <point x="-69.75" y="48.0" />
+                  <point x="-82.8125" y="-48.5" />
+                  <point x="170.61957443897154" y="1613.0" />
+                  <point x="244.0" y="1613.0" />
+                  <point x="244.0" y="473.0" />
+                  <point x="2488.2695157333087" y="473.0" />
+                  <point x="-62.0" y="48.0" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.RevenueDecreaseEvent">
-                  <point x="-16.69230769230768" y="-59.5" />
-                  <point x="1877.4442592558335" y="1593.0" />
-                  <point x="1684.5625" y="1593.0" />
+                  <point x="-33.38461538461536" y="-59.5" />
+                  <point x="1973.0234759254167" y="1613.0" />
+                  <point x="1549.9480871618803" y="1613.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="Main" target="controller.EventManager">
-                  <point x="0.0" y="-25.5" />
-                  <point x="3447.76819573602" y="1948.0" />
-                  <point x="3501.8125" y="1948.0" />
-                  <point x="3501.8125" y="1703.0" />
-                  <point x="3485.1458333333335" y="1703.0" />
-                  <point x="-22.166666666666515" y="59.5" />
+                  <point x="51.38461538461536" y="-25.5" />
+                  <point x="3162.6260400279807" y="1988.0" />
+                  <point x="3874.219515733309" y="1988.0" />
+                  <point x="3874.219515733309" y="1713.0" />
+                  <point x="3741.469515733309" y="1713.0" />
+                  <point x="116.375" y="59.5" />
                 </edge>
                 <edge source="controller.SimulationController" target="controller.PropertyManager">
-                  <point x="-150.9375" y="-92.5" />
-                  <point x="3617.75" y="1533.0" />
-                  <point x="2610.1125" y="1533.0" />
-                  <point x="148.05000000000018" y="115.0" />
+                  <point x="-86.25" y="-92.5" />
+                  <point x="3584.219515733309" y="1523.0" />
+                  <point x="2739.7980871618806" y="1523.0" />
+                  <point x="190.35000000000014" y="115.0" />
                 </edge>
                 <edge source="controller.SimulationController" target="view.UserInterface">
-                  <point x="107.8125" y="-92.5" />
-                  <point x="3876.5" y="1713.0" />
-                  <point x="4006.6875" y="1713.0" />
+                  <point x="86.25" y="-92.5" />
+                  <point x="3756.719515733309" y="1733.0" />
+                  <point x="3801.469515733309" y="1733.0" />
                   <point x="-70.125" y="48.0" />
                 </edge>
                 <edge source="model.property.Property" target="model.property.Company">
-                  <point x="-64.0" y="-103.5" />
-                  <point x="2900.726362055297" y="478.0" />
-                  <point x="2783.2035256410254" y="478.0" />
-                  <point x="28.307692307692264" y="126.0" />
+                  <point x="0.0" y="103.5" />
+                  <point x="2686.7695157333087" y="297.0" />
+                  <point x="2760.828175225159" y="297.0" />
+                  <point x="2760.828175225159" y="473.0" />
+                  <point x="2790.328175225159" y="473.0" />
+                  <point x="105.14285714285711" y="-126.0" />
+                </edge>
+                <edge source="model.transaction.BuyTransaction" target="model.property.Property">
+                  <point x="89.33333333333326" y="-37.0" />
+                  <point x="3139.427849066642" y="1253.0" />
+                  <point x="3349.185318082302" y="1253.0" />
+                  <point x="3349.185318082302" y="247.0" />
+                  <point x="2772.102849066642" y="247.0" />
+                  <point x="85.33333333333326" y="103.5" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="model.property.Company">
                   <point x="-49.6875" y="-48.5" />
-                  <point x="152.03125" y="1613.0" />
-                  <point x="263.03125" y="1613.0" />
-                  <point x="263.03125" y="458.0" />
-                  <point x="2613.357371794872" y="458.0" />
-                  <point x="-141.53846153846155" y="126.0" />
-                </edge>
-                <edge source="model.transaction.BuyTransaction" target="model.property.Property">
-                  <point x="0.0" y="-37.0" />
-                  <point x="2827.5625" y="1233.0" />
-                  <point x="2852.1458333333335" y="1233.0" />
-                  <point x="2852.1458333333335" y="815.0" />
-                  <point x="2964.726362055297" y="815.0" />
-                  <point x="0.0" y="103.5" />
+                  <point x="203.74457443897154" y="1623.0" />
+                  <point x="255.0" y="1623.0" />
+                  <point x="255.0" y="805.0" />
+                  <point x="2524.185318082302" y="805.0" />
+                  <point x="-161.0" y="126.0" />
                 </edge>
                 <edge source="model.event.RevenueDecreaseEvent" target="model.property.BusinessUnit">
-                  <point x="-67.33333333333348" y="-48.5" />
-                  <point x="1617.2291666666665" y="1183.0" />
-                  <point x="1662.289772727273" y="1183.0" />
-                  <point x="-22.272727272727252" y="81.5" />
+                  <point x="67.33333333333326" y="-48.5" />
+                  <point x="1617.2814204952135" y="1233.0" />
+                  <point x="1927.1299053436983" y="1233.0" />
+                  <point x="-66.81818181818187" y="81.5" />
                 </edge>
                 <edge source="controller.PropertyManager" target="view.WageObserver">
                   <point x="-60.42857142857133" y="-115.0" />
-                  <point x="2401.633928571429" y="1233.0" />
-                  <point x="2442.901957293392" y="1233.0" />
-                  <point x="2442.901957293392" y="745.0" />
-                  <point x="1161.2529761904764" y="745.0" />
+                  <point x="2489.019515733309" y="1093.0" />
+                  <point x="2340.9273507861876" y="1093.0" />
+                  <point x="2340.9273507861876" y="775.0" />
+                  <point x="1248.6385633523564" y="775.0" />
                   <point x="75.85714285714289" y="25.5" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="controller.reader.Reader">
                   <point x="-100.15384615384613" y="-59.5" />
-                  <point x="1793.982720794295" y="1643.0" />
-                  <point x="439.6875" y="1643.0" />
+                  <point x="1906.2542451561858" y="1653.0" />
+                  <point x="527.0730871618803" y="1653.0" />
                   <point x="24.625" y="36.5" />
                 </edge>
                 <edge source="model.transaction.SellTransaction" target="model.property.Property">
-                  <point x="-67.0" y="-37.0" />
-                  <point x="3074.5625" y="1223.0" />
-                  <point x="2921.73694573602" y="1223.0" />
-                  <point x="2921.73694573602" y="825.0" />
-                  <point x="2993.1708064997415" y="825.0" />
-                  <point x="28.444444444444457" y="103.5" />
+                  <point x="67.0" y="-37.0" />
+                  <point x="3405.094515733309" y="237.0" />
+                  <point x="2789.169515733309" y="237.0" />
+                  <point x="102.39999999999998" y="103.5" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.ValueIncreaseEvent">
-                  <point x="-33.38461538461536" y="-59.5" />
-                  <point x="1860.7519515635258" y="1603.0" />
-                  <point x="1462.5625" y="1603.0" />
+                  <point x="-16.69230769230768" y="-59.5" />
+                  <point x="1989.7157836177244" y="1603.0" />
+                  <point x="1771.9480871618803" y="1603.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.property.BusinessUnit">
-                  <point x="-50.076923076923094" y="-59.5" />
-                  <point x="1844.059643871218" y="1613.0" />
-                  <point x="1351.0625" y="1613.0" />
-                  <point x="1351.0625" y="1153.0" />
-                  <point x="1595.471590909091" y="1153.0" />
-                  <point x="-89.09090909090912" y="81.5" />
+                  <point x="33.38461538461536" y="-59.5" />
+                  <point x="2039.7927066946472" y="1653.0" />
+                  <point x="2327.4480871618803" y="1653.0" />
+                  <point x="2327.4480871618803" y="1123.0" />
+                  <point x="2083.0389962527893" y="1123.0" />
+                  <point x="89.09090909090912" y="81.5" />
                 </edge>
                 <edge source="model.property.Company" target="model.property.Property">
-                  <point x="84.92307692307679" y="126.0" />
-                  <point x="2839.81891025641" y="458.0" />
-                  <point x="2986.0596953886306" y="458.0" />
-                  <point x="21.33333333333337" y="-103.5" />
-                </edge>
-                <edge source="controller.TransactionManager" target="controller.Updateable">
-                  <point x="75.75" y="-59.5" />
-                  <point x="3887.5625" y="1233.0" />
-                  <point x="3817.3125" y="1233.0" />
-                  <point x="3817.3125" y="845.0" />
-                  <point x="3635.143028721964" y="845.0" />
-                  <point x="74.57142857142867" y="48.0" />
+                  <point x="52.571428571428555" y="-126.0" />
+                  <point x="2737.7567466537303" y="473.0" />
+                  <point x="2749.828175225159" y="473.0" />
+                  <point x="2749.828175225159" y="307.0" />
+                  <point x="2669.702849066642" y="307.0" />
+                  <point x="-17.066666666666663" y="103.5" />
                 </edge>
                 <edge source="controller.reader.Reader" target="model.error.FileFormatException">
                   <point x="0.0" y="-36.5" />
-                  <point x="415.0625" y="1133.0" />
-                  <point x="199.53125" y="1133.0" />
+                  <point x="502.44808716188027" y="1203.0" />
+                  <point x="180.5" y="1203.0" />
                   <point x="53.0" y="36.5" />
                 </edge>
                 <edge source="model.property.BusinessUnit" target="model.property.Property">
-                  <point x="81.66666666666663" y="-81.5" />
-                  <point x="1766.2291666666667" y="785.0" />
-                  <point x="2879.3930287219637" y="785.0" />
-                  <point x="-85.33333333333331" y="103.5" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="controller.Updateable">
-                  <point x="57.77777777777783" y="-59.5" />
-                  <point x="3114.9313901804644" y="1683.0" />
-                  <point x="3363.8125" y="1683.0" />
-                  <point x="3363.8125" y="865.0" />
-                  <point x="3535.7144572933926" y="865.0" />
-                  <point x="-24.85714285714289" y="48.0" />
+                  <point x="0.0" y="-81.5" />
+                  <point x="1993.9480871618803" y="307.0" />
+                  <point x="2584.3695157333086" y="307.0" />
+                  <point x="-102.39999999999998" y="103.5" />
                 </edge>
                 <edge source="model.transaction.BuyTransaction" target="model.transaction.Transaction">
-                  <point x="89.33333333333331" y="-37.0" />
-                  <point x="2916.8958333333335" y="1233.0" />
-                  <point x="2989.903612402687" y="1233.0" />
-                  <point x="-115.33333333333331" y="92.5" />
+                  <point x="0.0" y="-37.0" />
+                  <point x="3050.094515733309" y="1253.0" />
+                  <point x="3074.185318082302" y="1253.0" />
+                  <point x="0.0" y="92.5" />
                 </edge>
                 <edge source="model.property.BankAccount" target="model.property.Property">
-                  <point x="69.75" y="48.0" />
-                  <point x="2824.6458333333335" y="116.0" />
-                  <point x="2949.3958333333335" y="116.0" />
-                  <point x="2949.3958333333335" y="438.0" />
-                  <point x="3071.3930287219637" y="438.0" />
-                  <point x="106.66666666666663" y="-103.5" />
+                  <point x="5.6843418860808015E-14" y="-48.0" />
+                  <point x="2550.2695157333087" y="327.0" />
+                  <point x="2618.5028490666423" y="327.0" />
+                  <point x="-68.26666666666665" y="103.5" />
                 </edge>
                 <edge source="controller.reader.TransactionReader" target="model.transaction.BuyTransaction">
-                  <point x="-28.888888888888886" y="-59.5" />
-                  <point x="3028.2647235137974" y="1553.0" />
-                  <point x="2827.5625" y="1553.0" />
+                  <point x="13.75" y="-59.5" />
+                  <point x="3124.9914246433655" y="1543.0" />
+                  <point x="3050.094515733309" y="1543.0" />
                   <point x="0.0" y="37.0" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.Event">
-                  <point x="33.38461538461536" y="-59.5" />
-                  <point x="1927.5211823327563" y="1643.0" />
-                  <point x="2240.0625" y="1643.0" />
-                  <point x="2240.0625" y="1133.0" />
-                  <point x="2122.4064995446934" y="1133.0" />
-                  <point x="78.125" y="104.0" />
+                  <point x="-50.076923076923094" y="-59.5" />
+                  <point x="1956.3311682331089" y="1623.0" />
+                  <point x="1438.4480871618803" y="1623.0" />
+                  <point x="1438.4480871618803" y="1193.0" />
+                  <point x="1360.5821126909493" y="1193.0" />
+                  <point x="-35.71428571428578" y="104.0" />
                 </edge>
                 <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
                   <point x="132.0" y="-48.5" />
-                  <point x="863.5625" y="1193.0" />
-                  <point x="1934.9064995446934" y="1193.0" />
-                  <point x="-109.375" y="104.0" />
+                  <point x="950.9480871618803" y="1203.0" />
+                  <point x="1289.153541262378" y="1203.0" />
+                  <point x="-107.14285714285711" y="104.0" />
                 </edge>
                 <edge source="Main" target="controller.reader.Reader">
-                  <point x="-55.66666666666674" y="-25.5" />
-                  <point x="3392.101529069353" y="1998.0" />
-                  <point x="390.4375" y="1998.0" />
+                  <point x="-51.38461538461547" y="-25.5" />
+                  <point x="3059.8568092587498" y="1988.0" />
+                  <point x="477.82308716188027" y="1988.0" />
                   <point x="-24.625" y="36.5" />
                 </edge>
                 <edge source="model.transaction.Transaction" target="model.property.Property">
-                  <point x="-138.39999999999998" y="-92.5" />
-                  <point x="2966.83694573602" y="835.0" />
-                  <point x="3021.6152509441863" y="835.0" />
-                  <point x="56.888888888888914" y="103.5" />
+                  <point x="0.0" y="-92.5" />
+                  <point x="3074.185318082302" y="267.0" />
+                  <point x="2737.969515733309" y="267.0" />
+                  <point x="51.200000000000045" y="103.5" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="controller.reader.Reader">
                   <point x="49.6875" y="-48.5" />
-                  <point x="251.40625" y="1643.0" />
-                  <point x="341.1875" y="1643.0" />
+                  <point x="303.11957443897154" y="1653.0" />
+                  <point x="428.57308716188027" y="1653.0" />
                   <point x="-73.875" y="36.5" />
                 </edge>
                 <edge source="Main" target="controller.reader.EventReader">
-                  <point x="-44.53333333333336" y="-25.5" />
-                  <point x="3403.2348624026868" y="1988.0" />
-                  <point x="1894.136566948141" y="1988.0" />
+                  <point x="-38.538461538461576" y="-25.5" />
+                  <point x="3072.7029631049036" y="1978.0" />
+                  <point x="2006.408091310032" y="1978.0" />
                   <point x="0.0" y="59.5" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="controller.PropertyManager">
-                  <point x="115.9375" y="-48.5" />
-                  <point x="317.65625" y="1663.0" />
-                  <point x="2314.0125000000003" y="1663.0" />
-                  <point x="-148.04999999999995" y="115.0" />
+                  <point x="82.8125" y="-48.5" />
+                  <point x="336.24457443897154" y="1663.0" />
+                  <point x="2359.0980871618804" y="1663.0" />
+                  <point x="-190.35000000000002" y="115.0" />
                 </edge>
                 <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
-                  <point x="67.33333333333337" y="-48.5" />
-                  <point x="1529.8958333333335" y="1213.0" />
-                  <point x="1997.4064995446934" y="1213.0" />
-                  <point x="-46.875" y="104.0" />
+                  <point x="-67.33333333333348" y="-48.5" />
+                  <point x="1704.6147538285468" y="1173.0" />
+                  <point x="1432.0106841195209" y="1173.0" />
+                  <point x="35.71428571428578" y="104.0" />
                 </edge>
                 <edge source="Main" target="controller.reader.TransactionReader">
-                  <point x="-11.133333333333326" y="-25.5" />
-                  <point x="3436.634862402687" y="1958.0" />
-                  <point x="3057.1536124026866" y="1958.0" />
+                  <point x="-1.4210854715202004E-14" y="-25.5" />
                   <point x="0.0" y="59.5" />
                 </edge>
                 <edge source="model.property.BusinessUnit" target="model.property.Company">
-                  <point x="0.0" y="-81.5" />
-                  <point x="1684.5625" y="468.0" />
-                  <point x="2641.6650641025644" y="468.0" />
-                  <point x="-113.23076923076917" y="126.0" />
+                  <point x="81.66666666666663" y="-81.5" />
+                  <point x="2075.614753828547" y="825.0" />
+                  <point x="2616.185318082302" y="825.0" />
+                  <point x="-69.0" y="126.0" />
                 </edge>
                 <edge source="controller.SimulationController" target="controller.EventManager">
-                  <point x="-64.6875" y="-92.5" />
-                  <point x="3704.0" y="1513.0" />
-                  <point x="3573.8125" y="1513.0" />
-                  <point x="66.5" y="59.5" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="controller.TransactionManager">
-                  <point x="86.66666666666669" y="-59.5" />
-                  <point x="3143.820279069353" y="1713.0" />
-                  <point x="3685.5625" y="1713.0" />
-                  <point x="-126.25" y="59.5" />
+                  <point x="28.75" y="-92.5" />
+                  <point x="3699.219515733309" y="1733.0" />
+                  <point x="3674.969515733309" y="1733.0" />
+                  <point x="49.875" y="59.5" />
                 </edge>
                 <edge source="controller.PropertyManager" target="model.property.Company">
                   <point x="60.42857142857156" y="-115.0" />
-                  <point x="2522.4910714285716" y="1223.0" />
-                  <point x="2623.119136667517" y="1223.0" />
-                  <point x="2623.119136667517" y="488.0" />
-                  <point x="2698.2804487179487" y="488.0" />
-                  <point x="-56.61538461538464" y="126.0" />
+                  <point x="2609.876658590452" y="1243.0" />
+                  <point x="2679.685318082302" y="1243.0" />
+                  <point x="2679.685318082302" y="825.0" />
+                  <point x="2662.185318082302" y="825.0" />
+                  <point x="-23.0" y="126.0" />
                 </edge>
                 <edge source="Main" target="controller.PropertyManager">
-                  <point x="-33.40000000000009" y="-25.5" />
-                  <point x="3414.36819573602" y="1978.0" />
-                  <point x="2456.5625" y="1978.0" />
-                  <point x="2456.5625" y="1683.0" />
-                  <point x="2440.9125000000004" y="1683.0" />
+                  <point x="-25.692307692307736" y="-25.5" />
+                  <point x="3085.5491169510574" y="1968.0" />
+                  <point x="2543.9480871618803" y="1968.0" />
+                  <point x="2543.9480871618803" y="1693.0" />
+                  <point x="2528.29808716188" y="1693.0" />
                   <point x="-21.149999999999977" y="115.0" />
                 </edge>
                 <edge source="model.transaction.Transaction" target="controller.Updateable">
                   <point x="138.39999999999998" y="-92.5" />
-                  <point x="3243.63694573602" y="855.0" />
-                  <point x="3510.85731443625" y="855.0" />
-                  <point x="-49.714285714285666" y="48.0" />
+                  <point x="3212.585318082302" y="835.0" />
+                  <point x="3229.935318082302" y="835.0" />
+                  <point x="-21.75" y="48.0" />
                 </edge>
                 <edge source="model.transaction.BuyTransaction" target="model.property.Company">
-                  <point x="-89.33333333333337" y="-37.0" />
-                  <point x="2738.229166666667" y="1233.0" />
-                  <point x="2721.4036124026866" y="1233.0" />
-                  <point x="2721.4036124026866" y="488.0" />
-                  <point x="2726.588141025641" y="488.0" />
-                  <point x="-28.307692307692264" y="126.0" />
+                  <point x="-89.33333333333326" y="-37.0" />
+                  <point x="2960.761182399976" y="1243.0" />
+                  <point x="2890.685318082302" y="1243.0" />
+                  <point x="2890.685318082302" y="825.0" />
+                  <point x="2754.185318082302" y="825.0" />
+                  <point x="69.0" y="126.0" />
                 </edge>
                 <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
-                  <point x="67.33333333333326" y="-48.5" />
-                  <point x="2195.8958333333335" y="1143.0" />
-                  <point x="2091.1564995446934" y="1143.0" />
-                  <point x="46.875" y="104.0" />
+                  <point x="-67.33333333333326" y="-48.5" />
+                  <point x="1926.614753828547" y="1163.0" />
+                  <point x="1467.7249698338067" y="1163.0" />
+                  <point x="71.42857142857156" y="104.0" />
                 </edge>
                 <edge source="controller.reader.TransactionReader" target="model.transaction.SellTransaction">
-                  <point x="28.888888888888914" y="-59.5" />
-                  <point x="3086.0425012915757" y="1673.0" />
-                  <point x="3141.5625" y="1673.0" />
+                  <point x="41.25" y="-59.5" />
+                  <point x="3152.4914246433655" y="1693.0" />
+                  <point x="3338.094515733309" y="1693.0" />
                   <point x="0.0" y="37.0" />
                 </edge>
-                <edge source="Main" target="controller.TransactionManager">
-                  <point x="55.66666666666674" y="-25.5" />
-                  <point x="3503.434862402687" y="1998.0" />
-                  <point x="4024.09375" y="1998.0" />
-                  <point x="4024.09375" y="1693.0" />
-                  <point x="3938.0625" y="1693.0" />
-                  <point x="126.25" y="59.5" />
-                </edge>
                 <edge source="controller.reader.EventReader" target="controller.PropertyManager">
-                  <point x="66.76923076923077" y="-59.5" />
-                  <point x="1960.9057977173718" y="1683.0" />
-                  <point x="2398.6125" y="1683.0" />
-                  <point x="-63.450000000000045" y="115.0" />
-                </edge>
-                <edge source="controller.EventManager" target="model.event.Event">
-                  <point x="-88.66666666666674" y="-59.5" />
-                  <point x="3418.645833333333" y="1113.0" />
-                  <point x="2153.6564995446934" y="1113.0" />
-                  <point x="109.375" y="104.0" />
+                  <point x="50.076923076923094" y="-59.5" />
+                  <point x="2056.4850143869553" y="1683.0" />
+                  <point x="2443.6980871618803" y="1683.0" />
+                  <point x="-105.75" y="115.0" />
                 </edge>
                 <edge source="model.event.RevenueIncreaseEvent" target="model.property.BusinessUnit">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="2061.229166666667" y="1163.0" />
-                  <point x="1751.380681818182" y="1163.0" />
-                  <point x="66.81818181818187" y="81.5" />
-                </edge>
-                <edge source="model.event.ValueDecreaseEvent" target="model.property.BusinessUnit">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="1839.229166666667" y="1183.0" />
-                  <point x="1706.8352272727275" y="1183.0" />
+                  <point x="67.33333333333326" y="-48.5" />
+                  <point x="2061.2814204952138" y="1253.0" />
+                  <point x="2016.2208144346075" y="1253.0" />
                   <point x="22.272727272727252" y="81.5" />
                 </edge>
+                <edge source="model.event.ValueDecreaseEvent" target="model.property.BusinessUnit">
+                  <point x="67.33333333333326" y="-48.5" />
+                  <point x="2283.2814204952138" y="1133.0" />
+                  <point x="2060.7662689800623" y="1133.0" />
+                  <point x="66.81818181818187" y="81.5" />
+                </edge>
                 <edge source="model.event.WageIncreaseEvent" target="view.WageObserver">
-                  <point x="0.0" y="-48.5" />
-                  <point x="1145.0625" y="1123.0" />
-                  <point x="997.0561207568144" y="1123.0" />
-                  <point x="997.0561207568144" y="765.0" />
-                  <point x="1085.3958333333335" y="765.0" />
-                  <point x="0.0" y="25.5" />
+                  <point x="-130.33333333333348" y="-48.5" />
+                  <point x="1102.1147538285468" y="1193.0" />
+                  <point x="1107.3400799870637" y="1193.0" />
+                  <point x="1107.3400799870637" y="785.0" />
+                  <point x="1147.4957062094993" y="785.0" />
+                  <point x="-25.28571428571422" y="25.5" />
                 </edge>
                 <edge source="view.UserInterface" target="model.property.Property">
                   <point x="0.0" y="-48.0" />
-                  <point x="4076.8125" y="815.0" />
-                  <point x="3078.504139833075" y="815.0" />
-                  <point x="113.77777777777783" y="103.5" />
+                  <point x="3871.594515733309" y="227.0" />
+                  <point x="2806.2361823999754" y="227.0" />
+                  <point x="119.4666666666667" y="103.5" />
                 </edge>
                 <edge source="model.event.WageDecreaseEvent" target="view.WageObserver">
-                  <point x="0.0" y="-48.5" />
-                  <point x="731.5625" y="1123.0" />
-                  <point x="582.7227874234811" y="1123.0" />
-                  <point x="582.7227874234811" y="745.0" />
-                  <point x="1034.824404761905" y="745.0" />
-                  <point x="-50.57142857142844" y="25.5" />
+                  <point x="-132.0" y="-48.5" />
+                  <point x="686.9480871618803" y="1203.0" />
+                  <point x="693.0067466537305" y="1203.0" />
+                  <point x="693.0067466537305" y="765.0" />
+                  <point x="1096.9242776380706" y="765.0" />
+                  <point x="-75.85714285714289" y="25.5" />
                 </edge>
                 <edge source="Main" target="model.error.FileFormatException">
-                  <point x="-77.9333333333334" y="-25.5" />
-                  <point x="3369.8348624026867" y="2018.0" />
-                  <point x="0.0" y="2018.0" />
-                  <point x="0.0" y="1233.0" />
-                  <point x="93.53125" y="1233.0" />
+                  <point x="-77.0769230769231" y="-25.5" />
+                  <point x="3034.164501566442" y="2008.0" />
+                  <point x="0.0" y="2008.0" />
+                  <point x="0.0" y="1253.0" />
+                  <point x="74.5" y="1253.0" />
                   <point x="-53.0" y="36.5" />
                 </edge>
                 <edge source="model.property.BusinessUnit" target="view.WageObserver">
                   <point x="-81.66666666666674" y="-81.5" />
-                  <point x="1602.8958333333335" y="765.0" />
-                  <point x="1110.6815476190477" y="765.0" />
+                  <point x="1912.2814204952135" y="795.0" />
+                  <point x="1198.067134780928" y="795.0" />
                   <point x="25.285714285714334" y="25.5" />
                 </edge>
                 <edge source="controller.PropertyManager" target="model.property.BusinessUnit">
                   <point x="-181.28571428571422" y="-115.0" />
-                  <point x="2280.776785714286" y="1123.0" />
-                  <point x="1795.9261363636365" y="1123.0" />
+                  <point x="2368.162372876166" y="1113.0" />
+                  <point x="2105.3117235255168" y="1113.0" />
                   <point x="111.36363636363637" y="81.5" />
                 </edge>
                 <edge source="model.event.Event" target="controller.Updateable">
                   <point x="0.0" y="-104.0" />
-                  <point x="2044.2814995446934" y="845.0" />
-                  <point x="3486.000171579107" y="845.0" />
-                  <point x="-74.57142857142856" y="48.0" />
+                  <point x="1396.296398405235" y="835.0" />
+                  <point x="3186.435318082302" y="835.0" />
+                  <point x="-65.25" y="48.0" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="model.event.RevenueIncreaseEvent">
-                  <point x="16.69230769230768" y="-59.5" />
-                  <point x="1910.8288746404487" y="1633.0" />
-                  <point x="2128.5625" y="1633.0" />
+                  <point x="0.0" y="-59.5" />
+                  <point x="2006.408091310032" y="1593.0" />
+                  <point x="1993.9480871618803" y="1593.0" />
                   <point x="0.0" y="48.5" />
                 </edge>
                 <edge source="controller.reader.EventReader" target="controller.EventManager">
                   <point x="100.15384615384619" y="-59.5" />
-                  <point x="1994.2904131019873" y="1703.0" />
-                  <point x="3440.8125" y="1703.0" />
-                  <point x="-66.5" y="59.5" />
+                  <point x="2106.561937463878" y="1713.0" />
+                  <point x="3541.969515733309" y="1713.0" />
+                  <point x="-83.125" y="59.5" />
                 </edge>
                 <edge source="controller.reader.PropertyReader" target="model.property.BusinessUnit">
                   <point x="16.5625" y="-48.5" />
-                  <point x="218.28125" y="1633.0" />
-                  <point x="285.03125" y="1633.0" />
-                  <point x="285.03125" y="1143.0" />
-                  <point x="1573.1988636363637" y="1143.0" />
+                  <point x="269.99457443897154" y="1643.0" />
+                  <point x="372.41683716188027" y="1643.0" />
+                  <point x="372.41683716188027" y="1213.0" />
+                  <point x="1882.5844507982438" y="1213.0" />
                   <point x="-111.36363636363637" y="81.5" />
                 </edge>
                 <edge source="controller.PropertyManager" target="model.property.Property">
-                  <point x="120.85714285714289" y="-115.0" />
-                  <point x="2582.919642857143" y="1233.0" />
-                  <point x="2634.119136667517" y="1233.0" />
-                  <point x="2634.119136667517" y="795.0" />
-                  <point x="2907.837473166408" y="795.0" />
-                  <point x="-56.888888888888914" y="103.5" />
+                  <point x="0.0" y="-115.0" />
+                  <point x="2549.4480871618803" y="1083.0" />
+                  <point x="2445.578175225159" y="1083.0" />
+                  <point x="2445.578175225159" y="317.0" />
+                  <point x="2601.4361823999757" y="317.0" />
+                  <point x="-85.33333333333331" y="103.5" />
                 </edge>
                 <edge source="model.property.Company" target="model.property.BankAccount">
-                  <point x="92.0" y="-126.0" />
-                  <point x="2846.8958333333335" y="126.0" />
-                  <point x="2778.1458333333335" y="126.0" />
-                  <point x="23.25" y="48.0" />
+                  <point x="-157.71428571428572" y="-126.0" />
+                  <point x="2527.471032368016" y="473.0" />
+                  <point x="2550.2695157333087" y="473.0" />
+                  <point x="0.0" y="48.0" />
                 </edge>
                 <edge source="controller.reader.TransactionReader" target="controller.reader.Reader">
-                  <point x="-115.55555555555554" y="-59.5" />
-                  <point x="2941.598056847131" y="1583.0" />
-                  <point x="488.9375" y="1583.0" />
+                  <point x="-96.25" y="-59.5" />
+                  <point x="3014.9914246433655" y="1583.0" />
+                  <point x="576.3230871618803" y="1583.0" />
                   <point x="73.875" y="36.5" />
                 </edge>
               </edges>
-              <settings layout="Hierarchic Group" zoom="0.1844476055002371" x="461.73264781491" y="1291.1825192802055" />
+              <settings layout="Hierarchic Group" zoom="0.230109575988566" x="681.4461697722568" y="1032.9813664596272" />
               <SelectedNodes>
-                <node>model.property.Company</node>
-                <node>model.event.WageIncreaseEvent</node>
-                <node>controller.EventManager</node>
-                <node>model.event.Event</node>
-                <node>model.event.ValueIncreaseEvent</node>
-                <node>model.error.FileFormatException</node>
-                <node>controller.Updateable</node>
-                <node>controller.reader.EventReader</node>
-                <node>model.event.RevenueDecreaseEvent</node>
-                <node>model.transaction.BuyTransaction</node>
-                <node>model.event.ValueDecreaseEvent</node>
-                <node>controller.reader.Reader</node>
-                <node>controller.PropertyManager</node>
-                <node>model.transaction.Transaction</node>
-                <node>view.WageObserver</node>
-                <node>model.property.BusinessUnit</node>
-                <node>controller.reader.PropertyReader</node>
                 <node>view.UserInterface</node>
                 <node>controller.SimulationController</node>
-                <node>model.transaction.SellTransaction</node>
-                <node>model.event.RevenueIncreaseEvent</node>
-                <node>controller.reader.TransactionReader</node>
-                <node>model.property.Property</node>
-                <node>model.event.WageDecreaseEvent</node>
+                <node>controller.EventManager</node>
+                <node>controller.Updateable</node>
+                <node>view.WageObserver</node>
                 <node>Main</node>
-                <node>model.property.BankAccount</node>
-                <node>controller.TransactionManager</node>
               </SelectedNodes>
               <Categories>
                 <Category>Fields</Category>
@@ -671,19 +637,6 @@
               </Categories>
               <SCOPE>All</SCOPE>
               <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding>
-                <element signature="e#0#1243#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -701,33 +654,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/TransactionManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Updateable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/Updateable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimulationController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SimulationController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/SimulationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="152">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
               <folding>
                 <element signature="e#0#1970#0" expanded="true" />
               </folding>
@@ -1110,17 +1051,17 @@
         <option value="$PROJECT_DIR$/src/main/java/model/transaction/SellTransaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/RevenueDecreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/Event.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/Updateable.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TransactionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/EventManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SimulationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" />
       </list>
     </option>
   </component>
@@ -1280,32 +1221,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1337,70 +1252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="property" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="event" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="error" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1936,16 +1787,16 @@
       <workItem from="1477133776879" duration="7157000" />
       <workItem from="1477145274419" duration="260000" />
       <workItem from="1477230100027" duration="1805000" />
-      <workItem from="1477270610681" duration="14585000" />
+      <workItem from="1477270610681" duration="16000000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81728000" />
+    <option name="totallyTimeSpent" value="83143000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1956,7 +1807,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33084577" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33084577" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40547264" sideWeight="0.84583336" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1971,7 +1823,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.84583336" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2395,18 +2246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="104" column="54" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#2840#0" expanded="true" />
-            <element signature="e#1501#1502#0" expanded="true" />
-            <element signature="e#1531#1532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/event/ValueDecreaseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -2513,17 +2352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#2586#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/event/WageDecreaseEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -2574,643 +2402,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state relative-caret-position="-69">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
-            <element signature="e#0#2270#0" expanded="true" />
+            <element signature="e#0#1243#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/Main">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Main</OriginalElement>
-          <nodes>
-            <node x="2570.8958333333335" y="146.0">model.property.Company</node>
-            <node x="949.5625" y="1319.5">model.event.WageIncreaseEvent</node>
-            <node x="3374.3125" y="1308.5">controller.EventManager</node>
-            <node x="1919.2814995446934" y="885.0">model.event.Event</node>
-            <node x="1361.5625" y="1319.5">model.event.ValueIncreaseEvent</node>
-            <node x="40.53125" y="952.5">model.error.FileFormatException</node>
-            <node x="3473.5716001505352" y="563.5">controller.Updateable</node>
-            <node x="1785.636566948141" y="1776.0">controller.reader.EventReader</node>
-            <node x="1583.5625" y="1319.5">model.event.RevenueDecreaseEvent</node>
-            <node x="2693.5625" y="1331.0">model.transaction.BuyTransaction</node>
-            <node x="1805.5625" y="1319.5">model.event.ValueDecreaseEvent</node>
-            <node x="316.5625" y="1331.5">controller.reader.Reader</node>
-            <node x="2250.5625" y="1253.0">controller.PropertyManager</node>
-            <node x="2932.23694573602" y="896.5">model.transaction.Transaction</node>
-            <node x="996.8958333333335" y="586.0">view.WageObserver</node>
-            <node x="1562.0625" y="907.5">model.property.BusinessUnit</node>
-            <node x="69.21875" y="1787.0">controller.reader.PropertyReader</node>
-            <node x="3983.3125" y="1320.0">view.UserInterface</node>
-            <node x="3596.1875" y="1743.0">controller.SimulationController</node>
-            <node x="3007.5625" y="1331.0">model.transaction.SellTransaction</node>
-            <node x="2027.5625" y="1319.5">model.event.RevenueIncreaseEvent</node>
-            <node x="2927.1536124026866" y="1776.0">controller.reader.TransactionReader</node>
-            <node x="2836.726362055297" y="508.0">model.property.Property</node>
-            <node x="533.5625" y="1319.5">model.event.WageDecreaseEvent</node>
-            <node x="3364.26819573602" y="2038.0">Main</node>
-            <node x="2661.8958333333335" y="0.0">model.property.BankAccount</node>
-            <node x="3660.3125" y="1308.5">controller.TransactionManager</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
-              <point x="67.33333333333337" y="-48.5" />
-              <point x="1973.8958333333335" y="1233.0" />
-              <point x="2059.9064995446934" y="1233.0" />
-              <point x="15.625" y="104.0" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="model.property.Property">
-              <point x="-16.5625" y="-48.5" />
-              <point x="185.15625" y="1623.0" />
-              <point x="274.03125" y="1623.0" />
-              <point x="274.03125" y="775.0" />
-              <point x="2850.9485842775193" y="775.0" />
-              <point x="-113.77777777777783" y="103.5" />
-            </edge>
-            <edge source="model.transaction.SellTransaction" target="model.transaction.Transaction">
-              <point x="67.0" y="-37.0" />
-              <point x="3208.5625" y="1233.0" />
-              <point x="3220.570279069353" y="1233.0" />
-              <point x="115.33333333333331" y="92.5" />
-            </edge>
-            <edge source="controller.EventManager" target="controller.Updateable">
-              <point x="88.66666666666652" y="-59.5" />
-              <point x="3595.9791666666665" y="1233.0" />
-              <point x="3630.8930287219637" y="1233.0" />
-              <point x="3630.8930287219637" y="865.0" />
-              <point x="3585.4287430076783" y="865.0" />
-              <point x="24.85714285714289" y="48.0" />
-            </edge>
-            <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
-              <point x="67.33333333333348" y="-48.5" />
-              <point x="1751.8958333333335" y="1223.0" />
-              <point x="2028.6564995446934" y="1223.0" />
-              <point x="-15.625" y="104.0" />
-            </edge>
-            <edge source="controller.SimulationController" target="controller.TransactionManager">
-              <point x="21.5625" y="-92.5" />
-              <point x="3790.25" y="1723.0" />
-              <point x="3786.5625" y="1723.0" />
-              <point x="-25.25" y="59.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.WageDecreaseEvent">
-              <point x="-83.46153846153845" y="-59.5" />
-              <point x="1810.6750284866025" y="1633.0" />
-              <point x="731.5625" y="1633.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="Main" target="controller.SimulationController">
-              <point x="33.39999999999998" y="-25.5" />
-              <point x="3481.16819573602" y="1978.0" />
-              <point x="3854.9375" y="1978.0" />
-              <point x="86.25" y="92.5" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="model.transaction.Transaction">
-              <point x="0.0" y="-59.5" />
-              <point x="3057.1536124026866" y="1543.0" />
-              <point x="2997.0625" y="1543.0" />
-              <point x="2997.0625" y="1233.0" />
-              <point x="3105.23694573602" y="1233.0" />
-              <point x="0.0" y="92.5" />
-            </edge>
-            <edge source="Main" target="controller.reader.PropertyReader">
-              <point x="-66.80000000000001" y="-25.5" />
-              <point x="3380.96819573602" y="2008.0" />
-              <point x="201.71875" y="2008.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="Main" target="view.UserInterface">
-              <point x="77.9333333333334" y="-25.5" />
-              <point x="3525.7015290693535" y="2018.0" />
-              <point x="4111.1875" y="2018.0" />
-              <point x="4111.1875" y="1723.0" />
-              <point x="4146.9375" y="1723.0" />
-              <point x="70.125" y="48.0" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.WageIncreaseEvent">
-              <point x="-66.76923076923077" y="-59.5" />
-              <point x="1827.3673361789104" y="1623.0" />
-              <point x="1145.0625" y="1623.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="model.event.ValueIncreaseEvent" target="model.property.BusinessUnit">
-              <point x="-67.33333333333326" y="-48.5" />
-              <point x="1395.229166666667" y="1163.0" />
-              <point x="1617.7443181818182" y="1163.0" />
-              <point x="-66.81818181818187" y="81.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.ValueDecreaseEvent">
-              <point x="0.0" y="-59.5" />
-              <point x="1894.136566948141" y="1623.0" />
-              <point x="1906.5625" y="1623.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
-              <point x="130.33333333333326" y="-48.5" />
-              <point x="1275.3958333333333" y="1203.0" />
-              <point x="1966.1564995446934" y="1203.0" />
-              <point x="-78.125" y="104.0" />
-            </edge>
-            <edge source="model.transaction.Transaction" target="model.property.Company">
-              <point x="69.20000000000005" y="-92.5" />
-              <point x="3174.43694573602" y="835.0" />
-              <point x="3251.1430287219637" y="835.0" />
-              <point x="3251.1430287219637" y="418.0" />
-              <point x="2924.7419871794873" y="418.0" />
-              <point x="169.8461538461538" y="126.0" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="controller.PropertyManager">
-              <point x="-86.66666666666666" y="-59.5" />
-              <point x="2970.48694573602" y="1573.0" />
-              <point x="2525.5125000000003" y="1573.0" />
-              <point x="63.450000000000045" y="115.0" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="model.property.BankAccount">
-              <point x="-115.9375" y="-48.5" />
-              <point x="85.78125" y="1723.0" />
-              <point x="19.03125" y="1723.0" />
-              <point x="19.03125" y="116.0" />
-              <point x="2685.1458333333335" y="116.0" />
-              <point x="-69.75" y="48.0" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.RevenueDecreaseEvent">
-              <point x="-16.69230769230768" y="-59.5" />
-              <point x="1877.4442592558335" y="1593.0" />
-              <point x="1684.5625" y="1593.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="Main" target="controller.EventManager">
-              <point x="0.0" y="-25.5" />
-              <point x="3447.76819573602" y="1948.0" />
-              <point x="3501.8125" y="1948.0" />
-              <point x="3501.8125" y="1703.0" />
-              <point x="3485.1458333333335" y="1703.0" />
-              <point x="-22.166666666666515" y="59.5" />
-            </edge>
-            <edge source="controller.SimulationController" target="controller.PropertyManager">
-              <point x="-150.9375" y="-92.5" />
-              <point x="3617.75" y="1533.0" />
-              <point x="2610.1125" y="1533.0" />
-              <point x="148.05000000000018" y="115.0" />
-            </edge>
-            <edge source="controller.SimulationController" target="view.UserInterface">
-              <point x="107.8125" y="-92.5" />
-              <point x="3876.5" y="1713.0" />
-              <point x="4006.6875" y="1713.0" />
-              <point x="-70.125" y="48.0" />
-            </edge>
-            <edge source="model.property.Property" target="model.property.Company">
-              <point x="-64.0" y="-103.5" />
-              <point x="2900.726362055297" y="478.0" />
-              <point x="2783.2035256410254" y="478.0" />
-              <point x="28.307692307692264" y="126.0" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="model.property.Company">
-              <point x="-49.6875" y="-48.5" />
-              <point x="152.03125" y="1613.0" />
-              <point x="263.03125" y="1613.0" />
-              <point x="263.03125" y="458.0" />
-              <point x="2613.357371794872" y="458.0" />
-              <point x="-141.53846153846155" y="126.0" />
-            </edge>
-            <edge source="model.transaction.BuyTransaction" target="model.property.Property">
-              <point x="0.0" y="-37.0" />
-              <point x="2827.5625" y="1233.0" />
-              <point x="2852.1458333333335" y="1233.0" />
-              <point x="2852.1458333333335" y="815.0" />
-              <point x="2964.726362055297" y="815.0" />
-              <point x="0.0" y="103.5" />
-            </edge>
-            <edge source="model.event.RevenueDecreaseEvent" target="model.property.BusinessUnit">
-              <point x="-67.33333333333348" y="-48.5" />
-              <point x="1617.2291666666665" y="1183.0" />
-              <point x="1662.289772727273" y="1183.0" />
-              <point x="-22.272727272727252" y="81.5" />
-            </edge>
-            <edge source="controller.PropertyManager" target="view.WageObserver">
-              <point x="-60.42857142857133" y="-115.0" />
-              <point x="2401.633928571429" y="1233.0" />
-              <point x="2442.901957293392" y="1233.0" />
-              <point x="2442.901957293392" y="745.0" />
-              <point x="1161.2529761904764" y="745.0" />
-              <point x="75.85714285714289" y="25.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="controller.reader.Reader">
-              <point x="-100.15384615384613" y="-59.5" />
-              <point x="1793.982720794295" y="1643.0" />
-              <point x="439.6875" y="1643.0" />
-              <point x="24.625" y="36.5" />
-            </edge>
-            <edge source="model.transaction.SellTransaction" target="model.property.Property">
-              <point x="-67.0" y="-37.0" />
-              <point x="3074.5625" y="1223.0" />
-              <point x="2921.73694573602" y="1223.0" />
-              <point x="2921.73694573602" y="825.0" />
-              <point x="2993.1708064997415" y="825.0" />
-              <point x="28.444444444444457" y="103.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.ValueIncreaseEvent">
-              <point x="-33.38461538461536" y="-59.5" />
-              <point x="1860.7519515635258" y="1603.0" />
-              <point x="1462.5625" y="1603.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.property.BusinessUnit">
-              <point x="-50.076923076923094" y="-59.5" />
-              <point x="1844.059643871218" y="1613.0" />
-              <point x="1351.0625" y="1613.0" />
-              <point x="1351.0625" y="1153.0" />
-              <point x="1595.471590909091" y="1153.0" />
-              <point x="-89.09090909090912" y="81.5" />
-            </edge>
-            <edge source="model.property.Company" target="model.property.Property">
-              <point x="84.92307692307679" y="126.0" />
-              <point x="2839.81891025641" y="458.0" />
-              <point x="2986.0596953886306" y="458.0" />
-              <point x="21.33333333333337" y="-103.5" />
-            </edge>
-            <edge source="controller.TransactionManager" target="controller.Updateable">
-              <point x="75.75" y="-59.5" />
-              <point x="3887.5625" y="1233.0" />
-              <point x="3817.3125" y="1233.0" />
-              <point x="3817.3125" y="845.0" />
-              <point x="3635.143028721964" y="845.0" />
-              <point x="74.57142857142867" y="48.0" />
-            </edge>
-            <edge source="controller.reader.Reader" target="model.error.FileFormatException">
-              <point x="0.0" y="-36.5" />
-              <point x="415.0625" y="1133.0" />
-              <point x="199.53125" y="1133.0" />
-              <point x="53.0" y="36.5" />
-            </edge>
-            <edge source="model.property.BusinessUnit" target="model.property.Property">
-              <point x="81.66666666666663" y="-81.5" />
-              <point x="1766.2291666666667" y="785.0" />
-              <point x="2879.3930287219637" y="785.0" />
-              <point x="-85.33333333333331" y="103.5" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="controller.Updateable">
-              <point x="57.77777777777783" y="-59.5" />
-              <point x="3114.9313901804644" y="1683.0" />
-              <point x="3363.8125" y="1683.0" />
-              <point x="3363.8125" y="865.0" />
-              <point x="3535.7144572933926" y="865.0" />
-              <point x="-24.85714285714289" y="48.0" />
-            </edge>
-            <edge source="model.transaction.BuyTransaction" target="model.transaction.Transaction">
-              <point x="89.33333333333331" y="-37.0" />
-              <point x="2916.8958333333335" y="1233.0" />
-              <point x="2989.903612402687" y="1233.0" />
-              <point x="-115.33333333333331" y="92.5" />
-            </edge>
-            <edge source="model.property.BankAccount" target="model.property.Property">
-              <point x="69.75" y="48.0" />
-              <point x="2824.6458333333335" y="116.0" />
-              <point x="2949.3958333333335" y="116.0" />
-              <point x="2949.3958333333335" y="438.0" />
-              <point x="3071.3930287219637" y="438.0" />
-              <point x="106.66666666666663" y="-103.5" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="model.transaction.BuyTransaction">
-              <point x="-28.888888888888886" y="-59.5" />
-              <point x="3028.2647235137974" y="1553.0" />
-              <point x="2827.5625" y="1553.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.Event">
-              <point x="33.38461538461536" y="-59.5" />
-              <point x="1927.5211823327563" y="1643.0" />
-              <point x="2240.0625" y="1643.0" />
-              <point x="2240.0625" y="1133.0" />
-              <point x="2122.4064995446934" y="1133.0" />
-              <point x="78.125" y="104.0" />
-            </edge>
-            <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
-              <point x="132.0" y="-48.5" />
-              <point x="863.5625" y="1193.0" />
-              <point x="1934.9064995446934" y="1193.0" />
-              <point x="-109.375" y="104.0" />
-            </edge>
-            <edge source="Main" target="controller.reader.Reader">
-              <point x="-55.66666666666674" y="-25.5" />
-              <point x="3392.101529069353" y="1998.0" />
-              <point x="390.4375" y="1998.0" />
-              <point x="-24.625" y="36.5" />
-            </edge>
-            <edge source="model.transaction.Transaction" target="model.property.Property">
-              <point x="-138.39999999999998" y="-92.5" />
-              <point x="2966.83694573602" y="835.0" />
-              <point x="3021.6152509441863" y="835.0" />
-              <point x="56.888888888888914" y="103.5" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="controller.reader.Reader">
-              <point x="49.6875" y="-48.5" />
-              <point x="251.40625" y="1643.0" />
-              <point x="341.1875" y="1643.0" />
-              <point x="-73.875" y="36.5" />
-            </edge>
-            <edge source="Main" target="controller.reader.EventReader">
-              <point x="-44.53333333333336" y="-25.5" />
-              <point x="3403.2348624026868" y="1988.0" />
-              <point x="1894.136566948141" y="1988.0" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="controller.PropertyManager">
-              <point x="115.9375" y="-48.5" />
-              <point x="317.65625" y="1663.0" />
-              <point x="2314.0125000000003" y="1663.0" />
-              <point x="-148.04999999999995" y="115.0" />
-            </edge>
-            <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
-              <point x="67.33333333333337" y="-48.5" />
-              <point x="1529.8958333333335" y="1213.0" />
-              <point x="1997.4064995446934" y="1213.0" />
-              <point x="-46.875" y="104.0" />
-            </edge>
-            <edge source="Main" target="controller.reader.TransactionReader">
-              <point x="-11.133333333333326" y="-25.5" />
-              <point x="3436.634862402687" y="1958.0" />
-              <point x="3057.1536124026866" y="1958.0" />
-              <point x="0.0" y="59.5" />
-            </edge>
-            <edge source="model.property.BusinessUnit" target="model.property.Company">
-              <point x="0.0" y="-81.5" />
-              <point x="1684.5625" y="468.0" />
-              <point x="2641.6650641025644" y="468.0" />
-              <point x="-113.23076923076917" y="126.0" />
-            </edge>
-            <edge source="controller.SimulationController" target="controller.EventManager">
-              <point x="-64.6875" y="-92.5" />
-              <point x="3704.0" y="1513.0" />
-              <point x="3573.8125" y="1513.0" />
-              <point x="66.5" y="59.5" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="controller.TransactionManager">
-              <point x="86.66666666666669" y="-59.5" />
-              <point x="3143.820279069353" y="1713.0" />
-              <point x="3685.5625" y="1713.0" />
-              <point x="-126.25" y="59.5" />
-            </edge>
-            <edge source="controller.PropertyManager" target="model.property.Company">
-              <point x="60.42857142857156" y="-115.0" />
-              <point x="2522.4910714285716" y="1223.0" />
-              <point x="2623.119136667517" y="1223.0" />
-              <point x="2623.119136667517" y="488.0" />
-              <point x="2698.2804487179487" y="488.0" />
-              <point x="-56.61538461538464" y="126.0" />
-            </edge>
-            <edge source="Main" target="controller.PropertyManager">
-              <point x="-33.40000000000009" y="-25.5" />
-              <point x="3414.36819573602" y="1978.0" />
-              <point x="2456.5625" y="1978.0" />
-              <point x="2456.5625" y="1683.0" />
-              <point x="2440.9125000000004" y="1683.0" />
-              <point x="-21.149999999999977" y="115.0" />
-            </edge>
-            <edge source="model.transaction.Transaction" target="controller.Updateable">
-              <point x="138.39999999999998" y="-92.5" />
-              <point x="3243.63694573602" y="855.0" />
-              <point x="3510.85731443625" y="855.0" />
-              <point x="-49.714285714285666" y="48.0" />
-            </edge>
-            <edge source="model.transaction.BuyTransaction" target="model.property.Company">
-              <point x="-89.33333333333337" y="-37.0" />
-              <point x="2738.229166666667" y="1233.0" />
-              <point x="2721.4036124026866" y="1233.0" />
-              <point x="2721.4036124026866" y="488.0" />
-              <point x="2726.588141025641" y="488.0" />
-              <point x="-28.307692307692264" y="126.0" />
-            </edge>
-            <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
-              <point x="67.33333333333326" y="-48.5" />
-              <point x="2195.8958333333335" y="1143.0" />
-              <point x="2091.1564995446934" y="1143.0" />
-              <point x="46.875" y="104.0" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="model.transaction.SellTransaction">
-              <point x="28.888888888888914" y="-59.5" />
-              <point x="3086.0425012915757" y="1673.0" />
-              <point x="3141.5625" y="1673.0" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="Main" target="controller.TransactionManager">
-              <point x="55.66666666666674" y="-25.5" />
-              <point x="3503.434862402687" y="1998.0" />
-              <point x="4024.09375" y="1998.0" />
-              <point x="4024.09375" y="1693.0" />
-              <point x="3938.0625" y="1693.0" />
-              <point x="126.25" y="59.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="controller.PropertyManager">
-              <point x="66.76923076923077" y="-59.5" />
-              <point x="1960.9057977173718" y="1683.0" />
-              <point x="2398.6125" y="1683.0" />
-              <point x="-63.450000000000045" y="115.0" />
-            </edge>
-            <edge source="controller.EventManager" target="model.event.Event">
-              <point x="-88.66666666666674" y="-59.5" />
-              <point x="3418.645833333333" y="1113.0" />
-              <point x="2153.6564995446934" y="1113.0" />
-              <point x="109.375" y="104.0" />
-            </edge>
-            <edge source="model.event.RevenueIncreaseEvent" target="model.property.BusinessUnit">
-              <point x="-67.33333333333326" y="-48.5" />
-              <point x="2061.229166666667" y="1163.0" />
-              <point x="1751.380681818182" y="1163.0" />
-              <point x="66.81818181818187" y="81.5" />
-            </edge>
-            <edge source="model.event.ValueDecreaseEvent" target="model.property.BusinessUnit">
-              <point x="-67.33333333333326" y="-48.5" />
-              <point x="1839.229166666667" y="1183.0" />
-              <point x="1706.8352272727275" y="1183.0" />
-              <point x="22.272727272727252" y="81.5" />
-            </edge>
-            <edge source="model.event.WageIncreaseEvent" target="view.WageObserver">
-              <point x="0.0" y="-48.5" />
-              <point x="1145.0625" y="1123.0" />
-              <point x="997.0561207568144" y="1123.0" />
-              <point x="997.0561207568144" y="765.0" />
-              <point x="1085.3958333333335" y="765.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-            <edge source="view.UserInterface" target="model.property.Property">
-              <point x="0.0" y="-48.0" />
-              <point x="4076.8125" y="815.0" />
-              <point x="3078.504139833075" y="815.0" />
-              <point x="113.77777777777783" y="103.5" />
-            </edge>
-            <edge source="model.event.WageDecreaseEvent" target="view.WageObserver">
-              <point x="0.0" y="-48.5" />
-              <point x="731.5625" y="1123.0" />
-              <point x="582.7227874234811" y="1123.0" />
-              <point x="582.7227874234811" y="745.0" />
-              <point x="1034.824404761905" y="745.0" />
-              <point x="-50.57142857142844" y="25.5" />
-            </edge>
-            <edge source="Main" target="model.error.FileFormatException">
-              <point x="-77.9333333333334" y="-25.5" />
-              <point x="3369.8348624026867" y="2018.0" />
-              <point x="0.0" y="2018.0" />
-              <point x="0.0" y="1233.0" />
-              <point x="93.53125" y="1233.0" />
-              <point x="-53.0" y="36.5" />
-            </edge>
-            <edge source="model.property.BusinessUnit" target="view.WageObserver">
-              <point x="-81.66666666666674" y="-81.5" />
-              <point x="1602.8958333333335" y="765.0" />
-              <point x="1110.6815476190477" y="765.0" />
-              <point x="25.285714285714334" y="25.5" />
-            </edge>
-            <edge source="controller.PropertyManager" target="model.property.BusinessUnit">
-              <point x="-181.28571428571422" y="-115.0" />
-              <point x="2280.776785714286" y="1123.0" />
-              <point x="1795.9261363636365" y="1123.0" />
-              <point x="111.36363636363637" y="81.5" />
-            </edge>
-            <edge source="model.event.Event" target="controller.Updateable">
-              <point x="0.0" y="-104.0" />
-              <point x="2044.2814995446934" y="845.0" />
-              <point x="3486.000171579107" y="845.0" />
-              <point x="-74.57142857142856" y="48.0" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="model.event.RevenueIncreaseEvent">
-              <point x="16.69230769230768" y="-59.5" />
-              <point x="1910.8288746404487" y="1633.0" />
-              <point x="2128.5625" y="1633.0" />
-              <point x="0.0" y="48.5" />
-            </edge>
-            <edge source="controller.reader.EventReader" target="controller.EventManager">
-              <point x="100.15384615384619" y="-59.5" />
-              <point x="1994.2904131019873" y="1703.0" />
-              <point x="3440.8125" y="1703.0" />
-              <point x="-66.5" y="59.5" />
-            </edge>
-            <edge source="controller.reader.PropertyReader" target="model.property.BusinessUnit">
-              <point x="16.5625" y="-48.5" />
-              <point x="218.28125" y="1633.0" />
-              <point x="285.03125" y="1633.0" />
-              <point x="285.03125" y="1143.0" />
-              <point x="1573.1988636363637" y="1143.0" />
-              <point x="-111.36363636363637" y="81.5" />
-            </edge>
-            <edge source="controller.PropertyManager" target="model.property.Property">
-              <point x="120.85714285714289" y="-115.0" />
-              <point x="2582.919642857143" y="1233.0" />
-              <point x="2634.119136667517" y="1233.0" />
-              <point x="2634.119136667517" y="795.0" />
-              <point x="2907.837473166408" y="795.0" />
-              <point x="-56.888888888888914" y="103.5" />
-            </edge>
-            <edge source="model.property.Company" target="model.property.BankAccount">
-              <point x="92.0" y="-126.0" />
-              <point x="2846.8958333333335" y="126.0" />
-              <point x="2778.1458333333335" y="126.0" />
-              <point x="23.25" y="48.0" />
-            </edge>
-            <edge source="controller.reader.TransactionReader" target="controller.reader.Reader">
-              <point x="-115.55555555555554" y="-59.5" />
-              <point x="2941.598056847131" y="1583.0" />
-              <point x="488.9375" y="1583.0" />
-              <point x="73.875" y="36.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.1844476055002371" x="461.73264781491" y="1291.1825192802055" />
-          <SelectedNodes>
-            <node>model.property.Company</node>
-            <node>model.event.WageIncreaseEvent</node>
-            <node>controller.EventManager</node>
-            <node>model.event.Event</node>
-            <node>model.event.ValueIncreaseEvent</node>
-            <node>model.error.FileFormatException</node>
-            <node>controller.Updateable</node>
-            <node>controller.reader.EventReader</node>
-            <node>model.event.RevenueDecreaseEvent</node>
-            <node>model.transaction.BuyTransaction</node>
-            <node>model.event.ValueDecreaseEvent</node>
-            <node>controller.reader.Reader</node>
-            <node>controller.PropertyManager</node>
-            <node>model.transaction.Transaction</node>
-            <node>view.WageObserver</node>
-            <node>model.property.BusinessUnit</node>
-            <node>controller.reader.PropertyReader</node>
-            <node>view.UserInterface</node>
-            <node>controller.SimulationController</node>
-            <node>model.transaction.SellTransaction</node>
-            <node>model.event.RevenueIncreaseEvent</node>
-            <node>controller.reader.TransactionReader</node>
-            <node>model.property.Property</node>
-            <node>model.event.WageDecreaseEvent</node>
-            <node>Main</node>
-            <node>model.property.BankAccount</node>
-            <node>controller.TransactionManager</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Updateable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/TransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Updateable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="21" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#1941#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#1603#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#2588#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3225,23 +2440,594 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="422">
+          <caret line="93" column="61" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
           <folding>
-            <element signature="e#0#1243#0" expanded="true" />
+            <element signature="e#0#2605#0" expanded="true" />
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/EventManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1603#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PropertyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#2840#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="152">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
           <folding>
             <element signature="e#0#1970#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#2588#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Main">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Main</OriginalElement>
+          <nodes>
+            <node x="2501.185318082302" y="493.0">model.property.Company</node>
+            <node x="1036.9480871618803" y="1339.5">model.event.WageIncreaseEvent</node>
+            <node x="3492.094515733309" y="1328.5">controller.EventManager</node>
+            <node x="1271.296398405235" y="855.0">model.event.Event</node>
+            <node x="1670.9480871618803" y="1339.5">model.event.ValueIncreaseEvent</node>
+            <node x="21.5" y="922.5">model.error.FileFormatException</node>
+            <node x="3164.685318082302" y="571.0">controller.Updateable</node>
+            <node x="1448.9480871618803" y="1339.5">model.event.RevenueDecreaseEvent</node>
+            <node x="1897.908091310032" y="1786.0">controller.reader.EventReader</node>
+            <node x="2916.094515733309" y="1351.0">model.transaction.BuyTransaction</node>
+            <node x="2114.9480871618803" y="1339.5">model.event.ValueDecreaseEvent</node>
+            <node x="403.94808716188027" y="1351.5">controller.reader.Reader</node>
+            <node x="2337.9480871618803" y="1273.0">controller.PropertyManager</node>
+            <node x="2901.185318082302" y="866.5">model.transaction.Transaction</node>
+            <node x="1084.2814204952135" y="593.5">view.WageObserver</node>
+            <node x="1871.4480871618803" y="877.5">model.property.BusinessUnit</node>
+            <node x="120.93207443897154" y="1797.0">controller.reader.PropertyReader</node>
+            <node x="3778.094515733309" y="1340.0">view.UserInterface</node>
+            <node x="3497.969515733309" y="1753.0">controller.SimulationController</node>
+            <node x="3204.094515733309" y="1351.0">model.transaction.SellTransaction</node>
+            <node x="1892.9480871618803" y="1339.5">model.event.RevenueIncreaseEvent</node>
+            <node x="3001.2414246433655" y="1786.0">controller.reader.TransactionReader</node>
+            <node x="2558.7695157333087" y="0.0">model.property.Property</node>
+            <node x="620.9480871618803" y="1339.5">model.event.WageDecreaseEvent</node>
+            <node x="3027.7414246433655" y="2028.0">Main</node>
+            <node x="2457.2695157333087" y="347.0">model.property.BankAccount</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
+              <point x="-67.33333333333326" y="-48.5" />
+              <point x="2148.614753828547" y="1153.0" />
+              <point x="1503.4392555480922" y="1153.0" />
+              <point x="107.14285714285711" y="104.0" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="model.property.Property">
+              <point x="-115.9375" y="-48.5" />
+              <point x="137.49457443897154" y="1733.0" />
+              <point x="11.0" y="1733.0" />
+              <point x="11.0" y="297.0" />
+              <point x="2567.302849066642" y="297.0" />
+              <point x="-119.4666666666667" y="103.5" />
+            </edge>
+            <edge source="model.transaction.SellTransaction" target="model.transaction.Transaction">
+              <point x="-67.0" y="-37.0" />
+              <point x="3271.094515733309" y="1243.0" />
+              <point x="3189.5186514156353" y="1243.0" />
+              <point x="115.33333333333331" y="92.5" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="controller.EventManager">
+              <point x="96.25" y="-59.5" />
+              <point x="3207.4914246433655" y="1733.0" />
+              <point x="3608.469515733309" y="1733.0" />
+              <point x="-16.625" y="59.5" />
+            </edge>
+            <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
+              <point x="-67.33333333333326" y="-48.5" />
+              <point x="1482.614753828547" y="1183.0" />
+              <point x="1396.296398405235" y="1183.0" />
+              <point x="0.0" y="104.0" />
+            </edge>
+            <edge source="controller.EventManager" target="controller.Updateable">
+              <point x="66.5" y="-59.5" />
+              <point x="3691.594515733309" y="1253.0" />
+              <point x="3684.4071126909494" y="1253.0" />
+              <point x="3684.4071126909494" y="825.0" />
+              <point x="3316.935318082302" y="825.0" />
+              <point x="65.25" y="48.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.WageDecreaseEvent">
+              <point x="-83.46153846153845" y="-59.5" />
+              <point x="1922.9465528484934" y="1643.0" />
+              <point x="818.9480871618803" y="1643.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="Main" target="controller.SimulationController">
+              <point x="12.84615384615384" y="-25.5" />
+              <point x="3124.087578489519" y="1958.0" />
+              <point x="3584.219515733309" y="1958.0" />
+              <point x="-86.25" y="92.5" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="model.transaction.Transaction">
+              <point x="-13.75" y="-59.5" />
+              <point x="3097.4914246433655" y="1553.0" />
+              <point x="2898.4071126909494" y="1553.0" />
+              <point x="2898.4071126909494" y="1253.0" />
+              <point x="2958.851984748969" y="1253.0" />
+              <point x="-115.33333333333337" y="92.5" />
+            </edge>
+            <edge source="Main" target="controller.reader.PropertyReader">
+              <point x="-64.23076923076925" y="-25.5" />
+              <point x="3047.010655412596" y="1998.0" />
+              <point x="253.43207443897154" y="1998.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="Main" target="view.UserInterface">
+              <point x="77.0769230769231" y="-25.5" />
+              <point x="3188.3183477202883" y="2008.0" />
+              <point x="3916.6571126909494" y="2008.0" />
+              <point x="3916.6571126909494" y="1733.0" />
+              <point x="3941.719515733309" y="1733.0" />
+              <point x="70.125" y="48.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.WageIncreaseEvent">
+              <point x="-66.76923076923077" y="-59.5" />
+              <point x="1939.6388605408013" y="1633.0" />
+              <point x="1232.4480871618803" y="1633.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="model.event.ValueIncreaseEvent" target="model.property.BusinessUnit">
+              <point x="67.33333333333348" y="-48.5" />
+              <point x="1839.2814204952138" y="1253.0" />
+              <point x="1971.675359889153" y="1253.0" />
+              <point x="-22.272727272727252" y="81.5" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.ValueDecreaseEvent">
+              <point x="16.69230769230768" y="-59.5" />
+              <point x="2023.1003990023396" y="1643.0" />
+              <point x="2215.9480871618803" y="1643.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
+              <point x="130.33333333333326" y="-48.5" />
+              <point x="1362.7814204952135" y="1203.0" />
+              <point x="1324.8678269766638" y="1203.0" />
+              <point x="-71.42857142857133" y="104.0" />
+            </edge>
+            <edge source="model.transaction.Transaction" target="model.property.Company">
+              <point x="-138.39999999999998" y="-92.5" />
+              <point x="2935.785318082302" y="815.0" />
+              <point x="2800.185318082302" y="815.0" />
+              <point x="115.0" y="126.0" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="controller.PropertyManager">
+              <point x="-41.25" y="-59.5" />
+              <point x="3069.9914246433655" y="1563.0" />
+              <point x="2655.1980871618803" y="1563.0" />
+              <point x="105.75" y="115.0" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="model.property.BankAccount">
+              <point x="-82.8125" y="-48.5" />
+              <point x="170.61957443897154" y="1613.0" />
+              <point x="244.0" y="1613.0" />
+              <point x="244.0" y="473.0" />
+              <point x="2488.2695157333087" y="473.0" />
+              <point x="-62.0" y="48.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.RevenueDecreaseEvent">
+              <point x="-33.38461538461536" y="-59.5" />
+              <point x="1973.0234759254167" y="1613.0" />
+              <point x="1549.9480871618803" y="1613.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="Main" target="controller.EventManager">
+              <point x="51.38461538461536" y="-25.5" />
+              <point x="3162.6260400279807" y="1988.0" />
+              <point x="3874.219515733309" y="1988.0" />
+              <point x="3874.219515733309" y="1713.0" />
+              <point x="3741.469515733309" y="1713.0" />
+              <point x="116.375" y="59.5" />
+            </edge>
+            <edge source="controller.SimulationController" target="controller.PropertyManager">
+              <point x="-86.25" y="-92.5" />
+              <point x="3584.219515733309" y="1523.0" />
+              <point x="2739.7980871618806" y="1523.0" />
+              <point x="190.35000000000014" y="115.0" />
+            </edge>
+            <edge source="controller.SimulationController" target="view.UserInterface">
+              <point x="86.25" y="-92.5" />
+              <point x="3756.719515733309" y="1733.0" />
+              <point x="3801.469515733309" y="1733.0" />
+              <point x="-70.125" y="48.0" />
+            </edge>
+            <edge source="model.property.Property" target="model.property.Company">
+              <point x="0.0" y="103.5" />
+              <point x="2686.7695157333087" y="297.0" />
+              <point x="2760.828175225159" y="297.0" />
+              <point x="2760.828175225159" y="473.0" />
+              <point x="2790.328175225159" y="473.0" />
+              <point x="105.14285714285711" y="-126.0" />
+            </edge>
+            <edge source="model.transaction.BuyTransaction" target="model.property.Property">
+              <point x="89.33333333333326" y="-37.0" />
+              <point x="3139.427849066642" y="1253.0" />
+              <point x="3349.185318082302" y="1253.0" />
+              <point x="3349.185318082302" y="247.0" />
+              <point x="2772.102849066642" y="247.0" />
+              <point x="85.33333333333326" y="103.5" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="model.property.Company">
+              <point x="-49.6875" y="-48.5" />
+              <point x="203.74457443897154" y="1623.0" />
+              <point x="255.0" y="1623.0" />
+              <point x="255.0" y="805.0" />
+              <point x="2524.185318082302" y="805.0" />
+              <point x="-161.0" y="126.0" />
+            </edge>
+            <edge source="model.event.RevenueDecreaseEvent" target="model.property.BusinessUnit">
+              <point x="67.33333333333326" y="-48.5" />
+              <point x="1617.2814204952135" y="1233.0" />
+              <point x="1927.1299053436983" y="1233.0" />
+              <point x="-66.81818181818187" y="81.5" />
+            </edge>
+            <edge source="controller.PropertyManager" target="view.WageObserver">
+              <point x="-60.42857142857133" y="-115.0" />
+              <point x="2489.019515733309" y="1093.0" />
+              <point x="2340.9273507861876" y="1093.0" />
+              <point x="2340.9273507861876" y="775.0" />
+              <point x="1248.6385633523564" y="775.0" />
+              <point x="75.85714285714289" y="25.5" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="controller.reader.Reader">
+              <point x="-100.15384615384613" y="-59.5" />
+              <point x="1906.2542451561858" y="1653.0" />
+              <point x="527.0730871618803" y="1653.0" />
+              <point x="24.625" y="36.5" />
+            </edge>
+            <edge source="model.transaction.SellTransaction" target="model.property.Property">
+              <point x="67.0" y="-37.0" />
+              <point x="3405.094515733309" y="237.0" />
+              <point x="2789.169515733309" y="237.0" />
+              <point x="102.39999999999998" y="103.5" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.ValueIncreaseEvent">
+              <point x="-16.69230769230768" y="-59.5" />
+              <point x="1989.7157836177244" y="1603.0" />
+              <point x="1771.9480871618803" y="1603.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.property.BusinessUnit">
+              <point x="33.38461538461536" y="-59.5" />
+              <point x="2039.7927066946472" y="1653.0" />
+              <point x="2327.4480871618803" y="1653.0" />
+              <point x="2327.4480871618803" y="1123.0" />
+              <point x="2083.0389962527893" y="1123.0" />
+              <point x="89.09090909090912" y="81.5" />
+            </edge>
+            <edge source="model.property.Company" target="model.property.Property">
+              <point x="52.571428571428555" y="-126.0" />
+              <point x="2737.7567466537303" y="473.0" />
+              <point x="2749.828175225159" y="473.0" />
+              <point x="2749.828175225159" y="307.0" />
+              <point x="2669.702849066642" y="307.0" />
+              <point x="-17.066666666666663" y="103.5" />
+            </edge>
+            <edge source="controller.reader.Reader" target="model.error.FileFormatException">
+              <point x="0.0" y="-36.5" />
+              <point x="502.44808716188027" y="1203.0" />
+              <point x="180.5" y="1203.0" />
+              <point x="53.0" y="36.5" />
+            </edge>
+            <edge source="model.property.BusinessUnit" target="model.property.Property">
+              <point x="0.0" y="-81.5" />
+              <point x="1993.9480871618803" y="307.0" />
+              <point x="2584.3695157333086" y="307.0" />
+              <point x="-102.39999999999998" y="103.5" />
+            </edge>
+            <edge source="model.transaction.BuyTransaction" target="model.transaction.Transaction">
+              <point x="0.0" y="-37.0" />
+              <point x="3050.094515733309" y="1253.0" />
+              <point x="3074.185318082302" y="1253.0" />
+              <point x="0.0" y="92.5" />
+            </edge>
+            <edge source="model.property.BankAccount" target="model.property.Property">
+              <point x="5.6843418860808015E-14" y="-48.0" />
+              <point x="2550.2695157333087" y="327.0" />
+              <point x="2618.5028490666423" y="327.0" />
+              <point x="-68.26666666666665" y="103.5" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="model.transaction.BuyTransaction">
+              <point x="13.75" y="-59.5" />
+              <point x="3124.9914246433655" y="1543.0" />
+              <point x="3050.094515733309" y="1543.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.Event">
+              <point x="-50.076923076923094" y="-59.5" />
+              <point x="1956.3311682331089" y="1623.0" />
+              <point x="1438.4480871618803" y="1623.0" />
+              <point x="1438.4480871618803" y="1193.0" />
+              <point x="1360.5821126909493" y="1193.0" />
+              <point x="-35.71428571428578" y="104.0" />
+            </edge>
+            <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
+              <point x="132.0" y="-48.5" />
+              <point x="950.9480871618803" y="1203.0" />
+              <point x="1289.153541262378" y="1203.0" />
+              <point x="-107.14285714285711" y="104.0" />
+            </edge>
+            <edge source="Main" target="controller.reader.Reader">
+              <point x="-51.38461538461547" y="-25.5" />
+              <point x="3059.8568092587498" y="1988.0" />
+              <point x="477.82308716188027" y="1988.0" />
+              <point x="-24.625" y="36.5" />
+            </edge>
+            <edge source="model.transaction.Transaction" target="model.property.Property">
+              <point x="0.0" y="-92.5" />
+              <point x="3074.185318082302" y="267.0" />
+              <point x="2737.969515733309" y="267.0" />
+              <point x="51.200000000000045" y="103.5" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="controller.reader.Reader">
+              <point x="49.6875" y="-48.5" />
+              <point x="303.11957443897154" y="1653.0" />
+              <point x="428.57308716188027" y="1653.0" />
+              <point x="-73.875" y="36.5" />
+            </edge>
+            <edge source="Main" target="controller.reader.EventReader">
+              <point x="-38.538461538461576" y="-25.5" />
+              <point x="3072.7029631049036" y="1978.0" />
+              <point x="2006.408091310032" y="1978.0" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="controller.PropertyManager">
+              <point x="82.8125" y="-48.5" />
+              <point x="336.24457443897154" y="1663.0" />
+              <point x="2359.0980871618804" y="1663.0" />
+              <point x="-190.35000000000002" y="115.0" />
+            </edge>
+            <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
+              <point x="-67.33333333333348" y="-48.5" />
+              <point x="1704.6147538285468" y="1173.0" />
+              <point x="1432.0106841195209" y="1173.0" />
+              <point x="35.71428571428578" y="104.0" />
+            </edge>
+            <edge source="Main" target="controller.reader.TransactionReader">
+              <point x="-1.4210854715202004E-14" y="-25.5" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="model.property.BusinessUnit" target="model.property.Company">
+              <point x="81.66666666666663" y="-81.5" />
+              <point x="2075.614753828547" y="825.0" />
+              <point x="2616.185318082302" y="825.0" />
+              <point x="-69.0" y="126.0" />
+            </edge>
+            <edge source="controller.SimulationController" target="controller.EventManager">
+              <point x="28.75" y="-92.5" />
+              <point x="3699.219515733309" y="1733.0" />
+              <point x="3674.969515733309" y="1733.0" />
+              <point x="49.875" y="59.5" />
+            </edge>
+            <edge source="controller.PropertyManager" target="model.property.Company">
+              <point x="60.42857142857156" y="-115.0" />
+              <point x="2609.876658590452" y="1243.0" />
+              <point x="2679.685318082302" y="1243.0" />
+              <point x="2679.685318082302" y="825.0" />
+              <point x="2662.185318082302" y="825.0" />
+              <point x="-23.0" y="126.0" />
+            </edge>
+            <edge source="Main" target="controller.PropertyManager">
+              <point x="-25.692307692307736" y="-25.5" />
+              <point x="3085.5491169510574" y="1968.0" />
+              <point x="2543.9480871618803" y="1968.0" />
+              <point x="2543.9480871618803" y="1693.0" />
+              <point x="2528.29808716188" y="1693.0" />
+              <point x="-21.149999999999977" y="115.0" />
+            </edge>
+            <edge source="model.transaction.Transaction" target="controller.Updateable">
+              <point x="138.39999999999998" y="-92.5" />
+              <point x="3212.585318082302" y="835.0" />
+              <point x="3229.935318082302" y="835.0" />
+              <point x="-21.75" y="48.0" />
+            </edge>
+            <edge source="model.transaction.BuyTransaction" target="model.property.Company">
+              <point x="-89.33333333333326" y="-37.0" />
+              <point x="2960.761182399976" y="1243.0" />
+              <point x="2890.685318082302" y="1243.0" />
+              <point x="2890.685318082302" y="825.0" />
+              <point x="2754.185318082302" y="825.0" />
+              <point x="69.0" y="126.0" />
+            </edge>
+            <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
+              <point x="-67.33333333333326" y="-48.5" />
+              <point x="1926.614753828547" y="1163.0" />
+              <point x="1467.7249698338067" y="1163.0" />
+              <point x="71.42857142857156" y="104.0" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="model.transaction.SellTransaction">
+              <point x="41.25" y="-59.5" />
+              <point x="3152.4914246433655" y="1693.0" />
+              <point x="3338.094515733309" y="1693.0" />
+              <point x="0.0" y="37.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="controller.PropertyManager">
+              <point x="50.076923076923094" y="-59.5" />
+              <point x="2056.4850143869553" y="1683.0" />
+              <point x="2443.6980871618803" y="1683.0" />
+              <point x="-105.75" y="115.0" />
+            </edge>
+            <edge source="model.event.RevenueIncreaseEvent" target="model.property.BusinessUnit">
+              <point x="67.33333333333326" y="-48.5" />
+              <point x="2061.2814204952138" y="1253.0" />
+              <point x="2016.2208144346075" y="1253.0" />
+              <point x="22.272727272727252" y="81.5" />
+            </edge>
+            <edge source="model.event.ValueDecreaseEvent" target="model.property.BusinessUnit">
+              <point x="67.33333333333326" y="-48.5" />
+              <point x="2283.2814204952138" y="1133.0" />
+              <point x="2060.7662689800623" y="1133.0" />
+              <point x="66.81818181818187" y="81.5" />
+            </edge>
+            <edge source="model.event.WageIncreaseEvent" target="view.WageObserver">
+              <point x="-130.33333333333348" y="-48.5" />
+              <point x="1102.1147538285468" y="1193.0" />
+              <point x="1107.3400799870637" y="1193.0" />
+              <point x="1107.3400799870637" y="785.0" />
+              <point x="1147.4957062094993" y="785.0" />
+              <point x="-25.28571428571422" y="25.5" />
+            </edge>
+            <edge source="view.UserInterface" target="model.property.Property">
+              <point x="0.0" y="-48.0" />
+              <point x="3871.594515733309" y="227.0" />
+              <point x="2806.2361823999754" y="227.0" />
+              <point x="119.4666666666667" y="103.5" />
+            </edge>
+            <edge source="model.event.WageDecreaseEvent" target="view.WageObserver">
+              <point x="-132.0" y="-48.5" />
+              <point x="686.9480871618803" y="1203.0" />
+              <point x="693.0067466537305" y="1203.0" />
+              <point x="693.0067466537305" y="765.0" />
+              <point x="1096.9242776380706" y="765.0" />
+              <point x="-75.85714285714289" y="25.5" />
+            </edge>
+            <edge source="Main" target="model.error.FileFormatException">
+              <point x="-77.0769230769231" y="-25.5" />
+              <point x="3034.164501566442" y="2008.0" />
+              <point x="0.0" y="2008.0" />
+              <point x="0.0" y="1253.0" />
+              <point x="74.5" y="1253.0" />
+              <point x="-53.0" y="36.5" />
+            </edge>
+            <edge source="model.property.BusinessUnit" target="view.WageObserver">
+              <point x="-81.66666666666674" y="-81.5" />
+              <point x="1912.2814204952135" y="795.0" />
+              <point x="1198.067134780928" y="795.0" />
+              <point x="25.285714285714334" y="25.5" />
+            </edge>
+            <edge source="controller.PropertyManager" target="model.property.BusinessUnit">
+              <point x="-181.28571428571422" y="-115.0" />
+              <point x="2368.162372876166" y="1113.0" />
+              <point x="2105.3117235255168" y="1113.0" />
+              <point x="111.36363636363637" y="81.5" />
+            </edge>
+            <edge source="model.event.Event" target="controller.Updateable">
+              <point x="0.0" y="-104.0" />
+              <point x="1396.296398405235" y="835.0" />
+              <point x="3186.435318082302" y="835.0" />
+              <point x="-65.25" y="48.0" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="model.event.RevenueIncreaseEvent">
+              <point x="0.0" y="-59.5" />
+              <point x="2006.408091310032" y="1593.0" />
+              <point x="1993.9480871618803" y="1593.0" />
+              <point x="0.0" y="48.5" />
+            </edge>
+            <edge source="controller.reader.EventReader" target="controller.EventManager">
+              <point x="100.15384615384619" y="-59.5" />
+              <point x="2106.561937463878" y="1713.0" />
+              <point x="3541.969515733309" y="1713.0" />
+              <point x="-83.125" y="59.5" />
+            </edge>
+            <edge source="controller.reader.PropertyReader" target="model.property.BusinessUnit">
+              <point x="16.5625" y="-48.5" />
+              <point x="269.99457443897154" y="1643.0" />
+              <point x="372.41683716188027" y="1643.0" />
+              <point x="372.41683716188027" y="1213.0" />
+              <point x="1882.5844507982438" y="1213.0" />
+              <point x="-111.36363636363637" y="81.5" />
+            </edge>
+            <edge source="controller.PropertyManager" target="model.property.Property">
+              <point x="0.0" y="-115.0" />
+              <point x="2549.4480871618803" y="1083.0" />
+              <point x="2445.578175225159" y="1083.0" />
+              <point x="2445.578175225159" y="317.0" />
+              <point x="2601.4361823999757" y="317.0" />
+              <point x="-85.33333333333331" y="103.5" />
+            </edge>
+            <edge source="model.property.Company" target="model.property.BankAccount">
+              <point x="-157.71428571428572" y="-126.0" />
+              <point x="2527.471032368016" y="473.0" />
+              <point x="2550.2695157333087" y="473.0" />
+              <point x="0.0" y="48.0" />
+            </edge>
+            <edge source="controller.reader.TransactionReader" target="controller.reader.Reader">
+              <point x="-96.25" y="-59.5" />
+              <point x="3014.9914246433655" y="1583.0" />
+              <point x="576.3230871618803" y="1583.0" />
+              <point x="73.875" y="36.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.230109575988566" x="681.4461697722568" y="1032.9813664596272" />
+          <SelectedNodes>
+            <node>view.UserInterface</node>
+            <node>controller.SimulationController</node>
+            <node>controller.EventManager</node>
+            <node>controller.Updateable</node>
+            <node>view.WageObserver</node>
+            <node>Main</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#2270#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="63" column="91" selection-start-line="63" selection-start-column="91" selection-end-line="63" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#1935#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

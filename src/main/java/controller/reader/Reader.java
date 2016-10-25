@@ -91,7 +91,7 @@ public abstract class Reader
             }
 
 
-            throw new FileFormatException(e.getMessage(), e);
+            throw new FileFormatException("Invalid type: " + e.getMessage(), e);
         }
     }
 
