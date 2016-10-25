@@ -67,7 +67,7 @@ public class SimulationController
                   events.update(i);
 
                   //give the TransactionManager the properties as well as the current year
-                  transactions.update(i);
+                  this.transactions.update(i);
 
                   //update bank accounts
                   properties.update();

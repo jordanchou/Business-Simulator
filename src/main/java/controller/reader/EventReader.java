@@ -15,6 +15,7 @@ import model.event.*;
 import model.property.*;
 import controller.*;
 import model.property.Property;
+import java.util.*;
 
 public class EventReader extends Reader
 {
@@ -53,29 +54,35 @@ public class EventReader extends Reader
             case "R-":
                 if (pm.getProperty(lineArray[2]) == null)
                     throw new IllegalArgumentException("Cannot create event with property: " + lineArray[2]);
+                checkEvent(lineArray);
                 event = new RevenueDecreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "R+":
                 if (pm.getProperty(lineArray[2]) == null)
                     throw new IllegalArgumentException("Cannot create event with property: " + lineArray[2]);
+                checkEvent(lineArray);
                 event = new RevenueIncreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "W+":
+                checkEvent(lineArray);
                 event = new WageIncreaseEvent(year, pm.getWageObservers());
 
                 break;
 
             case "W-":
+                checkEvent(lineArray);
                 event = new WageDecreaseEvent(year, pm.getWageObservers());
                 break;
 
             case "V+":
+                checkEvent(lineArray);
                 event = new ValueIncreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
 
             case "V-":
+                checkEvent(lineArray);
                 event = new ValueDecreaseEvent(year, (BusinessUnit)pm.getProperty(lineArray[2]));
                 break;
             default:
@@ -83,5 +90,23 @@ public class EventReader extends Reader
         }
 
         ec.add(event);
+    }
+
+    private void checkEvent(String[] line)
+    {
+        if ("".equals(line[0]))
+            throw new IllegalArgumentException("Year is empty for event: " + Arrays.toString(line));
+
+        if ("".equals(line[1]))
+            throw new IllegalArgumentException("Type is invalid for event: " + Arrays.toString(line));
+
+
+        if (!('W' == line[1].charAt(0)))
+        {
+            if (line.length < 2)
+                throw new IllegalArgumentException("Property is empty for event: " + Arrays.toString(line) );
+        }
+
+
     }
 }

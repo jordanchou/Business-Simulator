@@ -12,6 +12,7 @@ package controller.reader;
 
 import model.property.*;
 import controller.*;
+import java.util.*;
 
 public class PropertyReader extends Reader
 {
@@ -53,12 +54,14 @@ public class PropertyReader extends Reader
         switch (lineArray[1])
         {
             case "C":
+                checkCompany(lineArray);
                 property = new Company(lineArray[0], (Company)properties.getProperty(lineArray[2]),
                                         Double.parseDouble(lineArray[3]), new BankAccount());
 
                 break;
 
             case "B":
+                checkBusinessUnit(lineArray);
                 property = new BusinessUnit(lineArray[0], (Company)properties.getProperty(lineArray[2]),
                                             Double.parseDouble(lineArray[3]), Double.parseDouble(lineArray[4]),
                                             Double.parseDouble(lineArray[5]));
@@ -82,8 +85,36 @@ public class PropertyReader extends Reader
         }
 
         properties.addProperty(property);
+    }
 
+    public void checkCompany(String[] lineArray)
+    {
+        if ("".equals(lineArray[0]))
+            throw new IllegalArgumentException("Name is empty for company: " + Arrays.toString(lineArray));
 
+        if ("".equals(lineArray[1]))
+            throw new IllegalArgumentException("Type is empty for company: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[3]))
+            throw new IllegalArgumentException("Worth is empty for company: " + Arrays.toString(lineArray));
+    }
+
+    public void checkBusinessUnit(String[] lineArray)
+    {
+        if ("".equals(lineArray[0]))
+            throw new IllegalArgumentException("Name is empty for company: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[1]))
+            throw new IllegalArgumentException("Type is empty for company: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[3]))
+            throw new IllegalArgumentException("Worth is empty for company: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[4]))
+            throw new IllegalArgumentException("Name is empty for company: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[5]))
+            throw new IllegalArgumentException("Name is empty for company: " + Arrays.toString(lineArray));
 
     }
 }

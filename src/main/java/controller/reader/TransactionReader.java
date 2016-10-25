@@ -13,6 +13,8 @@ package controller.reader;
 import model.transaction.*;
 import controller.*;
 
+import java.util.Arrays;
+
 public class TransactionReader extends Reader
 {
     EventManager tm;
@@ -47,13 +49,14 @@ public class TransactionReader extends Reader
         switch (lineArray[1])
         {
             case "S":
+                checkTransaction(lineArray);
                 transaction = new SellTransaction(year, pm.getProperty(lineArray[2]));
 
                 break;
 
             case "B":
+                checkTransaction(lineArray);
                 transaction = new BuyTransaction(year, pm.getProperty(lineArray[2]));
-
                 break;
 
             default:
@@ -66,5 +69,24 @@ public class TransactionReader extends Reader
         transaction.setPrimary(pm.getPrimary());//Each transaction gets a reference to the primary company
         tm.add(transaction);//Adds the transaction to the transaction manager
 
+    }
+
+    /**
+     * Checks if a transaction is valid
+     * @param lineArray Line for transaction which has been split
+     */
+    public void checkTransaction(String[] lineArray)
+    {
+        if ("".equals(lineArray[0]))
+            throw new IllegalArgumentException("Year is empty for transaction: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[1]))
+            throw new IllegalArgumentException("Type is empty for transaction: " + Arrays.toString(lineArray));
+
+        if ("".equals(lineArray[2]))
+            throw new IllegalArgumentException("Property is empty for transaction " + Arrays.toString(lineArray));
+
+        if (lineArray.length != 3)
+            throw new IllegalArgumentException("Transaction line is invalid: " + Arrays.toString(lineArray));
     }
 }
