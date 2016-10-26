@@ -36,7 +36,7 @@ public class EventReader extends Reader
     /**
      * Overrides the abstract processLine method from Reader. This method processes a line and adds it to the
      * EventManager
-     * @param line
+     * @param line the line to process
      */
     @Override
     public void processLine(String line)
@@ -92,6 +92,10 @@ public class EventReader extends Reader
         ec.add(event);
     }
 
+    /**
+     * Checks a event line for validity
+     * @param line the line to check converted to an array
+     */
     private void checkEvent(String[] line)
     {
         if ("".equals(line[0]))

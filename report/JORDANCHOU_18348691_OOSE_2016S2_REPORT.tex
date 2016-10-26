@@ -1,0 +1,156 @@
+\documentclass{article}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% This section is called the preamble, where we can specify which
+%% latex packages we required.  Most (but not of all) of the packages
+%% below should be fairly standard in most latex documents.  The
+%% exception is xspace and the new \latex command, which you probably
+%% do not need.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Better math support:
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{booktabs}
+%% Bibliography style:
+\usepackage{mathptmx}           % Use the Times font.
+\usepackage{graphicx}           % Needed for including graphics.
+\usepackage{url}                % Facility for activating URLs.
+\usepackage{listings}
+\usepackage{fancyvrb}
+\usepackage{tikz}
+\newcommand{\vertex}{\node[vertex]}
+\tikzstyle{vertex}=[circle, draw, inner sep=0pt, minimum size=6pt]
+
+%% Set the paper size to be A4, with a 2cm margin
+%% all around the page.
+\usepackage[a4paper,margin=2cm]{geometry}
+
+%% Natbib is a popular style for formatting references.
+\usepackage{natbib}
+%% bibpunct sets the punctuation used for formatting citations.
+\bibpunct{(}{)}{;}{a}{,}{,}
+
+%% textcomp provides extra control sequences for accessing text symbols:
+\usepackage{textcomp}
+\newcommand*{\micro}{\textmu}
+%% Here, we define the \micro command to print a text "mu".
+%% "\newcommand" returns an error if "\micro" is already defined.
+
+%% This is an example of a new macro that I've created to save me
+%% having to type \LaTeX each time.  The xspace command provides space
+%% after the word LaTeX where appropriate.
+\usepackage{xspace}
+\providecommand*{\latex}{\LaTeX\xspace}
+%% "\providecommand" does nothing if "\latex" is already defined.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Start of the document.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{language=Python}
+\begin{document}
+
+\author{Jordan Pinglin Chou\\
+  18348691\\\\
+  Object Oriented Software Engineering\\}
+\date{\today}
+\title{OOSE Assignment 2016 S2 Report}
+\maketitle
+
+	\begin{itemize}
+        \item Where have you used polymorphism and why?
+        \item Discuss design patterns that incorporate polymorphism.
+        \item How does the design achieve testability, how does it make unit testing easier.
+        \item Discuss two plausible alternate design choices and explain their pros and cons.
+    \end{itemize}
+
+\section*{Where have you used polymorphism and why? Discuss design patterns that incorporate polymorphism.}
+
+I have used polymorphism throughout the assignment. There are many instances in the implementation where it does not matter what the subclass is, the calling method will just invoke a method call on an interface and delegates the action to a subclass.\\
+
+The use of the \textbf{strategy} pattern throughout the program allows the context of the program to use instances of \texttt{Event} and \texttt{Transactions} without having to know what they are. Both \texttt{Event} and \texttt{Transaction} implement an \texttt{Updateable} interface. This allows a common controller to be used amongst them. This controller will just call \texttt{update()} on its set of \texttt{Updateable} objects and the program will figure out which methods to call from there.\\ 
+
+Having this \texttt{Updateable} interface allows for the program to be extended with ease in the future. If more events or plans are to be added to the program the programmer can just implement the \texttt{Updateable} interface and specify a controller for it. This also allows for great reusability as currently both the Event and Transaction controllers are instances of the same class.\\
+
+This was done because Events and Transactions had very similar behaviour between them, they each carry out a task and because they are models that store all the logic they need.\\
+
+Polymorphism was also achieved via the \textbf{observer} pattern. Wage events hold a list of observers which implement a \texttt{WageObserver} interface where the event just has to call \texttt{update()} to notify the observer. This allows for great extensibility as any future events that require such behaviour can just implement the interface and implements.\\ 
+
+Another way polymorphism was achieved was through the usage of abstract \texttt{Reader} and abstract \texttt{Property} classes. For property the \texttt{update()} method is delegated to the subclass. Regardless of the type of property they all have a way of calculating profit.\\
+
+\pagebreak
+\section*{How does the design achieve testability, how does it make unit testing easier?}
+
+The program makes use of dependency injection to make testing simple. Because the only instantiating is done in either a factory or main it makes it easy to mock objects and stub the return to whatever is required for the test.\\
+
+Each controller is simply passed the the objects it need. This allows for unit tests to mock objects easily.\\
+
+Low coupling through polymorphism allows for easier unit testing because you can isolate the code that you want tested.\\
+
+MVC also allows for sections of the code to be separated out and tested properly on its own.\\
+
+\section*{Discuss two plausible alternate design choices and explain their pros and cons.}
+
+\subsection*{Structural Alternatives}
+
+\subsubsection*{Singleton}
+
+The singleton pattern is an alternative structural pattern can be used for the program. The singleton pattern restricts a class so that only one instance of it can be active at any given time. The singleton pattern can be used for the primary company of the system. There can only be one primary company for the system and the primary company does not change for the duration of the simulation so it could be an alternative way to designing the system. The singleton can also be used to ensure that a company only has one bank account.\\
+
+\noindent
+\textbf{Pros}
+\begin{itemize}
+    \item Makes sure that only one primary company is active at a given time in the simulation
+    \item Makes sure that each company only has on bank account at a given time in the simulation.
+\end{itemize}
+\textbf{Cons}
+\begin{itemize}
+    \item Adds complexity to the system
+    \item Have to create extra singleton classes for Primary Company and BankAccounts
+    \item Could break polymorphism depending on the way the extra classes are laid out
+    \item Would reduce the testability of the system, it's difficult to test the singleton pattern
+\end{itemize}
+
+\subsubsection*{Composite}
+
+Because each company owns a list of properties the composite pattern can work well. The composite node will be a company, and the leaf nodes will be business units. This works well because companies can own zero to many properties but properties cannot own other properties. The difficult choice for this is to decide where a bank account fits in. You could possibly place it within the company or have it as a leaf node. It would probably be better to have it separate to the tree of properties due to how frequently you need to access the bank account.\\
+
+\noindent
+\textbf{Pros}
+\begin{itemize}
+    \item Makes sense logically to do it. Each company can own multiple properties so it makes sense for it to be a composite node, each business unit cannot own anything so it makes sense for it to be a leaf node
+    \item It allows for easy traversal of the tree to get the properties associated with a certain company
+    \item Because components of the tree use an interface, it makes it very general. We can reuse the tree structure in the future if we need to.
+\end{itemize}
+\textbf{Cons}
+\begin{itemize}
+    \item Because the tree is composed of an interface we have to add in checks to make sure that the types within the tree are correct (what we expect)
+    \item Once the tree has been made it can be difficult to change it, varies greatly with how the tree is implemented but buy/sell decisions may need to have extra steps implemented.
+\end{itemize}
+
+\subsection*{Behavioural Alternatives}
+
+
+\subsubsection*{Command}
+
+The command pattern defines a command interface with a method signature defining a command to execute. For the simulation you can pass the commands from the creators (factory or reader) to the controllers (invokers). The controller decide when to execute or invoke the command. This could be suitable for events, plans, and properties as they all have things to 'do', i.e events have to carry out the event, plans have to carry out the plan, and properties have to update their values.\\
+
+
+\noindent
+\textbf{Pros}
+\begin{itemize}
+    \item Useful for separating concerns, especially since creation of the command (event, plan, properties) is not dependent on the invocation of the command (controllers) and vice versa
+    \item The command instance can be instantiated by the client but run later by the invoker. The client and invoke need not to know anything about each other.
+    \item Extensibility: We can add new commands easily by implementing the command interface
+\end{itemize}
+\textbf{Cons}
+\begin{itemize}
+    \item Using the command pattern increase the number of classes we need since we would need to have a class for each command.
+\end{itemize}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The end.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

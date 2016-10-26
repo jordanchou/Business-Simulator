@@ -28,11 +28,19 @@ public abstract class Event implements Comparable<Event>, Updateable<Event>
         setYear(year);
     }
 
+    /**
+     * Retrieves the year
+     * @return the year of the event as a long
+     */
     public long getYear()
     {
         return this.year;
     }
 
+    /**
+     * Sets the year of the event to the imported year
+     * @param year a year as a long
+     */
     public void setYear(long year)
     {
         if (!validateYear(year))
@@ -46,6 +54,11 @@ public abstract class Event implements Comparable<Event>, Updateable<Event>
         return year > 0;
     }
 
+    /**
+     * Compares two events to see how close they are
+     * @param event the event to compare
+     * @return 0, 1 or -1 depending on how close the events are
+     */
     public int compareTo(Event event)
     {
         int value;

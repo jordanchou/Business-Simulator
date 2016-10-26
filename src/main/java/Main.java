@@ -33,6 +33,7 @@ public class Main
 
             reader = new EventReader(em, pm);
             reader.readFile(args[1]);
+
             reader = new TransactionReader(tm, pm);
             reader.readFile(args[2]);
 

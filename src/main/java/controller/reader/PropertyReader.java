@@ -87,6 +87,10 @@ public class PropertyReader extends Reader
         properties.addProperty(property);
     }
 
+    /**
+     * Checks a company for validity
+     * @param lineArray the line to check as an array
+     */
     public void checkCompany(String[] lineArray)
     {
         if ("".equals(lineArray[0]))
@@ -99,6 +103,10 @@ public class PropertyReader extends Reader
             throw new IllegalArgumentException("Worth is empty for company: " + Arrays.toString(lineArray));
     }
 
+    /**
+     * Checks a line to see if it is a valid business unit
+     * @param lineArray the line to check as an array
+     */
     public void checkBusinessUnit(String[] lineArray)
     {
         if ("".equals(lineArray[0]))
