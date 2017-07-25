@@ -1,3 +1,8 @@
+### Description
+
+Object-oriented program design assignment involving the simulation of businesses and how they handle various scheduled and unscheduled events. The assignment is written in Java 8 and demonstrates the use of various design patterns such as the strategy pattern, and the factory pattern
+
+
 ### Compiling the program
 
 * Running **ant** will build the program
