@@ -43,7 +43,7 @@ public class TransactionReader extends Reader
         long year;
 
         lineArray = line.split(",");
-        System.out.println("HI");
+;
         year = Long.parseLong(lineArray[0]);
 
         switch (lineArray[1])

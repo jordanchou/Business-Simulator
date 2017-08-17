@@ -36,7 +36,7 @@
             <arg value="${dist.dir}/events.txt"/>
             <arg value="${dist.dir}/plan.txt"/>
             <arg value="2017"/>
-            <arg value="2020"/>
+            <arg value="2025"/>
         </java>
     </target>
 
