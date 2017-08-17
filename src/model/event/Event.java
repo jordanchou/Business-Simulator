@@ -10,9 +10,7 @@ REQUIRES:-
 */
 package model.event;
 
-import java.util.*;
 import controller.*;
-import model.property.*;
 
 public abstract class Event implements Comparable<Event>, Updateable<Event>
 {

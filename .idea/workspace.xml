@@ -2,28 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="066da7c9-8b55-4ef9-936e-cc81a5d0d832" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/OOSE2016s2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/OOSE2016s2_main.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/OOSE2016s2_test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/build.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oose2016s2.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oose2016s2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oose2016s2_Mon_Oct_17_19-17-30_AWST_2016.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oose2016s2_Mon_Oct_17_19-17-30_AWST_2016.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Main.class" afterPath="$PROJECT_DIR$/build/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/controller/reader/EventReader.class" afterPath="$PROJECT_DIR$/build/controller/reader/EventReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/controller/reader/PropertyReader.class" afterPath="$PROJECT_DIR$/build/controller/reader/PropertyReader.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/model/event/Event.class" afterPath="$PROJECT_DIR$/build/model/event/Event.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/man.jar" afterPath="$PROJECT_DIR$/dist/man.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/oose_assignment_2016s2.iml" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/EventManager.java" afterPath="$PROJECT_DIR$/src/controller/EventManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/PropertyManager.java" afterPath="$PROJECT_DIR$/src/controller/PropertyManager.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/SimulationController.java" afterPath="$PROJECT_DIR$/src/controller/SimulationController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/Updateable.java" afterPath="$PROJECT_DIR$/src/controller/Updateable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" afterPath="$PROJECT_DIR$/src/controller/reader/EventReader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java" afterPath="$PROJECT_DIR$/src/controller/reader/PropertyReader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" afterPath="$PROJECT_DIR$/src/controller/reader/Reader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" afterPath="$PROJECT_DIR$/src/controller/reader/TransactionReader.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/error/FileFormatException.java" afterPath="$PROJECT_DIR$/src/model/error/FileFormatException.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/Event.java" afterPath="$PROJECT_DIR$/src/model/event/Event.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/RevenueDecreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/RevenueDecreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/RevenueIncreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/RevenueIncreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/ValueDecreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/ValueDecreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/ValueIncreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/ValueIncreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/WageDecreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/WageDecreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/event/WageIncreaseEvent.java" afterPath="$PROJECT_DIR$/src/model/event/WageIncreaseEvent.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/property/BankAccount.java" afterPath="$PROJECT_DIR$/src/model/property/BankAccount.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/property/BusinessUnit.java" afterPath="$PROJECT_DIR$/src/model/property/BusinessUnit.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/property/Company.java" afterPath="$PROJECT_DIR$/src/model/property/Company.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/property/Property.java" afterPath="$PROJECT_DIR$/src/model/property/Property.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/transaction/BuyTransaction.java" afterPath="$PROJECT_DIR$/src/model/transaction/BuyTransaction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/transaction/SellTransaction.java" afterPath="$PROJECT_DIR$/src/model/transaction/SellTransaction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java" afterPath="$PROJECT_DIR$/src/model/transaction/Transaction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/view/UserInterface.java" afterPath="$PROJECT_DIR$/src/view/UserInterface.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/view/WageObserver.java" afterPath="$PROJECT_DIR$/src/view/WageObserver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" afterPath="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java" afterPath="$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/model/event/Event.java" afterPath="$PROJECT_DIR$/src/main/java/model/event/Event.java" />
     </list>
     <ignored path="OOSE2016s2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,7 +51,6 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -60,473 +69,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
+      <file leaf-file-name="SimulationControllerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controller/SimulationControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-804">
-              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserInterface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/UserInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WageObserver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/view/WageObserver.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JAVA/Main" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/Main">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>Main</OriginalElement>
-              <nodes>
-                <node x="2505.173029126048" y="493.0">model.property.Company</node>
-                <node x="1024.6799458204632" y="1329.5">model.event.WageIncreaseEvent</node>
-                <node x="3434.100183915701" y="1318.5">controller.EventManager</node>
-                <node x="1283.3375861446993" y="855.0">model.event.Event</node>
-                <node x="2102.679945820463" y="1329.5">model.event.ValueIncreaseEvent</node>
-                <node x="21.5" y="922.5">model.error.FileFormatException</node>
-                <node x="3159.850183915701" y="571.0">controller.Updateable</node>
-                <node x="1912.9139436951955" y="1755.0">controller.reader.EventReader</node>
-                <node x="1658.6799458204632" y="1329.5">model.event.RevenueDecreaseEvent</node>
-                <node x="2814.5251839157013" y="1341.0">model.transaction.BuyTransaction</node>
-                <node x="1436.6799458204632" y="1329.5">model.event.ValueDecreaseEvent</node>
-                <node x="391.6799458204632" y="1341.5">controller.reader.Reader</node>
-                <node x="2325.679945820463" y="1263.0">controller.PropertyManager</node>
-                <node x="2939.5251839157013" y="866.5">model.transaction.Transaction</node>
-                <node x="1072.0132791537962" y="593.5">view.WageObserver</node>
-                <node x="1859.1799458204632" y="877.5">model.property.BusinessUnit</node>
-                <node x="111.62859774325352" y="1755.0">controller.reader.PropertyReader</node>
-                <node x="3720.100183915701" y="1330.0">view.UserInterface</node>
-                <node x="3439.975183915701" y="1733.0">controller.SimulationController</node>
-                <node x="3146.100183915701" y="1341.0">model.transaction.SellTransaction</node>
-                <node x="1880.6799458204632" y="1329.5">model.event.RevenueIncreaseEvent</node>
-                <node x="2993.1639436951955" y="1755.0">controller.reader.TransactionReader</node>
-                <node x="608.6799458204632" y="1329.5">model.event.WageDecreaseEvent</node>
-                <node x="2546.5013743918917" y="0.0">model.property.Property</node>
-                <node x="3029.6639436951955" y="2008.0">Main</node>
-                <node x="2460.065886268905" y="347.0">model.property.BankAccount</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="1470.3466124871297" y="1183.0" />
-                  <point x="1408.3375861446993" y="1183.0" />
-                  <point x="0.0" y="104.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.transaction.SellTransaction" target="model.transaction.Transaction">
-                  <point x="-67.0" y="-37.0" />
-                  <point x="3213.100183915701" y="1243.0" />
-                  <point x="3227.858517249035" y="1243.0" />
-                  <point x="115.33333333333331" y="92.5" />
-                </edge>
-                <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
-                  <point x="-67.33333333333348" y="-48.5" />
-                  <point x="1692.3466124871297" y="1173.0" />
-                  <point x="1444.0518718589851" y="1173.0" />
-                  <point x="35.71428571428578" y="104.0" />
-                </edge>
-                <edge source="controller.EventManager" target="controller.Updateable">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="controller.EventManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="controller.SimulationController">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.WageDecreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="model.transaction.Transaction">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="view.UserInterface">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="controller.reader.PropertyReader">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.WageIncreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.ValueIncreaseEvent" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.ValueDecreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
-                  <point x="130.33333333333326" y="-48.5" />
-                  <point x="1350.5132791537965" y="1193.0" />
-                  <point x="1336.9090147161282" y="1193.0" />
-                  <point x="-71.42857142857133" y="104.0" />
-                </edge>
-                <edge source="model.transaction.Transaction" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="controller.PropertyManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="model.property.BankAccount">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.RevenueDecreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="controller.EventManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.SimulationController" target="controller.PropertyManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.SimulationController" target="view.UserInterface">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.property.Property" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.transaction.BuyTransaction" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.RevenueDecreaseEvent" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.PropertyManager" target="view.WageObserver">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="controller.reader.Reader">
-                  <point x="-109.38461538461536" y="-70.5" />
-                  <point x="1922.02932831058" y="1633.0" />
-                  <point x="514.8049458204632" y="1633.0" />
-                  <point x="24.625" y="36.5" />
-                </edge>
-                <edge source="model.transaction.SellTransaction" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.ValueIncreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.Reader" target="model.error.FileFormatException">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.property.Company" target="model.property.Property">
-                  <point x="52.571428571428555" y="-126.0" />
-                  <point x="2741.7444576974767" y="473.0" />
-                  <point x="2753.815886268905" y="473.0" />
-                  <point x="2753.815886268905" y="307.0" />
-                  <point x="2657.434707725225" y="307.0" />
-                  <point x="-17.066666666666606" y="103.5" />
-                </edge>
-                <edge source="model.property.BusinessUnit" target="model.property.Property">
-                  <point x="0.0" y="-81.5" />
-                  <point x="1981.6799458204632" y="307.0" />
-                  <point x="2572.1013743918916" y="307.0" />
-                  <point x="-102.39999999999998" y="103.5" />
-                </edge>
-                <edge source="model.transaction.BuyTransaction" target="model.transaction.Transaction">
-                  <point x="89.33333333333331" y="-37.0" />
-                  <point x="3037.858517249035" y="1243.0" />
-                  <point x="2997.191850582368" y="1243.0" />
-                  <point x="-115.33333333333331" y="92.5" />
-                </edge>
-                <edge source="model.property.BankAccount" target="model.property.Property">
-                  <point x="5.6843418860808015E-14" y="-48.0" />
-                  <point x="2553.065886268905" y="327.0" />
-                  <point x="2606.2347077252252" y="327.0" />
-                  <point x="-68.26666666666665" y="103.5" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="model.transaction.BuyTransaction">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.Event">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
-                  <point x="132.0" y="-48.5" />
-                  <point x="938.6799458204632" y="1193.0" />
-                  <point x="1301.1947290018425" y="1193.0" />
-                  <point x="-107.14285714285711" y="104.0" />
-                </edge>
-                <edge source="Main" target="controller.reader.Reader">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.transaction.Transaction" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="controller.reader.Reader">
-                  <point x="57.1875" y="-70.5" />
-                  <point x="321.3160977432535" y="1633.0" />
-                  <point x="416.3049458204632" y="1633.0" />
-                  <point x="-73.875" y="36.5" />
-                </edge>
-                <edge source="Main" target="controller.reader.EventReader">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="controller.PropertyManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="2136.3466124871297" y="1153.0" />
-                  <point x="1515.4804432875567" y="1153.0" />
-                  <point x="107.14285714285711" y="104.0" />
-                </edge>
-                <edge source="Main" target="controller.reader.TransactionReader">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.property.BusinessUnit" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.SimulationController" target="controller.EventManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.PropertyManager" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="controller.PropertyManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.transaction.Transaction" target="controller.Updateable">
-                  <point x="138.39999999999998" y="-92.5" />
-                  <point x="3250.9251839157014" y="835.0" />
-                  <point x="3225.100183915701" y="835.0" />
-                  <point x="-21.75" y="48.0" />
-                </edge>
-                <edge source="model.transaction.BuyTransaction" target="model.property.Company">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
-                  <point x="-67.33333333333326" y="-48.5" />
-                  <point x="1914.3466124871297" y="1163.0" />
-                  <point x="1479.766157573271" y="1163.0" />
-                  <point x="71.42857142857156" y="104.0" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="model.transaction.SellTransaction">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="controller.PropertyManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.RevenueIncreaseEvent" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.WageIncreaseEvent" target="view.WageObserver">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.ValueDecreaseEvent" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.WageDecreaseEvent" target="view.WageObserver">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="view.UserInterface" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="Main" target="model.error.FileFormatException">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.property.BusinessUnit" target="view.WageObserver">
-                  <point x="-81.66666666666674" y="-81.5" />
-                  <point x="1900.0132791537962" y="795.0" />
-                  <point x="1185.7989934395105" y="795.0" />
-                  <point x="25.285714285714334" y="25.5" />
-                </edge>
-                <edge source="controller.PropertyManager" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="model.event.Event" target="controller.Updateable">
-                  <point x="0.0" y="-104.0" />
-                  <point x="1408.3375861446993" y="835.0" />
-                  <point x="3181.600183915701" y="835.0" />
-                  <point x="-65.25" y="48.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="model.event.RevenueIncreaseEvent">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.EventReader" target="controller.EventManager">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.PropertyReader" target="model.property.BusinessUnit">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.PropertyManager" target="model.property.Property">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-                <edge source="controller.reader.TransactionReader" target="controller.reader.Reader">
-                  <point x="-105.0" y="-70.5" />
-                  <point x="3008.1639436951955" y="1563.0" />
-                  <point x="564.0549458204632" y="1563.0" />
-                  <point x="73.875" y="36.5" />
-                </edge>
-                <edge source="model.property.Company" target="model.property.BankAccount">
-                  <point x="0.0" y="0.0" />
-                  <point x="0.0" y="0.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.23232323232323232" x="1954.0" y="1029.5" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BankAccount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/property/BankAccount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
+            <state relative-caret-position="190">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#526#527#0" expanded="true" />
+                <element signature="e#576#577#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessUnit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/property/BusinessUnit.java">
+      <file leaf-file-name="RevenueIncreaseEventTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/event/RevenueIncreaseEventTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
+            <state relative-caret-position="156">
+              <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
               <folding>
-                <element signature="e#1953#1954#0" expanded="true" />
-                <element signature="e#2001#2002#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Company.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/property/Company.java">
+      <file leaf-file-name="ValueDecreaseEventTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/event/ValueDecreaseEventTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
+            <state relative-caret-position="170">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueIncreaseEventTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/event/ValueIncreaseEventTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WageDecreaseEventTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/event/WageDecreaseEventTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WageIncreaseEventTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/event/WageIncreaseEventTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EventManagerTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/controller/EventManagerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="28" />
               <folding>
-                <element signature="e#0#3310#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Property.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/property/Property.java">
+      <file leaf-file-name="BuyTransactionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/model/transaction/BuyTransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
+            <state relative-caret-position="345">
+              <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BuyTransaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/BuyTransaction.java">
+      <file leaf-file-name="SellTransactionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/model/transaction/SellTransactionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="39" column="26" selection-start-line="33" selection-start-column="8" selection-end-line="39" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SellTransaction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/SellTransaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="37" column="0" selection-start-line="32" selection-start-column="5" selection-end-line="37" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TestMe with JUnit4 &amp; Mockito" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -547,14 +207,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="oose_assignment_2016s2" />
+              <option name="name" value="Business-Simulator" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="oose_assignment_2016s2" />
+                <option name="name" value="Business-Simulator" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -573,22 +233,22 @@
                 <option name="name" value="init" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'oose_assignment_2016s2'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'Business-Simulator'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays the sub-projects of root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -598,7 +258,7 @@
                 <option name="name" value="wrapper" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays all dependencies declared in root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -608,23 +268,28 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'oose_assignment_2016s2'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'Business-Simulator'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays the properties of root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'oose_assignment_2016s2'." />
+                <option name="description" value="Displays the tasks runnable from root project 'Business-Simulator'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
             </list>
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1502930544000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -643,7 +308,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="oose_assignment_2016s2" />
+              <option name="name" value="Business-Simulator" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.13-all/1b9wlm73elu4cqnbc0rk7r7qn/gradle-2.13/src/announce" />
@@ -781,33 +446,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/model/event/ValueIncreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/view/Observer.java" />
-        <option value="$PROJECT_DIR$/src/main/model/event/WageDecreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/model/event/WageIncreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/view/WageObserver.java" />
-        <option value="$PROJECT_DIR$/src/main/model/event/RevenueIncreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/BankAccount.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/Property.java" />
-        <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/main/controller/SimulationController.java" />
-        <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/TransactionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/PropertyManager.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/factory/PropertyFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/model/transaction/SellTransaction.java" />
-        <option value="$PROJECT_DIR$/src/main/model/transaction/BuyTransaction.java" />
-        <option value="$PROJECT_DIR$/src/main/controller/EventManager.java" />
-        <option value="$PROJECT_DIR$/src/main/model/event/RevenueDecreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/BusinessUnit.java" />
-        <option value="$PROJECT_DIR$/src/main/model/property/Company.java" />
-        <option value="$PROJECT_DIR$/dist/plan.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/reader/EventFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/event/RevenueEvent.java" />
-        <option value="$PROJECT_DIR$/dist/events.txt" />
         <option value="$PROJECT_DIR$/src/main/java/controller/PropertyManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/RevenueIncreaseEvent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/event/ValueDecreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/ValueIncreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/WageIncreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/WageDecreaseEvent.java" />
@@ -823,15 +463,40 @@
         <option value="$PROJECT_DIR$/src/main/java/controller/Updateable.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/TransactionManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/EventManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/reader/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/view/UserInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/SimulationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/EventManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/event/ValueDecreaseEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/event/Event.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java" />
+        <option value="$PROJECT_DIR$/src/controller/reader/EventReader.java" />
+        <option value="$PROJECT_DIR$/src/model/event/Event.java" />
+        <option value="$PROJECT_DIR$/test/model/event/EventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/RevenueDecreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/RevenueIncreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/ValueDecreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/ValueIncreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/WageDecreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/event/WageIncreaseEventTest.java" />
+        <option value="$PROJECT_DIR$/test/model/property/BankAccountTest.java" />
+        <option value="$PROJECT_DIR$/test/model/property/BusinessUnitTest.java" />
+        <option value="$PROJECT_DIR$/test/model/property/CompanyTest.java" />
+        <option value="$PROJECT_DIR$/test/model/property/PropertyTest.java" />
+        <option value="$PROJECT_DIR$/test/model/transaction/BuyTransactionTest.java" />
+        <option value="$PROJECT_DIR$/test/model/transaction/SellTransactionTest.java" />
+        <option value="$PROJECT_DIR$/test/model/transaction/TransactionTest.java" />
+        <option value="$PROJECT_DIR$/test/view/UserInterfaceTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/reader/EventReaderTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/reader/PropertyReaderTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/reader/ReaderTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/reader/TransactionReaderTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/EventManagerTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/PropertyManagerTest.java" />
+        <option value="$PROJECT_DIR$/test/controller/SimulationControllerTest.java" />
       </list>
     </option>
   </component>
@@ -869,15 +534,8 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -895,91 +553,97 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oose_assignment_2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oose_assignment_2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oose_assignment_2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="OOSE2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="oose_assignment_2016s2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="2.14" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name=".gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="2.14" type="462c0819:PsiDirectoryNode" />
+              <item name="taskArtifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="reader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Business-Simulator" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Business-Simulator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.file-colors" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
@@ -989,8 +653,12 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="build" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/view" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="controller.reader" />
     </key>
@@ -1002,12 +670,153 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="OOSE2016s2" />
+      <envs />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
-      <method />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="" />
@@ -1054,55 +863,6 @@
       <Profilers>
         <option name="GAPID_DISABLE_PCS" value="false" />
       </Profilers>
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <module />
-      <method />
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="">
@@ -1225,15 +985,6 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="depsClasspath" value="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <method />
-    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -1241,27 +992,6 @@
       <setting name="params" value="" />
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
       <method />
     </configuration>
     <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
@@ -1309,19 +1039,6 @@
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="OOSE2016s2" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
@@ -1334,46 +1051,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="Remote" factoryName="Remote">
-      <option name="USE_SOCKET_TRANSPORT" value="true" />
-      <option name="SERVER_MODE" value="false" />
-      <option name="SHMEM_ADDRESS" value="javadebug" />
-      <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
-      <method />
-    </configuration>
     <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
@@ -1402,15 +1083,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -1448,36 +1120,45 @@
       <workItem from="1477230100027" duration="1805000" />
       <workItem from="1477270610681" duration="16000000" />
       <workItem from="1477357937875" duration="6920000" />
+      <workItem from="1502944257054" duration="745000" />
+      <workItem from="1502945017757" duration="810000" />
+      <workItem from="1502945875871" duration="159000" />
+      <workItem from="1502946050549" duration="694000" />
+      <workItem from="1502946766193" duration="765000" />
+      <workItem from="1502947551064" duration="3458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90063000" />
+    <option name="totallyTimeSpent" value="96694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32958803" sideWeight="0.50972223" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32958803" sideWeight="0.49027777" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33084577" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33083645" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25069445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="EvoSuite" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7486111" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1489,6 +1170,35 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.49722221" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1510,632 +1220,19 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-    <buildFile url="file://$PROJECT_DIR$/oose2016s2.xml">
-      <targetFilters>
-        <filter targetName="register.custom.compilers" isVisible="false" />
-        <filter targetName="compile.module.oose2016s2" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2.production" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2.tests" isVisible="true" />
-        <filter targetName="clean.module.oose2016s2" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_main" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_main.production" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_main.tests" isVisible="true" />
-        <filter targetName="clean.module.oose2016s2_main" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_test" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_test.production" isVisible="true" />
-        <filter targetName="compile.module.oose2016s2_test.tests" isVisible="true" />
-        <filter targetName="clean.module.oose2016s2_test" isVisible="true" />
-        <filter targetName="init" isVisible="true" />
-        <filter targetName="clean" isVisible="true" />
-        <filter targetName="build.modules" isVisible="true" />
-        <filter targetName="all" isVisible="true" />
-      </targetFilters>
-      <expanded value="true" />
-    </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/model/event/WageEvent.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/event/RevenueEvent.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradlew.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/propertyfile.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/eventfile.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/planfile.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="15" column="96" selection-start-line="15" selection-start-column="96" selection-end-line="15" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/properties.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///private/var/folders/tj/x98zcwss6wz4xvzx7jfn3v8h0000gn/T/modules1.uml" />
-    <entry file="file:///private/var/folders/tj/x98zcwss6wz4xvzx7jfn3v8h0000gn/T/modules.uml" />
-    <entry file="uml://JAVA/model.event.Event">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>model.event.Event</OriginalElement>
-          <nodes>
-            <node x="507.0" y="347.0">model.event.ValueDecreaseEvent</node>
-            <node x="256.0" y="358.5">model.event.WageIncreaseEvent</node>
-            <node x="1137.0" y="347.0">model.event.ValueIncreaseEvent</node>
-            <node x="592.0" y="101.0">model.event.Event</node>
-            <node x="717.0" y="347.0">model.event.RevenueDecreaseEvent</node>
-            <node x="927.0" y="347.0">model.event.RevenueIncreaseEvent</node>
-            <node x="627.5" y="0.0">java.lang.Comparable</node>
-            <node x="0.0" y="358.5">model.event.WageDecreaseEvent</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="1232.0" y="307.0" />
-              <point x="802.8333333333334" y="307.0" />
-              <point x="95.83333333333337" y="93.0" />
-            </edge>
-            <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="602.0" y="327.0" />
-              <point x="687.8333333333334" y="327.0" />
-              <point x="-19.16666666666663" y="93.0" />
-            </edge>
-            <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-37.0" />
-              <point x="118.0" y="307.0" />
-              <point x="611.1666666666666" y="307.0" />
-              <point x="-95.83333333333337" y="93.0" />
-            </edge>
-            <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="812.0" y="327.0" />
-              <point x="726.1666666666666" y="327.0" />
-              <point x="19.16666666666663" y="93.0" />
-            </edge>
-            <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-37.0" />
-              <point x="371.5" y="317.0" />
-              <point x="649.5" y="317.0" />
-              <point x="-57.5" y="93.0" />
-            </edge>
-            <edge source="model.event.Event" target="java.lang.Comparable">
-              <point x="0.0" y="-93.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-            <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="1022.0" y="317.0" />
-              <point x="764.5" y="317.0" />
-              <point x="57.5" y="93.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.5000000000000001" x="-533.0" y="247.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar!/WrapperGenerator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="1312" column="34" selection-start-line="1312" selection-start-column="34" selection-end-line="1312" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/plan.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/model">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>model</OriginalElement>
-          <nodes>
-            <node x="0.0" y="257.0">model.property.Company</node>
-            <node x="507.0" y="800.0">model.event.ValueDecreaseEvent</node>
-            <node x="256.0" y="811.5">model.event.WageIncreaseEvent</node>
-            <node x="592.0" y="554.0">model.event.Event</node>
-            <node x="117.5" y="942.0">model.transaction.Transaction</node>
-            <node x="388.0" y="301.5">model.property.BusinessUnit</node>
-            <node x="1137.0" y="800.0">model.event.ValueIncreaseEvent</node>
-            <node x="273.0" y="1133.0">model.transaction.SellTransaction</node>
-            <node x="717.0" y="800.0">model.event.RevenueDecreaseEvent</node>
-            <node x="927.0" y="800.0">model.event.RevenueIncreaseEvent</node>
-            <node x="0.0" y="811.5">model.event.WageDecreaseEvent</node>
-            <node x="382.5" y="0.0">model.property.Property</node>
-            <node x="0.0" y="1133.0">model.transaction.BuyTransaction</node>
-            <node x="653.0" y="335.0">model.property.BankAccount</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="model.transaction.BuyTransaction" target="model.transaction.Transaction">
-              <point x="0.0" y="-37.0" />
-              <point x="126.5" y="1108.0" />
-              <point x="190.25" y="1108.0" />
-              <point x="-72.75" y="70.5" />
-            </edge>
-            <edge source="model.event.ValueIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="1232.0" y="760.0" />
-              <point x="802.8333333333334" y="760.0" />
-              <point x="95.83333333333337" y="93.0" />
-            </edge>
-            <edge source="model.event.ValueDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="602.0" y="780.0" />
-              <point x="687.8333333333334" y="780.0" />
-              <point x="-19.16666666666663" y="93.0" />
-            </edge>
-            <edge source="model.property.BankAccount" target="model.property.Property">
-              <point x="0.0" y="-48.0" />
-              <point x="746.0" y="232.0" />
-              <point x="595.8333333333333" y="232.0" />
-              <point x="85.33333333333326" y="103.5" />
-            </edge>
-            <edge source="model.event.WageDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-37.0" />
-              <point x="118.0" y="760.0" />
-              <point x="611.1666666666666" y="760.0" />
-              <point x="-95.83333333333337" y="93.0" />
-            </edge>
-            <edge source="model.transaction.SellTransaction" target="model.transaction.Transaction">
-              <point x="0.0" y="-37.0" />
-              <point x="399.5" y="1108.0" />
-              <point x="335.75" y="1108.0" />
-              <point x="72.75" y="70.5" />
-            </edge>
-            <edge source="model.event.RevenueDecreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="812.0" y="780.0" />
-              <point x="726.1666666666666" y="780.0" />
-              <point x="19.16666666666663" y="93.0" />
-            </edge>
-            <edge source="model.event.WageIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-37.0" />
-              <point x="371.5" y="770.0" />
-              <point x="649.5" y="770.0" />
-              <point x="-57.5" y="93.0" />
-            </edge>
-            <edge source="model.event.RevenueIncreaseEvent" target="model.event.Event">
-              <point x="0.0" y="-48.5" />
-              <point x="1022.0" y="770.0" />
-              <point x="764.5" y="770.0" />
-              <point x="57.5" y="93.0" />
-            </edge>
-            <edge source="model.property.Company" target="model.property.Property">
-              <point x="0.0" y="-126.0" />
-              <point x="184.0" y="232.0" />
-              <point x="425.1666666666667" y="232.0" />
-              <point x="-85.33333333333331" y="103.5" />
-            </edge>
-            <edge source="model.property.BusinessUnit" target="model.property.Property">
-              <point x="0.0" y="-81.5" />
-              <point x="0.0" y="103.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="-732.0" y="332.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/controller.factory">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>controller.factory</OriginalElement>
-          <nodes>
-            <node x="" y="">controller.factory.PropertyFactory</node>
-            <node x="" y="">model.property.Company</node>
-            <node x="" y="">model.event.ValueDecreaseEvent</node>
-            <node x="" y="">model.event.WageIncreaseEvent</node>
-            <node x="" y="">controller.factory.EventFactory</node>
-            <node x="" y="">model.event.Event</node>
-            <node x="" y="">controller.PropertyManager</node>
-            <node x="" y="">model.transaction.Transaction</node>
-            <node x="" y="">view.WageObserver</node>
-            <node x="" y="">model.property.BusinessUnit</node>
-            <node x="" y="">view.UserInterface</node>
-            <node x="" y="">controller.SimulationController</node>
-            <node x="" y="">model.event.ValueIncreaseEvent</node>
-            <node x="" y="">model.transaction.SellTransaction</node>
-            <node x="" y="">controller.factory.TransactionFactory</node>
-            <node x="" y="">model.event.RevenueDecreaseEvent</node>
-            <node x="" y="">model.event.RevenueIncreaseEvent</node>
-            <node x="" y="">model.property.Property</node>
-            <node x="" y="">model.event.WageDecreaseEvent</node>
-            <node x="" y="">Main</node>
-            <node x="" y="">model.transaction.BuyTransaction</node>
-            <node x="" y="">model.property.BankAccount</node>
-            <node x="" y="">controller.TransactionManager</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="34.0" y="1055.0" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/EventFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/RevenueEvent.java" />
-    <entry file="file://$PROJECT_DIR$/dist/events.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://MODULES/mdl-OOSE2016s2_main">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MODULES</ID>
-          <OriginalElement>mdl-OOSE2016s2_main</OriginalElement>
-          <nodes>
-            <node x="0.0" y="0.0">mdl-OOSE2016s2_main</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="-196.0" y="39.0" />
-          <SelectedNodes>
-            <node>mdl-OOSE2016s2_main</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement />
-          <nodes>
-            <node x="160.0" y="392.0">com</node>
-            <node x="193.0" y="170.0">netscape</node>
-            <node x="196.0" y="96.0">controller</node>
-            <node x="331.0" y="318.0">junit</node>
-            <node x="171.0" y="244.0">oracle</node>
-            <node x="155.0" y="466.0">org</node>
-            <node x="0.0" y="170.0">resources</node>
-            <node x="212.0" y="0.0">toolbarButtonGraphics</node>
-            <node x="0.0" y="466.0">sun</node>
-            <node x="0.0" y="96.0">META-INF</node>
-            <node x="308.0" y="466.0">jdk</node>
-            <node x="0.0" y="318.0">apple</node>
-            <node x="0.0" y="392.0">view</node>
-            <node x="319.0" y="392.0">java</node>
-            <node x="166.0" y="318.0">javax</node>
-            <node x="0.0" y="244.0">model</node>
-            <node x="341.0" y="244.0">javafx</node>
-            <node x="0.0" y="0.0">Main</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.8368932038834952" x="-125.0" y="277.0" />
-          <SelectedNodes>
-            <node>com</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Fields</Category>
-            <Category>Inner Classes</Category>
-            <Category>Constructors</Category>
-            <Category>Properties</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/ValueIncreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/RevenueIncreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/TransactionManager.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="25" column="45" selection-start-line="24" selection-start-column="7" selection-end-line="25" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#1244#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/EventReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#3510#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/PropertyReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1191">
-          <caret line="107" column="53" selection-start-line="107" selection-start-column="53" selection-end-line="107" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="996">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/reader/TransactionReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="89" column="106" selection-start-line="89" selection-start-column="106" selection-end-line="89" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/EventManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#1603#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PropertyManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="90" column="74" selection-start-line="90" selection-start-column="74" selection-end-line="90" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#2840#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SimulationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/Updateable.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/Updateable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
-          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
+          <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/error/FileFormatException.java">
+    <entry file="file://$PROJECT_DIR$/src/model/error/FileFormatException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/Event.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#1748#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/RevenueDecreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/ValueDecreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="23" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/WageDecreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/event/WageIncreaseEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="49" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/property/BankAccount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="22" column="58" selection-start-line="22" selection-start-column="58" selection-end-line="22" selection-end-column="58" />
-          <folding>
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/property/BusinessUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="87" column="5" selection-start-line="87" selection-start-column="5" selection-end-line="87" selection-end-column="5" />
-          <folding>
-            <element signature="e#1953#1954#0" expanded="true" />
-            <element signature="e#2001#2002#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/property/Company.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="126" column="8" selection-start-line="126" selection-start-column="8" selection-end-line="126" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#3310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/property/Property.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="117" column="51" selection-start-line="117" selection-start-column="51" selection-end-line="117" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/BuyTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="39" column="26" selection-start-line="33" selection-start-column="8" selection-end-line="39" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/SellTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="37" column="0" selection-start-line="32" selection-start-column="5" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/transaction/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-804">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/UserInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/view/WageObserver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -2491,17 +1588,430 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.23232323232323232" x="1954.0" y="1029.5" />
+          <settings layout="Hierarchic Group" zoom="0.23232323232323232" x="1954.0" y="1030.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
-            <Category>Constructors</Category>
-            <Category>Methods</Category>
-            <Category>Properties</Category>
             <Category>Inner Classes</Category>
+            <Category>Constructors</Category>
+            <Category>Properties</Category>
+            <Category>Methods</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UML_nodepenencies.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/RevenueDecreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/RevenueIncreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/ValueDecreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/ValueIncreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/WageDecreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="33" column="10" lean-forward="true" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/event/WageIncreaseEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="40" column="4" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/property/BankAccount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/property/BankAccountTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="27" lean-forward="false" selection-start-line="27" selection-start-column="27" selection-end-line="27" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/property/BusinessUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="66" column="14" lean-forward="false" selection-start-line="66" selection-start-column="14" selection-end-line="66" selection-end-column="14" />
+          <folding>
+            <element signature="e#1953#1954#0" expanded="true" />
+            <element signature="e#2001#2002#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/property/BusinessUnitTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/property/Company.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="114" column="8" lean-forward="false" selection-start-line="114" selection-start-column="8" selection-end-line="114" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/property/CompanyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="28" lean-forward="false" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/property/Property.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="102" column="12" lean-forward="false" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/property/PropertyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/transaction/BuyTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/transaction/SellTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/transaction/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/transaction/TransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/UserInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="7" lean-forward="false" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/view/UserInterfaceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#284#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/WageObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/reader/EventReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/reader/EventReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/reader/PropertyReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="91" column="11" lean-forward="false" selection-start-line="91" selection-start-column="11" selection-end-line="91" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/reader/PropertyReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="35" lean-forward="false" selection-start-line="27" selection-start-column="35" selection-end-line="27" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/reader/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="86" column="26" lean-forward="false" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/reader/ReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/reader/TransactionReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="79" column="19" lean-forward="false" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/reader/TransactionReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="30" column="38" lean-forward="false" selection-start-line="30" selection-start-column="38" selection-end-line="30" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/EventManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#1603#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/PropertyManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="71" column="33" lean-forward="false" selection-start-line="71" selection-start-column="33" selection-end-line="71" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/PropertyManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/SimulationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/EventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/RevenueDecreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-80">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/RevenueIncreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="22" column="11" lean-forward="true" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/ValueDecreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/ValueIncreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/WageDecreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/event/WageIncreaseEventTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="30" column="33" lean-forward="false" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/SimulationControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#526#527#0" expanded="true" />
+            <element signature="e#576#577#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/controller/EventManagerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/transaction/BuyTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="35" column="31" lean-forward="false" selection-start-line="35" selection-start-column="31" selection-end-line="35" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/model/transaction/SellTransactionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="31" column="31" lean-forward="false" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2557,7 +2067,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>OOSE2016s2_main|OOSE2016s2</last-edited>
+          <last-edited>Business-Simulator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2582,7 +2092,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Gradle: junit:junit:4.11</last-edited>
+          <last-edited>junit-4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

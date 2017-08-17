@@ -10,11 +10,10 @@ REQUIRES:-
 */
 package controller.reader;
 
-import model.error.FileFormatException;
 import model.event.*;
 import model.property.*;
 import controller.*;
-import model.property.Property;
+
 import java.util.*;
 
 public class EventReader extends Reader
