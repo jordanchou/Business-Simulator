@@ -44,16 +44,16 @@ public class PropertyManager
      * Retrieves the list of companies for the PropertyManager.
      * @return The list of companies as a List<Property></Property>
      */
-    public List<Property> getCompanies()
+    public List<Company> getCompanies()
     {
-        List<Property> companies;
+        List<Company> companies;
 
-        companies = new ArrayList<Property>();
+        companies = new ArrayList<Company>();
 
         for (Property property : properties.values())
         {
             if (property instanceof Company)
-                companies.add(property);
+                companies.add((Company)property);
         }
 
         return companies;

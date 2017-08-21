@@ -60,7 +60,9 @@ public class SimulationController
               for (long i = start; i <= end; i++)
               {
                   //output company names and bank account balances
-                  ui.output(properties.getCompanies(), i);
+                  ui.update(properties.getCompanies(), i);
+
+
 
                   //do events :D
                   //give the EventManager the properties as well as the current year
@@ -72,6 +74,8 @@ public class SimulationController
                   //update bank accounts
                   properties.update();
               }
+
+              ui.run();
           }
           catch (IllegalArgumentException e)
           {

@@ -24,7 +24,8 @@ public class Main
         PropertyManager pm = new PropertyManager();
         EventManager em = new EventManager();
         EventManager tm = new EventManager();
-        UserInterface ui = new UserInterface();
+        UserInterface ui = new GInterface(Integer.parseInt(args[3]), Integer.parseInt(args[4]));
+
 
         try
         {

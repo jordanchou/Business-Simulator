@@ -1,44 +1,13 @@
-/*
-FILE: UserInterface.java
-AUTHOR:Jordan Pinglin Chou
-USERNAME:18348691
-UNIT: COMP2003 (Object Oriented Software Engineering)
-PURPOSE:
-REFERENCE:-
-COMMENTS:-
-REQUIRES:-
-*/
 package view;
 
-import java.util.*;
 import model.property.*;
+import java.util.*;
 
-public class UserInterface
+public interface UserInterface
 {
-    /**
-     * Constructs a UserInterface
-     */
-    public UserInterface()
-    {
-    }
+    public void update(List<Company> companies, long year);
 
-    /**
-     * Outputs the current year as well as a list of properties
-     * @param properties a list of properties to output
-     * @param year the year to output
-     */
-    public void output(List<Property> properties, long year)
-    {
-        System.out.println("Year: " + year);
+    public void output(Exception e);
 
-        for (Property property : properties)
-            System.out.println(property.toString());
-
-        System.out.println();
-    }
-
-    public void output(Exception e)
-    {
-        System.out.println(e.getMessage());
-    }
+    public void run();
 }
