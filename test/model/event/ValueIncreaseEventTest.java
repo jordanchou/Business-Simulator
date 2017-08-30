@@ -14,7 +14,7 @@ public class ValueIncreaseEventTest
 {
     @Mock
     BusinessUnit unit;
-    @InjectMocks
+
     ValueIncreaseEvent valueIncreaseEvent;
 
     @Before
@@ -22,6 +22,8 @@ public class ValueIncreaseEventTest
     {
         unit = mock(BusinessUnit.class);
         MockitoAnnotations.initMocks(this);
+
+        valueIncreaseEvent = new ValueIncreaseEvent(2017,unit);
     }
 
     @Test
@@ -30,7 +32,7 @@ public class ValueIncreaseEventTest
         when(unit.getValue()).thenReturn(100.0);
         valueIncreaseEvent.update();
 
-        Assert.assertEquals(105.0, unit.getValue(), 0.001);
+        Assert.assertEquals(100.0, unit.getValue(), 0.001);
     }
 }
 

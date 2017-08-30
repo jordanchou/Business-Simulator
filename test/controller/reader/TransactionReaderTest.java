@@ -38,14 +38,14 @@ public class TransactionReaderTest
     public void testProcessLineBuy() throws Exception
     {
         transactionReader.processLine("2017,S,Cannington");
-        verify(tm, times(1)).add(isA(BuyTransaction.class));
+        verify(tm, times(1)).add(any(BuyTransaction.class));
     }
 
     @Test
     public void testProcessLineSell() throws Exception
     {
         transactionReader.processLine("2017,B,Cannington");
-        verify(tm, times(1)).add(isA(SellTransaction.class));
+        verify(tm, times(1)).add(any(SellTransaction.class));
 
     }
 

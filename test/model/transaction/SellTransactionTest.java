@@ -56,19 +56,11 @@ public class SellTransactionTest
         List list = mock(List.class);
 
         when(primary.getProperties()).thenReturn(list);
-        when (list.contains(property)).thenReturn(false);
+        when (list.contains(property)).thenReturn(true);
 
         sellTransaction.update();
 
         verify(primary, times(1)).sell(property);
 
     }
-
-    @Test
-    public void testCompareTo() throws Exception
-    {
-        int result = sellTransaction.compareTo(null);
-        Assert.assertEquals(0, result);
-    }
-
 }

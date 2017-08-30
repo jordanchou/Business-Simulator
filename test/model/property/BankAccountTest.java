@@ -11,15 +11,12 @@ import static org.mockito.Mockito.*;
 
 public class BankAccountTest
 {
-    @Mock
-    Company owner;
     @InjectMocks
     BankAccount bankAccount;
 
     @Before
     public void setUp()
     {
-        owner = mock(Company.class);
         bankAccount = new BankAccount();
         MockitoAnnotations.initMocks(this);
     }

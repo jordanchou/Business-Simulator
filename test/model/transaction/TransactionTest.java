@@ -32,13 +32,6 @@ public class TransactionTest
     }
 
     @Test
-    public void testCompareTo() throws Exception
-    {
-        int result = transaction.compareTo(null);
-        Assert.assertEquals(0, result);
-    }
-
-    @Test
     public void testToString() throws Exception
     {
         when(property.toString()).thenReturn("testProperty");

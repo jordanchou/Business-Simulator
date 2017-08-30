@@ -7,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import view.WageObserver;
+import java.util.*;
 
 import java.util.List;
 
@@ -14,10 +15,9 @@ import static org.mockito.Mockito.*;
 
 public class WageIncreaseEventTest
 {
-    @Mock
     List<WageObserver> observers;
     WageObserver wage;
-    @InjectMocks
+
     WageIncreaseEvent wageIncreaseEvent;
 
     @Before
@@ -25,6 +25,9 @@ public class WageIncreaseEventTest
     {
         wage = mock(WageObserver.class);
         MockitoAnnotations.initMocks(this);
+        observers = new LinkedList<WageObserver>();
+
+        wageIncreaseEvent = new WageIncreaseEvent(2017,observers);
     }
 
     @Test

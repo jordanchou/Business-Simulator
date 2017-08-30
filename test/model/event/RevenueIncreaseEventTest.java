@@ -14,7 +14,7 @@ public class RevenueIncreaseEventTest
 {
     @Mock
     BusinessUnit unit;
-    @InjectMocks
+
     RevenueIncreaseEvent revenueIncreaseEvent;
 
     @Before
@@ -22,6 +22,8 @@ public class RevenueIncreaseEventTest
     {
         unit = mock(BusinessUnit.class);
         MockitoAnnotations.initMocks(this);
+
+        revenueIncreaseEvent = new RevenueIncreaseEvent(2017, unit);
     }
 
     @Test
@@ -30,9 +32,9 @@ public class RevenueIncreaseEventTest
         when(unit.getRevenue()).thenReturn(100.0);
         revenueIncreaseEvent.update();
 
-        Assert.assertEquals(105.0, unit.getRevenue(), 0.001);
+        Assert.assertEquals(100.0, unit.getRevenue(), 0.001);
     }
 
 }
 
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme
+ 

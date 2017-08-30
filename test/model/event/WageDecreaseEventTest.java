@@ -7,6 +7,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import view.WageObserver;
+import java.util.*;
 
 import java.util.List;
 
@@ -14,10 +15,12 @@ import static org.mockito.Mockito.*;
 
 public class WageDecreaseEventTest
 {
-    @Mock
+
     List<WageObserver> observers;
+
+    @Mock
     WageObserver wage;
-    @InjectMocks
+
     WageDecreaseEvent wageDecreaseEvent;
 
     @Before
@@ -25,6 +28,8 @@ public class WageDecreaseEventTest
     {
         wage = mock(WageObserver.class);
         MockitoAnnotations.initMocks(this);
+        observers = new LinkedList<WageObserver>();
+        wageDecreaseEvent = new WageDecreaseEvent(2017,observers);
     }
 
     @Test
@@ -38,5 +43,3 @@ public class WageDecreaseEventTest
     }
 
 }
-
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

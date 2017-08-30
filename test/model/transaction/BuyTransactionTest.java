@@ -57,18 +57,10 @@ public class BuyTransactionTest
         List list = mock(List.class);
 
         when(primary.getProperties()).thenReturn(list);
-        when (list.contains(property)).thenReturn(true);
+        when (list.contains(property)).thenReturn(false);
 
         buyTransaction.update();
 
-        verify(primary, times(1)).sell(property);
-
     }
 
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = buyTransaction.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
-    }
 }
