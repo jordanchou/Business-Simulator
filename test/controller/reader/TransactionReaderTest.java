@@ -2,6 +2,8 @@ package controller.reader;
 
 import controller.EventManager;
 import controller.PropertyManager;
+import model.property.*;
+import model.transaction.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;
@@ -16,6 +18,10 @@ public class TransactionReaderTest
     EventManager tm;
     @Mock
     PropertyManager pm;
+    @Mock
+    Property property;
+    @Mock
+    Company company;
     @InjectMocks
     TransactionReader transactionReader;
 
@@ -23,25 +29,24 @@ public class TransactionReaderTest
     public void setUp()
     {
         MockitoAnnotations.initMocks(this);
+
+        when(pm.getProperty("Cannington")).thenReturn(property);
+        when(pm.getPrimary()).thenReturn(company);
     }
 
     @Test
-    public void testProcessLine() throws Exception
+    public void testProcessLineBuy() throws Exception
     {
-        transactionReader.processLine("line");
+        transactionReader.processLine("2017,S,Cannington");
+        verify(tm, times(1)).add(isA(BuyTransaction.class));
     }
 
     @Test
-    public void testCheckTransaction() throws Exception
+    public void testProcessLineSell() throws Exception
     {
-        transactionReader.checkTransaction(new String[]{"lineArray"});
+        transactionReader.processLine("2017,B,Cannington");
+        verify(tm, times(1)).add(isA(SellTransaction.class));
+
     }
 
-    @Test
-    public void testReadFile() throws Exception
-    {
-        transactionReader.readFile("file");
-    }
 }
-
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

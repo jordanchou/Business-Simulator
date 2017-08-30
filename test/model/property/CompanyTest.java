@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import java.util.*;
 
 import java.util.List;
 
@@ -21,49 +22,54 @@ public class CompanyTest
     Company owner;
     @InjectMocks
     Company company;
+    Property property;
+
 
     @Before
     public void setUp()
     {
+        properties = mock(List.class);
+        account = mock(BankAccount.class);
+        owner = mock(Company.class);
+        company = mock(Company.class);
+        property = mock(Property.class);
+
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
     public void testAddProperty() throws Exception
     {
-        company.addProperty(null);
+        List list = mock(List.class);
+        company.addProperty(property);
+
+        verify(list, times(1)).add(property);
     }
 
     @Test
     public void testRemoveProperty() throws Exception
     {
+        when(properties.remove(property)).thenReturn(true);
+
         boolean result = company.removeProperty(null);
         Assert.assertEquals(true, result);
     }
 
     @Test
-    public void testToString() throws Exception
-    {
-        String result = company.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
-    }
-
-    @Test
     public void testBuy() throws Exception
     {
-        company.buy(null);
+        company.buy(property);
+        verify(property, times(1)).setOwner(anyObject());
+        verify(company, times(1)).addProperty(property);
     }
 
     @Test
     public void testSell() throws Exception
     {
-        company.sell(null);
-    }
+        company.sell(property);
+        verify(property, times(1)).setOwner(null);
+        verify(company, times(1)).removeProperty(property);
 
-    @Test
-    public void testUpdate() throws Exception
-    {
-        company.update();
     }
 }
 

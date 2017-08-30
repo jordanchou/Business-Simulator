@@ -16,34 +16,27 @@ public class WageDecreaseEventTest
 {
     @Mock
     List<WageObserver> observers;
+    WageObserver wage;
     @InjectMocks
     WageDecreaseEvent wageDecreaseEvent;
 
     @Before
     public void setUp()
     {
+        wage = mock(WageObserver.class);
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
     public void testUpdate() throws Exception
     {
+        observers.add(wage);
+        wageDecreaseEvent.setObservers(observers);
         wageDecreaseEvent.update();
+
+        verify(wage, times(1)).update(0.95);
     }
 
-    @Test
-    public void testCompareTo() throws Exception
-    {
-        int result = wageDecreaseEvent.compareTo(null);
-        Assert.assertEquals(0, result);
-    }
-
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = wageDecreaseEvent.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
-    }
 }
 
 //Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

@@ -20,27 +20,17 @@ public class RevenueDecreaseEventTest
     @Before
     public void setUp()
     {
+        unit = mock(BusinessUnit.class);
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
     public void testUpdate() throws Exception
     {
+        when(unit.getRevenue()).thenReturn(100.0);
         revenueDecreaseEvent.update();
-    }
 
-    @Test
-    public void testCompareTo() throws Exception
-    {
-        int result = revenueDecreaseEvent.compareTo(null);
-        Assert.assertEquals(0, result);
-    }
-
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = revenueDecreaseEvent.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
+        Assert.assertEquals(95.0, unit.getRevenue(), 0.001);
     }
 }
 

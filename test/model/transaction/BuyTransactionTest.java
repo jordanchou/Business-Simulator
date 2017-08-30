@@ -9,6 +9,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 
+import java.util.List;
+
 import static org.mockito.Mockito.*;
 
 public class BuyTransactionTest
@@ -23,20 +25,44 @@ public class BuyTransactionTest
     @Before
     public void setUp()
     {
+        property = mock(Property.class);
+        primary = mock(Company.class);
+        buyTransaction = new BuyTransaction(2000, property);
+        buyTransaction.setPrimary(primary);
+
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
-    public void testUpdate() throws Exception
+    public void testUpdateFail() throws Exception
     {
-        buyTransaction.update();
+        List list = mock(List.class);
+
+        when(primary.getProperties()).thenReturn(list);
+        when (list.contains(property)).thenReturn(true);
+
+        try
+        {
+            buyTransaction.update();
+        }
+        catch (IllegalStateException e)
+        {
+        }
+
     }
 
     @Test
-    public void testCompareTo() throws Exception
+    public void testUpdateNormal() throws Exception
     {
-        int result = buyTransaction.compareTo(null);
-        Assert.assertEquals(0, result);
+        List list = mock(List.class);
+
+        when(primary.getProperties()).thenReturn(list);
+        when (list.contains(property)).thenReturn(true);
+
+        buyTransaction.update();
+
+        verify(primary, times(1)).sell(property);
+
     }
 
     @Test
@@ -46,5 +72,3 @@ public class BuyTransactionTest
         Assert.assertEquals("replaceMeWithExpectedResult", result);
     }
 }
-
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

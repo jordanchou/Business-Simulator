@@ -23,6 +23,11 @@ public class TransactionTest
     @Before
     public void setUp()
     {
+        property = mock(Property.class);
+        primary = mock(Company.class);
+        transaction = new BuyTransaction(2000, property);
+        transaction.setPrimary(primary);
+
         MockitoAnnotations.initMocks(this);
     }
 
@@ -36,9 +41,9 @@ public class TransactionTest
     @Test
     public void testToString() throws Exception
     {
+        when(property.toString()).thenReturn("testProperty");
+        when(primary.toString()).thenReturn("testPrimary");
         String result = transaction.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
+        Assert.assertEquals("Transaction: year=2000, property=testProperty, primary=testPrimary", result);
     }
 }
-
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

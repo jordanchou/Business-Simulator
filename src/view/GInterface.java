@@ -25,7 +25,7 @@ public class GInterface extends Application implements UserInterface
 
     public GInterface()
     {
-        
+
     }
 
     public GInterface(int startYear, int endYear)

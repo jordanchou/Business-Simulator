@@ -19,21 +19,17 @@ public class BankAccountTest
     @Before
     public void setUp()
     {
+        owner = mock(Company.class);
+        bankAccount = new BankAccount();
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
     public void testUpdate() throws Exception
     {
+        bankAccount.setValue(100.0);
         bankAccount.update();
-    }
-
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = bankAccount.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
+        Assert.assertEquals(105.0, bankAccount.getValue(), 0.001);
     }
 }
 
-//Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

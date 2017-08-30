@@ -19,27 +19,25 @@ public class BusinessUnitTest
     @Before
     public void setUp()
     {
+        owner = mock(Company.class);
+        businessUnit = new BusinessUnit(null, null, 100, 100, 100);
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
-    public void testUpdate() throws Exception
+    public void testUpdateWages() throws Exception
     {
-        businessUnit.update(0d);
+        businessUnit.update(0.5);
+        Assert.assertEquals(50.0, businessUnit.getWages(), 0.001);
     }
 
     @Test
-    public void testUpdate2() throws Exception
+    public void testUpdateProfits() throws Exception
     {
         businessUnit.update();
+        Assert.assertEquals(0.0, businessUnit.getProfit(), 0.001);
     }
 
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = businessUnit.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
-    }
 }
 
 //Generated with love by TestMe :) Please report issues and submit feature requests at: http://weirddev.com/forum#!/testme

@@ -20,27 +20,17 @@ public class ValueDecreaseEventTest
     @Before
     public void setUp()
     {
+        unit = mock(BusinessUnit.class);
         MockitoAnnotations.initMocks(this);
     }
 
     @Test
     public void testUpdate() throws Exception
     {
+        when(unit.getValue()).thenReturn(100.0);
         valueDecreaseEvent.update();
-    }
 
-    @Test
-    public void testCompareTo() throws Exception
-    {
-        int result = valueDecreaseEvent.compareTo(null);
-        Assert.assertEquals(0, result);
-    }
-
-    @Test
-    public void testToString() throws Exception
-    {
-        String result = valueDecreaseEvent.toString();
-        Assert.assertEquals("replaceMeWithExpectedResult", result);
+        Assert.assertEquals(95.0, unit.getValue(), 0.001);
     }
 }
 
