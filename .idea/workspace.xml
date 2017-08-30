@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="066da7c9-8b55-4ef9-936e-cc81a5d0d832" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controller/EventManagerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controller/PropertyManagerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controller/SimulationControllerTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controller/reader/ReaderTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/model/event/EventTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/model/property/PropertyTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/man.jar" afterPath="$PROJECT_DIR$/dist/man.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/Business-Simulator.iml" afterPath="$PROJECT_DIR$/.idea/modules/Business-Simulator.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/GInterface.java" afterPath="$PROJECT_DIR$/src/view/GInterface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controller/reader/EventReaderTest.java" afterPath="$PROJECT_DIR$/test/controller/reader/EventReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controller/reader/PropertyReaderTest.java" afterPath="$PROJECT_DIR$/test/controller/reader/PropertyReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controller/reader/TransactionReaderTest.java" afterPath="$PROJECT_DIR$/test/controller/reader/TransactionReaderTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/RevenueDecreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/RevenueDecreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/RevenueIncreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/RevenueIncreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/ValueDecreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/ValueDecreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/ValueIncreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/ValueIncreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/WageDecreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/WageDecreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/event/WageIncreaseEventTest.java" afterPath="$PROJECT_DIR$/test/model/event/WageIncreaseEventTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/property/BankAccountTest.java" afterPath="$PROJECT_DIR$/test/model/property/BankAccountTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/property/BusinessUnitTest.java" afterPath="$PROJECT_DIR$/test/model/property/BusinessUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/property/CompanyTest.java" afterPath="$PROJECT_DIR$/test/model/property/CompanyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/transaction/BuyTransactionTest.java" afterPath="$PROJECT_DIR$/test/model/transaction/BuyTransactionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/transaction/SellTransactionTest.java" afterPath="$PROJECT_DIR$/test/model/transaction/SellTransactionTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/model/transaction/TransactionTest.java" afterPath="$PROJECT_DIR$/test/model/transaction/TransactionTest.java" />
     </list>
     <ignored path="OOSE2016s2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1260,8 +1235,16 @@
       <workItem from="1503572688047" duration="2404000" />
       <workItem from="1503918468522" duration="516000" />
       <workItem from="1503919013886" duration="68000" />
-      <workItem from="1503919097560" duration="14541000" />
+      <workItem from="1503919097560" duration="14573000" />
     </task>
+    <task id="LOCAL-00001" summary="Updated tests">
+      <created>1504073426766</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1504073426767</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1297,7 +1280,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126166000" />
+    <option name="totallyTimeSpent" value="126198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -1416,6 +1399,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
